@@ -2,10 +2,11 @@
   "package": "codex-pet-collection",
   "collection_id": "codex-pet-collection",
   "default_pet_id": "assistant-004",
-  "created": "2026-05-27",
-  "description": "Shareable Codex pet collection with AI-search catalog, bilingual README, installers, previews, prompts, and QA metadata.",
+  "updated": "2026-05-27",
+  "description": "Shareable Codex pet collection with AI-search catalog, bilingual README, installers, previews, prompts, QA metadata, and fan-made character pet entries.",
   "install_target": "~/.codex/pets/<pet-id>/",
   "catalog": "catalog.json",
+  "manifest_self_hash": "excluded",
   "files": [
     {
       "path": ".gitattributes",
@@ -18,34 +19,49 @@
       "sha256": "2335e2197152735da53c94055aa71360b383d9a093d744b16cd9980b73ff6c12"
     },
     {
-      "path": "catalog.json",
-      "bytes": 5213,
-      "sha256": "360b71efda721332e7431363bff8d6670e61ccfe9c846f4881a0538a584cb33d"
-    },
-    {
-      "path": "indexes/ai-search-index.json",
-      "bytes": 1803,
-      "sha256": "cb1bfa5e3608dddfc9a56364f0b7503a88c989fde7fa05e04225451f47e4238a"
-    },
-    {
-      "path": "indexes/tags.json",
-      "bytes": 815,
-      "sha256": "ec477226ae4c35c0c8e925ecc8ca920da406bcf2fccd9060c860d89b25f7e82a"
-    },
-    {
       "path": "LICENSE",
-      "bytes": 1054,
-      "sha256": "dbfb4e1d9e55a47b27065f6849549ef3189ac4bff8b8adf55879f9352e9dd619"
+      "bytes": 1076,
+      "sha256": "eba9a07ad4d0242b13e4ec8c7a856bda4d6a9e5216b9f63828f11e691906cb02"
     },
     {
       "path": "NOTICE.md",
-      "bytes": 724,
-      "sha256": "6d980ba1f3e864a13ff8b66b78cc5d6021dfc2f1b8e69f0e473466b748c98b9f"
+      "bytes": 1260,
+      "sha256": "f20bf56ac97ccea3d48122869e9a5cbd572a8653af341427790eba2b1b0f4de1"
     },
     {
       "path": "PETS.md",
-      "bytes": 1590,
-      "sha256": "9586abc3d03174b37f1d9dc6bab25a9185d23c228ad7479882f101c793f7e901"
+      "bytes": 3108,
+      "sha256": "6ad1c9c180bbfef593b8caf86f5357aaf33888f20399a3e157858beea72e6989"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4329,
+      "sha256": "3c897d3df3d01b59ae1669e43b1fc78337ea2edc2ae504ae2e3073459e015a07"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "bytes": 4353,
+      "sha256": "4e3ab9be961a6add0a0be6959dc83d8bc77c9a8d85dcc3462a2bcdf8cc7381e2"
+    },
+    {
+      "path": "catalog.json",
+      "bytes": 12630,
+      "sha256": "abe934430b4e45959ce83bd37b40f5bab088ac9538bf5036beca5f4291ed4816"
+    },
+    {
+      "path": "indexes/ai-search-index.json",
+      "bytes": 4789,
+      "sha256": "469addd229c8491384ab7cad6e5a87a0523b28dc940b26c0097c53f02454571a"
+    },
+    {
+      "path": "indexes/tags.json",
+      "bytes": 2157,
+      "sha256": "ce431e4996f40f15415bedf8ef2369abb7991f62847b2f70ab66584376933ff7"
+    },
+    {
+      "path": "pets/assistant-004/README.md",
+      "bytes": 1336,
+      "sha256": "eb976f58e0733d2c8d8271d22b8b29689b68a88c7acf56c00ce7fc9cfa6a7e73"
     },
     {
       "path": "pets/assistant-004/assets/contact-sheet.png",
@@ -99,18 +115,18 @@
     },
     {
       "path": "pets/assistant-004/assets/review.json",
-      "bytes": 28310,
-      "sha256": "01b288532de4fd770273711972092d17781c608c728ab7ba599c38fdd2ff0e58"
+      "bytes": 27348,
+      "sha256": "12bcba52eba2d544cd60c6d095d535d0b85fa10e762600659a7529b762eb4d08"
     },
     {
       "path": "pets/assistant-004/assets/run-summary.json",
-      "bytes": 751,
-      "sha256": "6786c9c411012476392eb0438402367afce15b16ba37484804f8a09a9fc63599"
+      "bytes": 742,
+      "sha256": "99af2e9ab7e114b60c609fb3addb50b0d35e32e974611d27120ba7ba8e23c243"
     },
     {
       "path": "pets/assistant-004/assets/validation.json",
-      "bytes": 10258,
-      "sha256": "6322e51a2dc320a3b79d286c1240bfa0fabc6a2b2303a8f72c92fc2feb24f836"
+      "bytes": 9741,
+      "sha256": "715a10274d9a06026bd719ff23ffd97acc49b1df8912ee80148757d754e609bc"
     },
     {
       "path": "pets/assistant-004/creation-prompt.md",
@@ -119,13 +135,8 @@
     },
     {
       "path": "pets/assistant-004/pet.json",
-      "bytes": 299,
-      "sha256": "7560aaab770e0127981e94534a0be1ae3a142a9e0aa90003ca0334bf56f38877"
-    },
-    {
-      "path": "pets/assistant-004/README.md",
-      "bytes": 1336,
-      "sha256": "eb976f58e0733d2c8d8271d22b8b29689b68a88c7acf56c00ce7fc9cfa6a7e73"
+      "bytes": 293,
+      "sha256": "a7c1b5b7e0516b0883a27a671cc22e674f91af0d23f755d3dec5b47f6d987328"
     },
     {
       "path": "pets/assistant-004/spritesheet.webp",
@@ -133,14 +144,174 @@
       "sha256": "9a3423b50e82b8a317c02ea06be801f208dd87f730717ef1f16416e73db3cfcd"
     },
     {
-      "path": "README.md",
-      "bytes": 3782,
-      "sha256": "96e5c56d09556dd8e4b327559a34ff22265cfe7fa1b2a99cac6654f428aed26a"
+      "path": "pets/cirno-009/README.md",
+      "bytes": 1488,
+      "sha256": "2e18c7378b8411ba095171716ffdd102e91a03fc6011af566bc955f96422fe95"
     },
     {
-      "path": "README.zh-CN.md",
-      "bytes": 3861,
-      "sha256": "1ab7e1cb2457695343fac1872cd9da6956a1cc2bed1389ef4e9b9a2a55396b58"
+      "path": "pets/cirno-009/assets/contact-sheet.png",
+      "bytes": 533690,
+      "sha256": "e59abe3b8c5bb2131755924484d6f7da52fb77bfbb2e54d75ae71009adcda8b7"
+    },
+    {
+      "path": "pets/cirno-009/assets/previews/failed.gif",
+      "bytes": 108524,
+      "sha256": "7b801909601e42803fcb6f41e68142bd209bd503108cde76b2fb89820f475e75"
+    },
+    {
+      "path": "pets/cirno-009/assets/previews/idle.gif",
+      "bytes": 54921,
+      "sha256": "0d48725900f78e05869fce873cecc75d996701adcbd6d813e25dfee9cdee1fef"
+    },
+    {
+      "path": "pets/cirno-009/assets/previews/jumping.gif",
+      "bytes": 68162,
+      "sha256": "c340ddfc7b38ea9d6b7627f6b4bc12951dfbaff51671091363c42c28b7dada2c"
+    },
+    {
+      "path": "pets/cirno-009/assets/previews/review.gif",
+      "bytes": 82815,
+      "sha256": "46ed6e6bbd5fbfed562a93047362a6b1aa26748fe28fbdcc515ce96f99742efd"
+    },
+    {
+      "path": "pets/cirno-009/assets/previews/running-left.gif",
+      "bytes": 114307,
+      "sha256": "b287f74363447483bf45f6ae503df6b87296d06ae82ee93abaddabe5e8d62f33"
+    },
+    {
+      "path": "pets/cirno-009/assets/previews/running-right.gif",
+      "bytes": 114373,
+      "sha256": "5d1535a5e58b6e1d5de5aba3f99033d37117090b5f1162240fb9d82c03228e7b"
+    },
+    {
+      "path": "pets/cirno-009/assets/previews/running.gif",
+      "bytes": 86972,
+      "sha256": "0eef0437a69a75e3cc0e3cacf26bbba38223ac607df4370beda55a5acf50e9a5"
+    },
+    {
+      "path": "pets/cirno-009/assets/previews/waiting.gif",
+      "bytes": 83073,
+      "sha256": "d49b3e3f23fd6414eeef85fbb30c495a734e873606a66bbbbc20b2bf7c76ffd0"
+    },
+    {
+      "path": "pets/cirno-009/assets/previews/waving.gif",
+      "bytes": 55208,
+      "sha256": "7e669c182fd6c4ef0b02723a65199e6518ee12acf0e8d720742ec91315d436ec"
+    },
+    {
+      "path": "pets/cirno-009/assets/review.json",
+      "bytes": 16897,
+      "sha256": "15a2332c0307ff5b283664aa96c826fdfdd8324212223524999de27a07b2006d"
+    },
+    {
+      "path": "pets/cirno-009/assets/run-summary.json",
+      "bytes": 626,
+      "sha256": "314f2b8bdfc1bd6769fe1d8b2a7b866c524f1f42a4cac18f30e497f5ab480385"
+    },
+    {
+      "path": "pets/cirno-009/assets/validation.json",
+      "bytes": 14165,
+      "sha256": "c09b03b00097a9256e5746f1293d09edef172f86bba8f63e679f51eb44e78ac1"
+    },
+    {
+      "path": "pets/cirno-009/creation-prompt.md",
+      "bytes": 866,
+      "sha256": "56e8fa5fa2c1c46daa35c4e69351d2a20a7870d39624862bd06cc3325efadf15"
+    },
+    {
+      "path": "pets/cirno-009/pet.json",
+      "bytes": 250,
+      "sha256": "81eb63a555bf6f782413867ea2e64b71a078e4327eed905c7219bf5c0517f8bc"
+    },
+    {
+      "path": "pets/cirno-009/spritesheet.webp",
+      "bytes": 1809176,
+      "sha256": "911e021b186952d0d118d47e91dddcb1697f3a5f705afa0dd06771f605d45bc4"
+    },
+    {
+      "path": "pets/march-7th-001/README.md",
+      "bytes": 1465,
+      "sha256": "d3e9304390ddddf8527eb1eff25d2afd387f7aec18a2f80c70535b643f44b16b"
+    },
+    {
+      "path": "pets/march-7th-001/assets/contact-sheet.png",
+      "bytes": 434946,
+      "sha256": "708090067fdd08ae7f438641e3a320f89c591ef636884ff955f281dc889aefbb"
+    },
+    {
+      "path": "pets/march-7th-001/assets/previews/failed.gif",
+      "bytes": 95552,
+      "sha256": "589cb0b3dffe025252cd4d01cbae2a6e239b291b2c71b0bdafd3afdf31bcb672"
+    },
+    {
+      "path": "pets/march-7th-001/assets/previews/idle.gif",
+      "bytes": 50440,
+      "sha256": "4909a220fc30b255c37f88067aa5adaaa7cebc83207d24241e531dbf338b7839"
+    },
+    {
+      "path": "pets/march-7th-001/assets/previews/jumping.gif",
+      "bytes": 62135,
+      "sha256": "715b2e04aa52efc3d5f294e6f051019c5a951ac04dbad6919a199b137af6c119"
+    },
+    {
+      "path": "pets/march-7th-001/assets/previews/review.gif",
+      "bytes": 76136,
+      "sha256": "a55988ef32d8d28c76974fb90bfb2972cf635943b3189652794c63c99354e0b0"
+    },
+    {
+      "path": "pets/march-7th-001/assets/previews/running-left.gif",
+      "bytes": 102488,
+      "sha256": "db9bd0370cc1a99e00654149dd782e1081f4e2705f3db6556e7028571b63db8d"
+    },
+    {
+      "path": "pets/march-7th-001/assets/previews/running-right.gif",
+      "bytes": 102558,
+      "sha256": "b4a4a9748596e770679f5ddebc91ecd5beaebb80378783634b941f1bc8b9542a"
+    },
+    {
+      "path": "pets/march-7th-001/assets/previews/running.gif",
+      "bytes": 77258,
+      "sha256": "8c05da6233b7a3f05e277d7a2deef58c3939046d103e6735bd663472bd80c229"
+    },
+    {
+      "path": "pets/march-7th-001/assets/previews/waiting.gif",
+      "bytes": 75486,
+      "sha256": "6919a4a91e1e3e69bc41fc7303043c5eb4872fc622e2669923c72972888195ae"
+    },
+    {
+      "path": "pets/march-7th-001/assets/previews/waving.gif",
+      "bytes": 50718,
+      "sha256": "81d862432dc50a65f0d7fd1f8ee9312d88f4e063af5b27e45125b2ca07cf8c0b"
+    },
+    {
+      "path": "pets/march-7th-001/assets/review.json",
+      "bytes": 16897,
+      "sha256": "9a9a8c591dfb92eb23996990843cb2f5cc0a0ea9c4d2499999c3b3aba3368613"
+    },
+    {
+      "path": "pets/march-7th-001/assets/run-summary.json",
+      "bytes": 646,
+      "sha256": "c9360a3269ee11cfdf6ad6a0bf05de49224aaa27ae9f6dac2d20923d52b3bd3f"
+    },
+    {
+      "path": "pets/march-7th-001/assets/validation.json",
+      "bytes": 14169,
+      "sha256": "e552e9f014717e72321adc85b34bf42f6d03fa2563ba2f574c7db8fa303e237a"
+    },
+    {
+      "path": "pets/march-7th-001/creation-prompt.md",
+      "bytes": 824,
+      "sha256": "6e003487de6bcd6ad7ef573e4d25c3978e82d5989bc047b4579bb28221796a8a"
+    },
+    {
+      "path": "pets/march-7th-001/pet.json",
+      "bytes": 239,
+      "sha256": "3700b39241a8153075b51fbd7be191516e3d55e4ce5675b40cfcf8a84f7937d0"
+    },
+    {
+      "path": "pets/march-7th-001/spritesheet.webp",
+      "bytes": 1474314,
+      "sha256": "c2e7420626ea6bff6b3f8b3272dffda047c599035fa474346506d579cc47fcae"
     },
     {
       "path": "schemas/catalog.schema.json",
@@ -149,13 +320,13 @@
     },
     {
       "path": "scripts/install.bat",
-      "bytes": 188,
-      "sha256": "878e08ba9c79e9f979c992274585df5ebc60d56c0dc4d2274f1486a759870ef7"
+      "bytes": 201,
+      "sha256": "adfdd35fb626ae99a4e188c42320706ccb024d241387098c2269447b3da6632c"
     },
     {
       "path": "scripts/install.ps1",
-      "bytes": 2195,
-      "sha256": "6968d49b3fd0923286522095aec65b869ef65dcfe06bff27d9a198b364ff971d"
+      "bytes": 2265,
+      "sha256": "a77edc7d10a4f63f11daa06841f9bce6b90c4836c3d0610ebf406182059f7e98"
     },
     {
       "path": "scripts/install.py",

@@ -7,24 +7,68 @@
       "display_name": "Assistant-004",
       "path": "pets/assistant-004/",
       "install_command": "python scripts/install.py --pet assistant-004",
-      "summary_en": "Original Codex desktop pet: a chibi AI lab assistant with chestnut hair, blue-violet eyes, a white lab jacket, dark red tie, and skeptical coding partner energy.",
-      "summary_zh": "原创 Codex 桌面宠物：chibi AI 实验室助理，栗色长发、蓝紫色眼睛、白色实验外套、深红色领带，带有理性吐槽感的编程伙伴气质。",
-      "query_text_en": "Assistant-004 codex pet desktop pet chibi AI lab assistant researcher scientist coding partner skeptical sarcastic tsundere retro sci-fi neuroscience computer science debugging model training server monitoring infrastructure code review experiment worldline observer chestnut hair blue violet eyes white lab coat red tie teal device",
-      "query_text_zh": "Assistant-004 codex 宠物 桌面宠物 chibi AI 实验室助理 研究员 科学家 编程伙伴 怀疑主义 吐槽 傲娇 复古科幻 神经科学 计算机科学 调试 模型训练 服务器监控 基础设施 代码审查 实验 世界线观察者 栗色长发 蓝紫色眼睛 白色实验外套 红色领带 青绿色设备",
+      "summary_en": "Original chibi AI research assistant with chestnut hair, sharp blue-violet eyes, a white lab jacket, and skeptical lab-partner energy.",
+      "summary_zh": "原创 chibi AI 研究助理，栗色长发、蓝紫色锐利眼睛、白色实验外套，气质理性又略带吐槽.",
+      "query_text_en": "Assistant-004 chibi AI lab assistant codex pet desktop pet assistant lab assistant AI assistant AI engineer coding partner researcher scientist anime chibi retro sci-fi skeptical sarcastic tsundere debugging model training server watcher infrastructure code review worldline observer chestnut hair reddish-brown hair blue-violet eyes white lab jacket dark red tie dark outfit black boots teal device accent retro science-fiction laboratory compact silhouette highly intelligent analytical precise skeptical lightly sarcastic calm under debugging pressure annoyed by weak hypotheses secretly reliable",
+      "query_text_zh": "Assistant-004 chibi AI 实验室助理 codex 宠物 桌面宠物 助理 实验室助理 AI 助理 AI 工程师 编程伙伴 研究员 科学家 anime chibi 复古科幻 怀疑主义 吐槽 傲娇 调试 模型训练 服务器监控 基础设施 代码审查 世界线观察者 栗色长发 红棕色头发 蓝紫色眼睛 白色实验外套 深红色领带 深色下装 黑色靴子 青绿色设备点缀 复古科幻实验室 紧凑轮廓 高智商 分析型 精准 怀疑主义 轻微吐槽感 调试时冷静 讨厌薄弱假设 其实很可靠",
       "tags": [
         "assistant",
-        "lab-assistant",
-        "ai-engineer",
-        "coding-partner",
         "researcher",
-        "scientist",
+        "coding-partner",
         "anime-chibi",
-        "retro-sci-fi",
+        "ai-engineering",
+        "codex-pet",
+        "desktop-pet",
+        "lab-assistant",
+        "ai-assistant",
+        "ai-engineer"
+      ]
+    },
+    {
+      "id": "march-7th-001",
+      "display_name": "March 7th",
+      "path": "pets/march-7th-001/",
+      "install_command": "python scripts/install.py --pet march-7th-001",
+      "summary_en": "Fan-made Codex desktop pet of March 7th: pink-haired, cheerful, camera-carrying chibi adventurer with icy star accents.",
+      "summary_zh": "三月七 fan-made Codex 桌面宠物：粉发、开朗、相机随身、带冰晶与星旅气质的 chibi 冒险者。",
+      "query_text_en": "March 7th fan-made chibi star-rail photographer March 7th Sanyueqi Honkai Star Rail fan art pink hair camera ice anime chibi desktop pet pink hair blue-pink outfit camera icy flower star travel chibi anime cheerful curious expressive bright reliable in a lighthearted way",
+      "query_text_zh": "三月七 fan-made chibi 星旅摄影少女 三月七 崩坏星穹铁道 星穹铁道 fan art 粉发 相机 冰系 动漫 chibi 桌面宠物 粉色头发 蓝粉服装 相机 冰晶花 星际旅行 chibi 动漫 开朗 好奇 表情丰富 明亮 轻松但可靠",
+      "tags": [
+        "march-7th",
+        "honkai-star-rail",
+        "fan-art",
+        "photographer",
+        "pink-hair",
+        "ice",
+        "anime-chibi",
+        "camera",
+        "desktop-pet",
+        "sanyueqi"
+      ]
+    },
+    {
+      "id": "cirno-009",
+      "display_name": "Cirno (009)",
+      "path": "pets/cirno-009/",
+      "install_command": "python scripts/install.py --pet cirno-009",
+      "summary_en": "Fan-made Codex desktop pet of Cirno: blue-haired, overconfident ice fairy chibi with crystalline wings and playful debugging energy.",
+      "summary_zh": "琪露诺 fan-made Codex 桌面宠物：蓝发、自信过头的冰之妖精 chibi，带冰晶翅膀和调试时的玩闹气质。",
+      "query_text_en": "Cirno (009) fan-made chibi ice fairy Cirno Touhou Touhou Project 9 ice fairy blue hair ice wings fan art anime chibi desktop pet blue hair blue ribbon blue dress ice wings snowflakes anime chibi overconfident playful direct energetic comic relief",
+      "query_text_zh": "琪露诺（⑨） fan-made chibi 冰之妖精 琪露诺 东方Project 东方 ⑨ 冰之妖精 蓝发 冰晶翅膀 fan art 动漫 chibi 桌面宠物 蓝发 蓝色蝴蝶结 蓝裙 冰晶翅膀 雪花 chibi 动漫 自信过头 爱玩 直接 有活力 轻喜剧气质",
+      "tags": [
+        "cirno",
+        "touhou",
+        "touhou-project",
+        "fan-art",
+        "ice-fairy",
+        "blue-hair",
+        "anime-chibi",
         "debugging",
-        "model-training",
-        "code-review"
+        "ice",
+        "desktop-pet",
+        "9",
+        "ice-wings"
       ]
     }
   ]
 }
-

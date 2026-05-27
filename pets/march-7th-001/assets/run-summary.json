@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "source": "F:\\Codex_Project\\codex_anime_pets\\build.tmp\\march-7th-cutout.png",
+  "spritesheet": "F:\\Codex_Project\\codex_anime_pets\\pets\\march-7th-001\\spritesheet.webp",
+  "validation": "F:\\Codex_Project\\codex_anime_pets\\pets\\march-7th-001\\assets\\validation.json",
+  "contact_sheet": "F:\\Codex_Project\\codex_anime_pets\\pets\\march-7th-001\\assets\\contact-sheet.png",
+  "review": "F:\\Codex_Project\\codex_anime_pets\\pets\\march-7th-001\\assets\\review.json",
+  "package": "F:\\Codex_Project\\codex_anime_pets\\pets\\march-7th-001",
+  "generation_mode": "built-in image generation plus local sprite assembly"
+}

@@ -7,8 +7,12 @@
 当前包含：
 
 - [Assistant-004](pets/assistant-004/README.md) - 原创 chibi AI 实验室助理、带一点吐槽感的编程伙伴、复古科幻研究员气质。
+- [三月七](pets/march-7th-001/README.md) - 非官方 fan-made chibi Codex 桌宠，粉发、开朗、带相机的星旅摄影少女。
+- [琪露诺（⑨）](pets/cirno-009/README.md) - 非官方 fan-made chibi Codex 桌宠，自信过头的冰之妖精。
 
 ![Assistant-004 contact sheet](pets/assistant-004/assets/contact-sheet.png)
+![March 7th contact sheet](pets/march-7th-001/assets/contact-sheet.png)
+![Cirno contact sheet](pets/cirno-009/assets/contact-sheet.png)
 
 ## AI 检索目录
 
@@ -31,7 +35,7 @@
 
 ## 快速安装
 
-默认安装 `assistant-004`。
+默认安装 `assistant-004`。Fan-made 宠物可以通过指定 pet id 安装。
 
 ### Windows
 
@@ -178,9 +182,9 @@ pets/
 5. 在 `PETS.md` 中加入简短列表说明。
 6. 重新生成 `manifest.json`。
 
-## 许可
+## 许可与 Fan-made 说明
 
-本包使用 `MIT` 许可，方便分享、修改和复用。如果以后你想对图片素材采用更明确的署名条款，常见方案是：代码和元数据使用 MIT，宠物图片素材使用 CC BY 4.0。
+除非另有说明，仓库代码和原创元数据使用 MIT 许可。Fan-made 角色宠物属于非官方二创素材；相关角色与作品的底层权利归各自权利人所有。再分发前请查看 `NOTICE.md` 和各宠物 README。
 
 ## GitHub 分享
 
@@ -192,4 +196,3 @@ cd codex_anime_pets
 python scripts/install.py --list
 python scripts/install.py --pet assistant-004
 ```
-

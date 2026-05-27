@@ -1,25 +1,156 @@
 {
-  "assistant": ["assistant-004"],
-  "lab-assistant": ["assistant-004"],
-  "ai-engineer": ["assistant-004"],
-  "coding-partner": ["assistant-004"],
-  "researcher": ["assistant-004"],
-  "scientist": ["assistant-004"],
-  "anime-chibi": ["assistant-004"],
-  "retro-sci-fi": ["assistant-004"],
-  "debugging": ["assistant-004"],
-  "model-training": ["assistant-004"],
-  "server-monitoring": ["assistant-004"],
-  "infrastructure": ["assistant-004"],
-  "code-review": ["assistant-004"],
-  "worldline-observer": ["assistant-004"],
-  "实验室助理": ["assistant-004"],
-  "AI工程师": ["assistant-004"],
-  "编程伙伴": ["assistant-004"],
-  "研究员": ["assistant-004"],
-  "复古科幻": ["assistant-004"],
-  "调试": ["assistant-004"],
-  "模型训练": ["assistant-004"],
-  "代码审查": ["assistant-004"]
+  "9": [
+    "cirno-009"
+  ],
+  "AI 助理": [
+    "assistant-004"
+  ],
+  "AI 工程师": [
+    "assistant-004"
+  ],
+  "ai-assistant": [
+    "assistant-004"
+  ],
+  "ai-engineer": [
+    "assistant-004"
+  ],
+  "ai-engineering": [
+    "assistant-004"
+  ],
+  "anime-chibi": [
+    "assistant-004",
+    "march-7th-001",
+    "cirno-009"
+  ],
+  "assistant": [
+    "assistant-004"
+  ],
+  "blue-hair": [
+    "cirno-009"
+  ],
+  "camera": [
+    "march-7th-001"
+  ],
+  "cirno": [
+    "cirno-009"
+  ],
+  "codex 宠物": [
+    "assistant-004"
+  ],
+  "codex-pet": [
+    "assistant-004"
+  ],
+  "coding-partner": [
+    "assistant-004"
+  ],
+  "debugging": [
+    "cirno-009"
+  ],
+  "desktop-pet": [
+    "assistant-004",
+    "march-7th-001",
+    "cirno-009"
+  ],
+  "fan art": [
+    "march-7th-001",
+    "cirno-009"
+  ],
+  "fan-art": [
+    "march-7th-001",
+    "cirno-009"
+  ],
+  "honkai-star-rail": [
+    "march-7th-001"
+  ],
+  "ice": [
+    "march-7th-001",
+    "cirno-009"
+  ],
+  "ice-fairy": [
+    "cirno-009"
+  ],
+  "ice-wings": [
+    "cirno-009"
+  ],
+  "lab-assistant": [
+    "assistant-004"
+  ],
+  "march-7th": [
+    "march-7th-001"
+  ],
+  "photographer": [
+    "march-7th-001"
+  ],
+  "pink-hair": [
+    "march-7th-001"
+  ],
+  "researcher": [
+    "assistant-004"
+  ],
+  "sanyueqi": [
+    "march-7th-001"
+  ],
+  "touhou": [
+    "cirno-009"
+  ],
+  "touhou-project": [
+    "cirno-009"
+  ],
+  "⑨": [
+    "cirno-009"
+  ],
+  "三月七": [
+    "march-7th-001"
+  ],
+  "东方": [
+    "cirno-009"
+  ],
+  "东方Project": [
+    "cirno-009"
+  ],
+  "冰之妖精": [
+    "cirno-009"
+  ],
+  "冰晶翅膀": [
+    "cirno-009"
+  ],
+  "冰系": [
+    "march-7th-001"
+  ],
+  "动漫 chibi": [
+    "march-7th-001"
+  ],
+  "助理": [
+    "assistant-004"
+  ],
+  "实验室助理": [
+    "assistant-004"
+  ],
+  "崩坏星穹铁道": [
+    "march-7th-001"
+  ],
+  "星穹铁道": [
+    "march-7th-001"
+  ],
+  "桌面宠物": [
+    "assistant-004"
+  ],
+  "琪露诺": [
+    "cirno-009"
+  ],
+  "相机": [
+    "march-7th-001"
+  ],
+  "研究员": [
+    "assistant-004"
+  ],
+  "粉发": [
+    "march-7th-001"
+  ],
+  "编程伙伴": [
+    "assistant-004"
+  ],
+  "蓝发": [
+    "cirno-009"
+  ]
 }
-

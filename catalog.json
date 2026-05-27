@@ -174,7 +174,260 @@
         "no_logos": true,
         "no_named_character_copy": true
       }
+    },
+    {
+      "id": "march-7th-001",
+      "display_name": "March 7th",
+      "display_name_zh": "三月七",
+      "status": "ready",
+      "category": [
+        "fan-art",
+        "anime-chibi",
+        "camera",
+        "desktop-pet"
+      ],
+      "type": "fan-made chibi star-rail photographer",
+      "type_zh": "fan-made chibi 星旅摄影少女",
+      "short_description": "Fan-made Codex desktop pet of March 7th: pink-haired, cheerful, camera-carrying chibi adventurer with icy star accents.",
+      "short_description_zh": "三月七 fan-made Codex 桌面宠物：粉发、开朗、相机随身、带冰晶与星旅气质的 chibi 冒险者。",
+      "best_for": [
+        "screenshots",
+        "logging",
+        "task notes",
+        "daily coding",
+        "friendly assistant energy"
+      ],
+      "best_for_zh": [
+        "截图",
+        "日志记录",
+        "任务笔记",
+        "日常编码",
+        "轻快助理氛围"
+      ],
+      "personality": [
+        "cheerful",
+        "curious",
+        "expressive",
+        "bright",
+        "reliable in a lighthearted way"
+      ],
+      "personality_zh": [
+        "开朗",
+        "好奇",
+        "表情丰富",
+        "明亮",
+        "轻松但可靠"
+      ],
+      "visual_keywords": [
+        "pink hair",
+        "blue-pink outfit",
+        "camera",
+        "icy flower",
+        "star travel",
+        "chibi anime"
+      ],
+      "visual_keywords_zh": [
+        "粉色头发",
+        "蓝粉服装",
+        "相机",
+        "冰晶花",
+        "星际旅行",
+        "chibi 动漫"
+      ],
+      "search_keywords": [
+        "March 7th",
+        "Sanyueqi",
+        "Honkai Star Rail",
+        "fan art",
+        "pink hair",
+        "camera",
+        "ice",
+        "anime chibi",
+        "desktop pet"
+      ],
+      "search_keywords_zh": [
+        "三月七",
+        "崩坏星穹铁道",
+        "星穹铁道",
+        "fan art",
+        "粉发",
+        "相机",
+        "冰系",
+        "动漫 chibi",
+        "桌面宠物"
+      ],
+      "files": {
+        "pet_json": "pets/march-7th-001/pet.json",
+        "spritesheet": "pets/march-7th-001/spritesheet.webp",
+        "readme": "pets/march-7th-001/README.md",
+        "creation_prompt": "pets/march-7th-001/creation-prompt.md",
+        "contact_sheet": "pets/march-7th-001/assets/contact-sheet.png",
+        "previews_dir": "pets/march-7th-001/assets/previews",
+        "validation": "pets/march-7th-001/assets/validation.json",
+        "review": "pets/march-7th-001/assets/review.json"
+      },
+      "install": {
+        "default_target": "~/.codex/pets/march-7th-001/",
+        "command_python": "python scripts/install.py --pet march-7th-001",
+        "command_powershell": "powershell -ExecutionPolicy Bypass -File .\\scripts\\install.ps1 -PetId march-7th-001",
+        "command_shell": "./scripts/install.sh --pet march-7th-001"
+      },
+      "atlas": {
+        "width": 1536,
+        "height": 1872,
+        "cell_width": 192,
+        "cell_height": 208,
+        "format": "WEBP",
+        "mode": "RGBA"
+      },
+      "animation_states": [
+        "idle",
+        "running-right",
+        "running-left",
+        "waving",
+        "jumping",
+        "failed",
+        "waiting",
+        "running",
+        "review"
+      ],
+      "fan_notice": "March 7th and Honkai: Star Rail are associated with HoYoverse/miHoYo. This pet is an unofficial fan-made asset and is not endorsed by or affiliated with HoYoverse/miHoYo.",
+      "safety": {
+        "fan_made": true,
+        "official": false,
+        "copyright_safe_original_character": false,
+        "no_readable_text": true,
+        "no_logos": true,
+        "no_ui": true
+      }
+    },
+    {
+      "id": "cirno-009",
+      "display_name": "Cirno (009)",
+      "display_name_zh": "琪露诺（⑨）",
+      "status": "ready",
+      "category": [
+        "fan-art",
+        "anime-chibi",
+        "ice",
+        "desktop-pet"
+      ],
+      "type": "fan-made chibi ice fairy",
+      "type_zh": "fan-made chibi 冰之妖精",
+      "short_description": "Fan-made Codex desktop pet of Cirno: blue-haired, overconfident ice fairy chibi with crystalline wings and playful debugging energy.",
+      "short_description_zh": "琪露诺 fan-made Codex 桌面宠物：蓝发、自信过头的冰之妖精 chibi，带冰晶翅膀和调试时的玩闹气质。",
+      "best_for": [
+        "debugging",
+        "quick experiments",
+        "playful coding sessions",
+        "toy projects",
+        "error watching"
+      ],
+      "best_for_zh": [
+        "调试",
+        "快速实验",
+        "轻松编码",
+        "玩具项目",
+        "错误观察"
+      ],
+      "personality": [
+        "overconfident",
+        "playful",
+        "direct",
+        "energetic",
+        "comic relief"
+      ],
+      "personality_zh": [
+        "自信过头",
+        "爱玩",
+        "直接",
+        "有活力",
+        "轻喜剧气质"
+      ],
+      "visual_keywords": [
+        "blue hair",
+        "blue ribbon",
+        "blue dress",
+        "ice wings",
+        "snowflakes",
+        "anime chibi"
+      ],
+      "visual_keywords_zh": [
+        "蓝发",
+        "蓝色蝴蝶结",
+        "蓝裙",
+        "冰晶翅膀",
+        "雪花",
+        "chibi 动漫"
+      ],
+      "search_keywords": [
+        "Cirno",
+        "Touhou",
+        "Touhou Project",
+        "9",
+        "ice fairy",
+        "blue hair",
+        "ice wings",
+        "fan art",
+        "anime chibi",
+        "desktop pet"
+      ],
+      "search_keywords_zh": [
+        "琪露诺",
+        "东方Project",
+        "东方",
+        "⑨",
+        "冰之妖精",
+        "蓝发",
+        "冰晶翅膀",
+        "fan art",
+        "动漫 chibi",
+        "桌面宠物"
+      ],
+      "files": {
+        "pet_json": "pets/cirno-009/pet.json",
+        "spritesheet": "pets/cirno-009/spritesheet.webp",
+        "readme": "pets/cirno-009/README.md",
+        "creation_prompt": "pets/cirno-009/creation-prompt.md",
+        "contact_sheet": "pets/cirno-009/assets/contact-sheet.png",
+        "previews_dir": "pets/cirno-009/assets/previews",
+        "validation": "pets/cirno-009/assets/validation.json",
+        "review": "pets/cirno-009/assets/review.json"
+      },
+      "install": {
+        "default_target": "~/.codex/pets/cirno-009/",
+        "command_python": "python scripts/install.py --pet cirno-009",
+        "command_powershell": "powershell -ExecutionPolicy Bypass -File .\\scripts\\install.ps1 -PetId cirno-009",
+        "command_shell": "./scripts/install.sh --pet cirno-009"
+      },
+      "atlas": {
+        "width": 1536,
+        "height": 1872,
+        "cell_width": 192,
+        "cell_height": 208,
+        "format": "WEBP",
+        "mode": "RGBA"
+      },
+      "animation_states": [
+        "idle",
+        "running-right",
+        "running-left",
+        "waving",
+        "jumping",
+        "failed",
+        "waiting",
+        "running",
+        "review"
+      ],
+      "fan_notice": "Cirno and Touhou Project are associated with Team Shanghai Alice/ZUN. This pet is an unofficial fan-made asset and is not endorsed by or affiliated with Team Shanghai Alice/ZUN.",
+      "safety": {
+        "fan_made": true,
+        "official": false,
+        "copyright_safe_original_character": false,
+        "no_readable_text": true,
+        "no_logos": true,
+        "no_ui": true
+      }
     }
   ]
 }
-

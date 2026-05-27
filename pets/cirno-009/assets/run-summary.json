@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "source": "F:\\Codex_Project\\codex_anime_pets\\build.tmp\\cirno-009-cutout.png",
+  "spritesheet": "F:\\Codex_Project\\codex_anime_pets\\pets\\cirno-009\\spritesheet.webp",
+  "validation": "F:\\Codex_Project\\codex_anime_pets\\pets\\cirno-009\\assets\\validation.json",
+  "contact_sheet": "F:\\Codex_Project\\codex_anime_pets\\pets\\cirno-009\\assets\\contact-sheet.png",
+  "review": "F:\\Codex_Project\\codex_anime_pets\\pets\\cirno-009\\assets\\review.json",
+  "package": "F:\\Codex_Project\\codex_anime_pets\\pets\\cirno-009",
+  "generation_mode": "built-in image generation plus local sprite assembly"
+}

@@ -7,8 +7,12 @@ A searchable collection of Codex desktop pets. Each pet is stored as a self-cont
 Currently included:
 
 - [Assistant-004](pets/assistant-004/README.md) - original chibi AI lab assistant, skeptical coding partner, retro sci-fi researcher.
+- [March 7th](pets/march-7th-001/README.md) - unofficial fan-made chibi Codex pet of the cheerful pink-haired Star Rail photographer.
+- [Cirno (009)](pets/cirno-009/README.md) - unofficial fan-made chibi Codex pet of the overconfident ice fairy.
 
 ![Assistant-004 contact sheet](pets/assistant-004/assets/contact-sheet.png)
+![March 7th contact sheet](pets/march-7th-001/assets/contact-sheet.png)
+![Cirno contact sheet](pets/cirno-009/assets/contact-sheet.png)
 
 ## AI Search Catalog
 
@@ -31,7 +35,7 @@ Find a desktop pet for AI engineers, code review, debugging, and model training.
 
 ## Quick Install
 
-Default installs `assistant-004`.
+Default installs `assistant-004`. Fan-made pets can be installed by passing their pet id.
 
 ### Windows
 
@@ -178,9 +182,9 @@ To add another pet later:
 5. Add a short listing to `PETS.md`.
 6. Regenerate `manifest.json`.
 
-## License
+## License and Fan Notice
 
-This package uses the `MIT` license for easy sharing, modification, and reuse. If you want stricter asset terms later, a common option is: code and metadata under MIT, pet artwork under CC BY 4.0.
+Repository code and original metadata are MIT-licensed unless stated otherwise. Fan-made character pets are unofficial derivative fan assets; the underlying characters and franchises remain owned by their respective rights holders. See `NOTICE.md` and each pet README before redistribution.
 
 ## GitHub Sharing
 
