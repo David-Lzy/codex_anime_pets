@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "collection": {
+    "id": "codex-pet-collection",
+    "display_name": "Codex Pet Collection",
+    "display_name_zh": "Codex 桌面宠物合集",
+    "description": "A shareable collection of Codex desktop pets with machine-readable metadata, previews, prompts, and one-command installers.",
+    "description_zh": "一个可分享的 Codex 桌面宠物合集，包含机器可读元数据、预览、题词和一键安装脚本."
+  },
+  "pets": [
+    {
+      "id": "assistant-004",
+      "display_name": "Assistant-004",
+      "display_name_zh": "Assistant-004",
+      "status": "ready",
+      "category": [
+        "assistant",
+        "researcher",
+        "coding-partner",
+        "anime-chibi",
+        "ai-engineering"
+      ],
+      "type": "chibi AI lab assistant",
+      "type_zh": "chibi AI 实验室助理",
+      "short_description": "Original chibi AI research assistant with chestnut hair, sharp blue-violet eyes, a white lab jacket, and skeptical lab-partner energy.",
+      "short_description_zh": "原创 chibi AI 研究助理，栗色长发、蓝紫色锐利眼睛、白色实验外套，气质理性又略带吐槽.",
+      "best_for": [
+        "AI engineers",
+        "coding agents",
+        "model training",
+        "debugging",
+        "server monitoring",
+        "long-running infrastructure jobs",
+        "code review",
+        "experiments"
+      ],
+      "best_for_zh": [
+        "AI 工程师",
+        "代码代理",
+        "模型训练",
+        "调试",
+        "服务器监控",
+        "长时间基础设施任务",
+        "代码审查",
+        "实验"
+      ],
+      "personality": [
+        "highly intelligent",
+        "analytical",
+        "precise",
+        "skeptical",
+        "lightly sarcastic",
+        "calm under debugging pressure",
+        "annoyed by weak hypotheses",
+        "secretly reliable"
+      ],
+      "personality_zh": [
+        "高智商",
+        "分析型",
+        "精准",
+        "怀疑主义",
+        "轻微吐槽感",
+        "调试时冷静",
+        "讨厌薄弱假设",
+        "其实很可靠"
+      ],
+      "visual_keywords": [
+        "chestnut hair",
+        "reddish-brown hair",
+        "blue-violet eyes",
+        "white lab jacket",
+        "dark red tie",
+        "dark outfit",
+        "black boots",
+        "teal device accent",
+        "retro science-fiction laboratory",
+        "compact silhouette"
+      ],
+      "visual_keywords_zh": [
+        "栗色长发",
+        "红棕色头发",
+        "蓝紫色眼睛",
+        "白色实验外套",
+        "深红色领带",
+        "深色下装",
+        "黑色靴子",
+        "青绿色设备点缀",
+        "复古科幻实验室",
+        "紧凑轮廓"
+      ],
+      "search_keywords": [
+        "codex pet",
+        "desktop pet",
+        "assistant",
+        "lab assistant",
+        "AI assistant",
+        "AI engineer",
+        "coding partner",
+        "researcher",
+        "scientist",
+        "anime chibi",
+        "retro sci-fi",
+        "skeptical",
+        "sarcastic",
+        "tsundere",
+        "debugging",
+        "model training",
+        "server watcher",
+        "infrastructure",
+        "code review",
+        "worldline observer"
+      ],
+      "search_keywords_zh": [
+        "codex 宠物",
+        "桌面宠物",
+        "助理",
+        "实验室助理",
+        "AI 助理",
+        "AI 工程师",
+        "编程伙伴",
+        "研究员",
+        "科学家",
+        "anime chibi",
+        "复古科幻",
+        "怀疑主义",
+        "吐槽",
+        "傲娇",
+        "调试",
+        "模型训练",
+        "服务器监控",
+        "基础设施",
+        "代码审查",
+        "世界线观察者"
+      ],
+      "files": {
+        "pet_json": "pets/assistant-004/pet.json",
+        "spritesheet": "pets/assistant-004/spritesheet.webp",
+        "readme": "pets/assistant-004/README.md",
+        "creation_prompt": "pets/assistant-004/creation-prompt.md",
+        "contact_sheet": "pets/assistant-004/assets/contact-sheet.png",
+        "previews_dir": "pets/assistant-004/assets/previews",
+        "validation": "pets/assistant-004/assets/validation.json",
+        "review": "pets/assistant-004/assets/review.json"
+      },
+      "install": {
+        "default_target": "~/.codex/pets/assistant-004/",
+        "command_python": "python scripts/install.py --pet assistant-004",
+        "command_powershell": "powershell -ExecutionPolicy Bypass -File .\\scripts\\install.ps1 -PetId assistant-004",
+        "command_shell": "./scripts/install.sh --pet assistant-004"
+      },
+      "atlas": {
+        "width": 1536,
+        "height": 1872,
+        "cell_width": 192,
+        "cell_height": 208,
+        "format": "WEBP",
+        "mode": "RGBA"
+      },
+      "animation_states": [
+        "idle",
+        "running-right",
+        "running-left",
+        "waving",
+        "jumping",
+        "failed",
+        "waiting",
+        "running",
+        "review"
+      ],
+      "safety": {
+        "copyright_safe": true,
+        "original_character": true,
+        "no_readable_text": true,
+        "no_logos": true,
+        "no_named_character_copy": true
+      }
+    }
+  ]
+}
+

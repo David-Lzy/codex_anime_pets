@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Codex Pet Collection Catalog",
+  "type": "object",
+  "required": ["schema_version", "collection", "pets"],
+  "properties": {
+    "schema_version": { "type": "integer" },
+    "collection": {
+      "type": "object",
+      "required": ["id", "display_name", "description"],
+      "properties": {
+        "id": { "type": "string" },
+        "display_name": { "type": "string" },
+        "display_name_zh": { "type": "string" },
+        "description": { "type": "string" },
+        "description_zh": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "pets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "display_name", "status", "category", "search_keywords", "files", "install"],
+        "properties": {
+          "id": { "type": "string" },
+          "display_name": { "type": "string" },
+          "display_name_zh": { "type": "string" },
+          "status": { "type": "string" },
+          "category": { "type": "array", "items": { "type": "string" } },
+          "type": { "type": "string" },
+          "type_zh": { "type": "string" },
+          "short_description": { "type": "string" },
+          "short_description_zh": { "type": "string" },
+          "best_for": { "type": "array", "items": { "type": "string" } },
+          "best_for_zh": { "type": "array", "items": { "type": "string" } },
+          "personality": { "type": "array", "items": { "type": "string" } },
+          "personality_zh": { "type": "array", "items": { "type": "string" } },
+          "visual_keywords": { "type": "array", "items": { "type": "string" } },
+          "visual_keywords_zh": { "type": "array", "items": { "type": "string" } },
+          "search_keywords": { "type": "array", "items": { "type": "string" } },
+          "search_keywords_zh": { "type": "array", "items": { "type": "string" } },
+          "files": { "type": "object" },
+          "install": { "type": "object" },
+          "atlas": { "type": "object" },
+          "animation_states": { "type": "array", "items": { "type": "string" } },
+          "safety": { "type": "object" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
+

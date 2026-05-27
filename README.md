@@ -1,12 +1,49 @@
-# Assistant-004 Codex Pet / Codex 桌面宠物
+# Codex Pet Collection / Codex 桌面宠物合集
 
-Assistant-004 is an original, copyright-safe Codex desktop pet: a tiny chibi AI research assistant with chestnut hair, sharp blue-violet eyes, a white lab jacket, and a skeptical lab-partner personality.
+This repository is a shareable collection of Codex desktop pets. Each pet is stored as a self-contained folder under `pets/<pet-id>/`, with install files, preview media, QA metadata, and the saved creation prompt.
 
-Assistant-004 是一个原创、版权安全的 Codex 桌面宠物：一位小小的 chibi AI 研究助理，栗色长发、蓝紫色眼睛、白色实验外套，性格理性、精准、略带吐槽感。
+这是一个可分享的 Codex 桌面宠物合集仓库。每个宠物都放在独立的 `pets/<pet-id>/` 目录下，包含安装文件、预览图、QA 元数据和保存的创作题词。
 
-![Assistant-004 contact sheet](assets/contact-sheet.png)
+Currently included / 当前包含：
+
+- [Assistant-004](pets/assistant-004/README.md) - original chibi AI lab assistant, skeptical coding partner, retro sci-fi researcher.
+
+![Assistant-004 contact sheet](pets/assistant-004/assets/contact-sheet.png)
+
+## AI Search Catalog / AI 检索目录
+
+For AI agents, scripts, and search tools:
+
+- [`catalog.json`](catalog.json) - machine-readable pet registry
+- [`PETS.md`](PETS.md) - bilingual human-readable pet list
+- [`indexes/ai-search-index.json`](indexes/ai-search-index.json) - flattened retrieval index
+- [`indexes/tags.json`](indexes/tags.json) - tag-to-pet lookup table
+- [`schemas/catalog.schema.json`](schemas/catalog.schema.json) - lightweight schema for future entries
+- [`manifest.json`](manifest.json) - package file hashes
+
+给 AI、脚本和检索工具使用：
+
+- [`catalog.json`](catalog.json) - 机器可读宠物注册表
+- [`PETS.md`](PETS.md) - 中英双语宠物列表
+- [`indexes/ai-search-index.json`](indexes/ai-search-index.json) - 扁平化 AI 检索索引
+- [`indexes/tags.json`](indexes/tags.json) - 标签到宠物的查找表
+- [`schemas/catalog.schema.json`](schemas/catalog.schema.json) - 后续条目的轻量 schema
+- [`manifest.json`](manifest.json) - 包文件哈希清单
+
+Suggested AI search query examples:
+
+```text
+Find a Codex pet that feels like a skeptical AI lab assistant.
+Find a chibi coding partner pet with retro sci-fi research vibes.
+找一个理性、吐槽感、实验室助理风格的 Codex 宠物。
+找一个适合 AI 工程师的 chibi 研究员桌面宠物。
+```
 
 ## Quick Install / 快速安装
+
+Default installs `assistant-004`.
+
+默认安装 `assistant-004`。
 
 ### Windows
 
@@ -16,10 +53,22 @@ Double-click:
 scripts\install.bat
 ```
 
-Or run in PowerShell:
+Or run:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\install.ps1
+```
+
+Install a specific pet:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\install.ps1 -PetId assistant-004
+```
+
+List available pets:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\install.ps1 -List
 ```
 
 ### macOS / Linux
@@ -29,47 +78,63 @@ chmod +x scripts/install.sh
 ./scripts/install.sh
 ```
 
-### Universal Python Installer / 通用 Python 安装器
+Install a specific pet:
 
-Works on Windows, macOS, and Linux with Python 3:
+```sh
+./scripts/install.sh --pet assistant-004
+```
+
+List available pets:
+
+```sh
+./scripts/install.sh --list
+```
+
+### Universal Python Installer / 通用 Python 安装器
 
 ```sh
 python scripts/install.py
 ```
 
-If your system uses `python3`:
+Install a specific pet:
 
 ```sh
-python3 scripts/install.py
+python scripts/install.py --pet assistant-004
 ```
 
-The installer copies:
+Install all pets:
 
-```text
-pet/assistant-004/pet.json
-pet/assistant-004/spritesheet.webp
+```sh
+python scripts/install.py --all
 ```
 
-to:
+List pets:
+
+```sh
+python scripts/install.py --list
+```
+
+The installer copies each selected pet's `pet.json` and `spritesheet.webp` to:
 
 ```text
-~/.codex/pets/assistant-004/
+~/.codex/pets/<pet-id>/
 ```
 
 If `CODEX_HOME` is set, the installer uses:
 
 ```text
-$CODEX_HOME/pets/assistant-004/
+$CODEX_HOME/pets/<pet-id>/
 ```
 
-安装脚本会把宠物文件复制到当前用户的 Codex 宠物目录。如果设置了 `CODEX_HOME`，则优先安装到该目录下。
+安装脚本会把所选宠物的 `pet.json` 和 `spritesheet.webp` 复制到当前用户的 Codex 宠物目录。如果设置了 `CODEX_HOME`，则优先安装到该目录下。
 
 ## Manual Install / 手动安装
 
-Copy this folder:
+Copy:
 
 ```text
-pet/assistant-004/
+pets/assistant-004/pet.json
+pets/assistant-004/spritesheet.webp
 ```
 
 to:
@@ -88,42 +153,53 @@ Expected final layout:
       spritesheet.webp
 ```
 
-手动安装时，只需要复制 `pet/assistant-004/` 这个目录，确保目标目录里有 `pet.json` 和 `spritesheet.webp` 两个文件。
+## Repository Layout / 仓库结构
 
-## Included Files / 包含文件
+```text
+catalog.json
+PETS.md
+indexes/
+  ai-search-index.json
+  tags.json
+manifest.json
+schemas/catalog.schema.json
+scripts/
+  install.bat
+  install.ps1
+  install.py
+  install.sh
+pets/
+  assistant-004/
+    README.md
+    pet.json
+    spritesheet.webp
+    creation-prompt.md
+    assets/
+      contact-sheet.png
+      previews/*.gif
+      validation.json
+      review.json
+```
 
-- `pet/assistant-004/pet.json` - Codex pet metadata / Codex 宠物元数据
-- `pet/assistant-004/spritesheet.webp` - final animated sprite atlas / 最终动画精灵图
-- `assets/contact-sheet.png` - visual QA contact sheet / 视觉 QA 总览图
-- `assets/previews/*.gif` - per-state animation previews / 各状态动画预览
-- `assets/validation.json` - atlas validation result / 图集验证结果
-- `assets/review.json` - frame inspection result / 帧检查结果
-- `prompts/assistant-004-creation-prompt.md` - saved creation prompt / 保存的创作题词
-- `scripts/install.*` - one-command installers / 一键安装脚本
+## Adding More Pets / 添加更多宠物
 
-## Animation States / 动画状态
+To add another pet later:
 
-Assistant-004 follows the Codex pet atlas contract:
+1. Create `pets/<new-pet-id>/`.
+2. Add `pet.json` and `spritesheet.webp`.
+3. Add preview media and prompt files if available.
+4. Add a new entry to `catalog.json`.
+5. Add a short bilingual listing to `PETS.md`.
+6. Regenerate `manifest.json`.
 
-| Row | State | Frames | Meaning |
-| --- | --- | ---: | --- |
-| 0 | idle | 6 | quiet breathing and blink |
-| 1 | running-right | 8 | rightward drag movement |
-| 2 | running-left | 8 | leftward drag movement |
-| 3 | waving | 4 | restrained greeting |
-| 4 | jumping | 5 | small controlled hop |
-| 5 | failed | 8 | annoyed but composed failure reaction |
-| 6 | waiting | 6 | arms-crossed waiting for user input |
-| 7 | running | 6 | focused processing / task work |
-| 8 | review | 6 | sharp inspection / code review mood |
+以后添加新宠物时：
 
-## QA Summary / 验证摘要
-
-- Atlas size: `1536x1872`
-- Cell size: `192x208`
-- Format: `WEBP`, `RGBA`
-- Transparent RGB residue pixels: `0`
-- Frame inspection: no errors, no warnings
+1. 创建 `pets/<new-pet-id>/`。
+2. 放入 `pet.json` 和 `spritesheet.webp`。
+3. 如果有预览和题词，也一起放入。
+4. 在 `catalog.json` 中新增条目。
+5. 在 `PETS.md` 中加入中英双语简介。
+6. 重新生成 `manifest.json`。
 
 ## License / 许可
 
@@ -144,9 +220,3 @@ git remote add origin git@github.com:YOUR_NAME/YOUR_REPO.git
 git branch -M main
 git push -u origin main
 ```
-
-## Notes / 说明
-
-Assistant-004 is an original anime-inspired chibi assistant. It does not copy any named anime, game, or visual novel character, and it contains no readable franchise marks, logos, or text.
-
-Assistant-004 是原创 anime-inspired chibi 助理形象，不复刻任何具名动漫、游戏或视觉小说角色，也不包含可读的品牌标识、logo 或文字。

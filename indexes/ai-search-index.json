@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "description": "Flattened AI-search index for Codex pets. Each record is intentionally redundant so retrieval tools can match natural-language queries without parsing the full catalog.",
+  "records": [
+    {
+      "id": "assistant-004",
+      "display_name": "Assistant-004",
+      "path": "pets/assistant-004/",
+      "install_command": "python scripts/install.py --pet assistant-004",
+      "summary_en": "Original Codex desktop pet: a chibi AI lab assistant with chestnut hair, blue-violet eyes, a white lab jacket, dark red tie, and skeptical coding partner energy.",
+      "summary_zh": "原创 Codex 桌面宠物：chibi AI 实验室助理，栗色长发、蓝紫色眼睛、白色实验外套、深红色领带，带有理性吐槽感的编程伙伴气质。",
+      "query_text_en": "Assistant-004 codex pet desktop pet chibi AI lab assistant researcher scientist coding partner skeptical sarcastic tsundere retro sci-fi neuroscience computer science debugging model training server monitoring infrastructure code review experiment worldline observer chestnut hair blue violet eyes white lab coat red tie teal device",
+      "query_text_zh": "Assistant-004 codex 宠物 桌面宠物 chibi AI 实验室助理 研究员 科学家 编程伙伴 怀疑主义 吐槽 傲娇 复古科幻 神经科学 计算机科学 调试 模型训练 服务器监控 基础设施 代码审查 实验 世界线观察者 栗色长发 蓝紫色眼睛 白色实验外套 红色领带 青绿色设备",
+      "tags": [
+        "assistant",
+        "lab-assistant",
+        "ai-engineer",
+        "coding-partner",
+        "researcher",
+        "scientist",
+        "anime-chibi",
+        "retro-sci-fi",
+        "debugging",
+        "model-training",
+        "code-review"
+      ]
+    }
+  ]
+}
+

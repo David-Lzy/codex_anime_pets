@@ -1,10 +1,11 @@
 {
-  "package": "assistant-004-codex-pet",
-  "pet_id": "assistant-004",
-  "display_name": "Assistant-004",
+  "package": "codex-pet-collection",
+  "collection_id": "codex-pet-collection",
+  "default_pet_id": "assistant-004",
   "created": "2026-05-27",
-  "description": "Original copyright-safe Codex desktop pet: chibi AI lab assistant and skeptical coding partner.",
-  "install_target": "~/.codex/pets/assistant-004/",
+  "description": "Shareable Codex pet collection with AI-search catalog, bilingual README, installers, previews, prompts, and QA metadata.",
+  "install_target": "~/.codex/pets/<pet-id>/",
+  "catalog": "catalog.json",
   "files": [
     {
       "path": ".gitattributes",
@@ -17,69 +18,19 @@
       "sha256": "2335e2197152735da53c94055aa71360b383d9a093d744b16cd9980b73ff6c12"
     },
     {
-      "path": "assets/contact-sheet.png",
-      "bytes": 674171,
-      "sha256": "f3d75f0cce4cef74aba58c126aa2fe073ea2411c14ed73bd7de7cf8edbb9ffe9"
+      "path": "catalog.json",
+      "bytes": 5213,
+      "sha256": "360b71efda721332e7431363bff8d6670e61ccfe9c846f4881a0538a584cb33d"
     },
     {
-      "path": "assets/previews/failed.gif",
-      "bytes": 91148,
-      "sha256": "7d030f998451c4abdb0773624696d6e8e03fe8d2411542314ee6e20d366eec82"
+      "path": "indexes/ai-search-index.json",
+      "bytes": 1803,
+      "sha256": "cb1bfa5e3608dddfc9a56364f0b7503a88c989fde7fa05e04225451f47e4238a"
     },
     {
-      "path": "assets/previews/idle.gif",
-      "bytes": 75693,
-      "sha256": "1a38c4d00e9f54e3cbdf1ba27122616e319ea690611799f731a5594660f42e75"
-    },
-    {
-      "path": "assets/previews/jumping.gif",
-      "bytes": 64005,
-      "sha256": "ff318da6fc831e918e10f9122fd1b70d068017c465acae0675284d2c20b5750c"
-    },
-    {
-      "path": "assets/previews/review.gif",
-      "bytes": 65788,
-      "sha256": "51228440f0cf56a110c96848e2ef1a053670364a3fd4c850ea03c2ceafbc106b"
-    },
-    {
-      "path": "assets/previews/running-left.gif",
-      "bytes": 87150,
-      "sha256": "a3798f91247280ce8d7296093f074864ef2d1152f463bb82ae2b259bc1a5e57b"
-    },
-    {
-      "path": "assets/previews/running-right.gif",
-      "bytes": 87271,
-      "sha256": "dfa18878dffe60aa54aaf181622d53cb2a4c423005435abcb9888e047401848e"
-    },
-    {
-      "path": "assets/previews/running.gif",
-      "bytes": 66762,
-      "sha256": "7de8365ec153cec94853ca50924e828ed1a147362c69094772b3ef375cad00be"
-    },
-    {
-      "path": "assets/previews/waiting.gif",
-      "bytes": 65151,
-      "sha256": "cb50db35676e479dd53379ab31536ceed2f8eda4de0b623b18a9a250d452f56c"
-    },
-    {
-      "path": "assets/previews/waving.gif",
-      "bytes": 44741,
-      "sha256": "5a5f69ff34fa9d83369410532274d69593ebebfca96c716a59ab15fd87e8e4d1"
-    },
-    {
-      "path": "assets/review.json",
-      "bytes": 28310,
-      "sha256": "01b288532de4fd770273711972092d17781c608c728ab7ba599c38fdd2ff0e58"
-    },
-    {
-      "path": "assets/run-summary.json",
-      "bytes": 751,
-      "sha256": "6786c9c411012476392eb0438402367afce15b16ba37484804f8a09a9fc63599"
-    },
-    {
-      "path": "assets/validation.json",
-      "bytes": 10258,
-      "sha256": "6322e51a2dc320a3b79d286c1240bfa0fabc6a2b2303a8f72c92fc2feb24f836"
+      "path": "indexes/tags.json",
+      "bytes": 815,
+      "sha256": "ec477226ae4c35c0c8e925ecc8ca920da406bcf2fccd9060c860d89b25f7e82a"
     },
     {
       "path": "LICENSE",
@@ -88,28 +39,108 @@
     },
     {
       "path": "NOTICE.md",
-      "bytes": 607,
-      "sha256": "c77c9372751f73cf9aeeefd11b0f09a0ec138cf4e6a977adb56fc9913548b5e0"
+      "bytes": 724,
+      "sha256": "6d980ba1f3e864a13ff8b66b78cc5d6021dfc2f1b8e69f0e473466b748c98b9f"
     },
     {
-      "path": "pet/assistant-004/pet.json",
-      "bytes": 299,
-      "sha256": "7560aaab770e0127981e94534a0be1ae3a142a9e0aa90003ca0334bf56f38877"
+      "path": "PETS.md",
+      "bytes": 1590,
+      "sha256": "9586abc3d03174b37f1d9dc6bab25a9185d23c228ad7479882f101c793f7e901"
     },
     {
-      "path": "pet/assistant-004/spritesheet.webp",
-      "bytes": 1875274,
-      "sha256": "9a3423b50e82b8a317c02ea06be801f208dd87f730717ef1f16416e73db3cfcd"
+      "path": "pets/assistant-004/assets/contact-sheet.png",
+      "bytes": 674171,
+      "sha256": "f3d75f0cce4cef74aba58c126aa2fe073ea2411c14ed73bd7de7cf8edbb9ffe9"
     },
     {
-      "path": "prompts/assistant-004-creation-prompt.md",
+      "path": "pets/assistant-004/assets/previews/failed.gif",
+      "bytes": 91148,
+      "sha256": "7d030f998451c4abdb0773624696d6e8e03fe8d2411542314ee6e20d366eec82"
+    },
+    {
+      "path": "pets/assistant-004/assets/previews/idle.gif",
+      "bytes": 75693,
+      "sha256": "1a38c4d00e9f54e3cbdf1ba27122616e319ea690611799f731a5594660f42e75"
+    },
+    {
+      "path": "pets/assistant-004/assets/previews/jumping.gif",
+      "bytes": 64005,
+      "sha256": "ff318da6fc831e918e10f9122fd1b70d068017c465acae0675284d2c20b5750c"
+    },
+    {
+      "path": "pets/assistant-004/assets/previews/review.gif",
+      "bytes": 65788,
+      "sha256": "51228440f0cf56a110c96848e2ef1a053670364a3fd4c850ea03c2ceafbc106b"
+    },
+    {
+      "path": "pets/assistant-004/assets/previews/running-left.gif",
+      "bytes": 87150,
+      "sha256": "a3798f91247280ce8d7296093f074864ef2d1152f463bb82ae2b259bc1a5e57b"
+    },
+    {
+      "path": "pets/assistant-004/assets/previews/running-right.gif",
+      "bytes": 87271,
+      "sha256": "dfa18878dffe60aa54aaf181622d53cb2a4c423005435abcb9888e047401848e"
+    },
+    {
+      "path": "pets/assistant-004/assets/previews/running.gif",
+      "bytes": 66762,
+      "sha256": "7de8365ec153cec94853ca50924e828ed1a147362c69094772b3ef375cad00be"
+    },
+    {
+      "path": "pets/assistant-004/assets/previews/waiting.gif",
+      "bytes": 65151,
+      "sha256": "cb50db35676e479dd53379ab31536ceed2f8eda4de0b623b18a9a250d452f56c"
+    },
+    {
+      "path": "pets/assistant-004/assets/previews/waving.gif",
+      "bytes": 44741,
+      "sha256": "5a5f69ff34fa9d83369410532274d69593ebebfca96c716a59ab15fd87e8e4d1"
+    },
+    {
+      "path": "pets/assistant-004/assets/review.json",
+      "bytes": 28310,
+      "sha256": "01b288532de4fd770273711972092d17781c608c728ab7ba599c38fdd2ff0e58"
+    },
+    {
+      "path": "pets/assistant-004/assets/run-summary.json",
+      "bytes": 751,
+      "sha256": "6786c9c411012476392eb0438402367afce15b16ba37484804f8a09a9fc63599"
+    },
+    {
+      "path": "pets/assistant-004/assets/validation.json",
+      "bytes": 10258,
+      "sha256": "6322e51a2dc320a3b79d286c1240bfa0fabc6a2b2303a8f72c92fc2feb24f836"
+    },
+    {
+      "path": "pets/assistant-004/creation-prompt.md",
       "bytes": 3574,
       "sha256": "2ac7a3b0fa13fbaeaf3eaa24ee664bc3098e8f39ed2283668d529cc72553b83e"
     },
     {
+      "path": "pets/assistant-004/pet.json",
+      "bytes": 299,
+      "sha256": "7560aaab770e0127981e94534a0be1ae3a142a9e0aa90003ca0334bf56f38877"
+    },
+    {
+      "path": "pets/assistant-004/README.md",
+      "bytes": 1336,
+      "sha256": "eb976f58e0733d2c8d8271d22b8b29689b68a88c7acf56c00ce7fc9cfa6a7e73"
+    },
+    {
+      "path": "pets/assistant-004/spritesheet.webp",
+      "bytes": 1875274,
+      "sha256": "9a3423b50e82b8a317c02ea06be801f208dd87f730717ef1f16416e73db3cfcd"
+    },
+    {
       "path": "README.md",
-      "bytes": 4476,
-      "sha256": "9f1943a48d6f5ef120007dc1510023a9980a488439ca904bc6a3ae0d508453d5"
+      "bytes": 5547,
+      "sha256": "e26930e6202757a5756bd1ff435f9cc21371dd0d5d69dfc4af3af1f22cf20ec3"
+    },
+    {
+      "path": "schemas/catalog.schema.json",
+      "bytes": 2283,
+      "sha256": "fcabace3100cf8c705f43218a7c668fd5a97506eb048de393c7c2a80fadc5421"
     },
     {
       "path": "scripts/install.bat",
@@ -118,18 +149,18 @@
     },
     {
       "path": "scripts/install.ps1",
-      "bytes": 1108,
-      "sha256": "569fab33eb2b72bb78b4d2cb33aa263bba7eaf0ac7ae58cd3deddd8a3d0b8739"
+      "bytes": 2195,
+      "sha256": "6968d49b3fd0923286522095aec65b869ef65dcfe06bff27d9a198b364ff971d"
     },
     {
       "path": "scripts/install.py",
-      "bytes": 1588,
-      "sha256": "55a0b3f3e9de5f40b206d492fc9063d94cd5de33a7b26b6ccb3f61ac5026a3c9"
+      "bytes": 3519,
+      "sha256": "53db6710b5153424dc9ca9d18b6ffb926cfd1e099bda8d20d27934e03d22902a"
     },
     {
       "path": "scripts/install.sh",
-      "bytes": 805,
-      "sha256": "1e256e230c2ca243a5716898aea4ca75ea919fde0c1d70063d603a733ce85fba"
+      "bytes": 1269,
+      "sha256": "961e29e9aa3fe8dd9dc50383c7a83d9a7b1a12897765c80d410824ab66997565"
     }
   ]
 }

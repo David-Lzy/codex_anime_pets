@@ -1,28 +1,58 @@
 #!/usr/bin/env sh
 set -eu
 
-PET_ID="assistant-004"
+DEFAULT_PET_ID="assistant-004"
+PET_ID="$DEFAULT_PET_ID"
+INSTALL_ALL=0
+LIST_ONLY=0
+
+while [ "$#" -gt 0 ]; do
+  case "$1" in
+    --pet)
+      shift
+      if [ "$#" -eq 0 ]; then
+        echo "--pet requires a pet id" >&2
+        exit 1
+      fi
+      PET_ID="$1"
+      ;;
+    --all)
+      INSTALL_ALL=1
+      ;;
+    --list)
+      LIST_ONLY=1
+      ;;
+    -h|--help)
+      echo "Usage: ./scripts/install.sh [--pet PET_ID] [--all] [--list]"
+      exit 0
+      ;;
+    *)
+      echo "Unknown argument: $1" >&2
+      exit 1
+      ;;
+  esac
+  shift
+done
+
 SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 ROOT_DIR=$(CDPATH= cd -- "$SCRIPT_DIR/.." && pwd)
-SOURCE_DIR="$ROOT_DIR/pet/$PET_ID"
 CODEX_HOME_DIR="${CODEX_HOME:-"$HOME/.codex"}"
-TARGET_DIR="$CODEX_HOME_DIR/pets/$PET_ID"
 
-if [ ! -f "$SOURCE_DIR/pet.json" ]; then
-  echo "Missing pet.json at $SOURCE_DIR/pet.json" >&2
+python_bin=""
+if command -v python3 >/dev/null 2>&1; then
+  python_bin="python3"
+elif command -v python >/dev/null 2>&1; then
+  python_bin="python"
+else
+  echo "Python 3 is required for catalog-aware installation." >&2
   exit 1
 fi
 
-if [ ! -f "$SOURCE_DIR/spritesheet.webp" ]; then
-  echo "Missing spritesheet.webp at $SOURCE_DIR/spritesheet.webp" >&2
-  exit 1
+if [ "$LIST_ONLY" -eq 1 ]; then
+  "$python_bin" "$ROOT_DIR/scripts/install.py" --list
+elif [ "$INSTALL_ALL" -eq 1 ]; then
+  "$python_bin" "$ROOT_DIR/scripts/install.py" --codex-home "$CODEX_HOME_DIR" --all
+else
+  "$python_bin" "$ROOT_DIR/scripts/install.py" --codex-home "$CODEX_HOME_DIR" --pet "$PET_ID"
 fi
-
-mkdir -p "$TARGET_DIR"
-cp "$SOURCE_DIR/pet.json" "$TARGET_DIR/pet.json"
-cp "$SOURCE_DIR/spritesheet.webp" "$TARGET_DIR/spritesheet.webp"
-
-echo "Installed Assistant-004"
-echo "Target: $TARGET_DIR"
-echo "Restart Codex or refresh the pet picker if the pet does not appear immediately."
 
