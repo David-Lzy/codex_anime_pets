@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "run_dir": "C:\\Users\\davidli\\Documents\\Codex\\2026-05-27\\use-the-hatch-pet-skill-to\\assistant-004-run",
+  "spritesheet": "C:\\Users\\davidli\\Documents\\Codex\\2026-05-27\\use-the-hatch-pet-skill-to\\assistant-004-run\\final\\spritesheet.webp",
+  "validation": "C:\\Users\\davidli\\Documents\\Codex\\2026-05-27\\use-the-hatch-pet-skill-to\\assistant-004-run\\final\\validation.json",
+  "contact_sheet": "C:\\Users\\davidli\\Documents\\Codex\\2026-05-27\\use-the-hatch-pet-skill-to\\assistant-004-run\\qa\\contact-sheet.png",
+  "review": "C:\\Users\\davidli\\Documents\\Codex\\2026-05-27\\use-the-hatch-pet-skill-to\\assistant-004-run\\qa\\review.json",
+  "package": "C:\\Users\\davidli\\.codex\\pets\\assistant-004"
+}

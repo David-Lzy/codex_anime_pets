@@ -1,0 +1,135 @@
+{
+  "package": "assistant-004-codex-pet",
+  "pet_id": "assistant-004",
+  "display_name": "Assistant-004",
+  "created": "2026-05-27",
+  "description": "Original copyright-safe Codex desktop pet: chibi AI lab assistant and skeptical coding partner.",
+  "install_target": "~/.codex/pets/assistant-004/",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 202,
+      "sha256": "e47c2b38f1b522bb06a576291a79ddb2c3247933b98da02138e5f75c2b5e72b5"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 46,
+      "sha256": "2335e2197152735da53c94055aa71360b383d9a093d744b16cd9980b73ff6c12"
+    },
+    {
+      "path": "assets/contact-sheet.png",
+      "bytes": 674171,
+      "sha256": "f3d75f0cce4cef74aba58c126aa2fe073ea2411c14ed73bd7de7cf8edbb9ffe9"
+    },
+    {
+      "path": "assets/previews/failed.gif",
+      "bytes": 91148,
+      "sha256": "7d030f998451c4abdb0773624696d6e8e03fe8d2411542314ee6e20d366eec82"
+    },
+    {
+      "path": "assets/previews/idle.gif",
+      "bytes": 75693,
+      "sha256": "1a38c4d00e9f54e3cbdf1ba27122616e319ea690611799f731a5594660f42e75"
+    },
+    {
+      "path": "assets/previews/jumping.gif",
+      "bytes": 64005,
+      "sha256": "ff318da6fc831e918e10f9122fd1b70d068017c465acae0675284d2c20b5750c"
+    },
+    {
+      "path": "assets/previews/review.gif",
+      "bytes": 65788,
+      "sha256": "51228440f0cf56a110c96848e2ef1a053670364a3fd4c850ea03c2ceafbc106b"
+    },
+    {
+      "path": "assets/previews/running-left.gif",
+      "bytes": 87150,
+      "sha256": "a3798f91247280ce8d7296093f074864ef2d1152f463bb82ae2b259bc1a5e57b"
+    },
+    {
+      "path": "assets/previews/running-right.gif",
+      "bytes": 87271,
+      "sha256": "dfa18878dffe60aa54aaf181622d53cb2a4c423005435abcb9888e047401848e"
+    },
+    {
+      "path": "assets/previews/running.gif",
+      "bytes": 66762,
+      "sha256": "7de8365ec153cec94853ca50924e828ed1a147362c69094772b3ef375cad00be"
+    },
+    {
+      "path": "assets/previews/waiting.gif",
+      "bytes": 65151,
+      "sha256": "cb50db35676e479dd53379ab31536ceed2f8eda4de0b623b18a9a250d452f56c"
+    },
+    {
+      "path": "assets/previews/waving.gif",
+      "bytes": 44741,
+      "sha256": "5a5f69ff34fa9d83369410532274d69593ebebfca96c716a59ab15fd87e8e4d1"
+    },
+    {
+      "path": "assets/review.json",
+      "bytes": 28310,
+      "sha256": "01b288532de4fd770273711972092d17781c608c728ab7ba599c38fdd2ff0e58"
+    },
+    {
+      "path": "assets/run-summary.json",
+      "bytes": 751,
+      "sha256": "6786c9c411012476392eb0438402367afce15b16ba37484804f8a09a9fc63599"
+    },
+    {
+      "path": "assets/validation.json",
+      "bytes": 10258,
+      "sha256": "6322e51a2dc320a3b79d286c1240bfa0fabc6a2b2303a8f72c92fc2feb24f836"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1054,
+      "sha256": "dbfb4e1d9e55a47b27065f6849549ef3189ac4bff8b8adf55879f9352e9dd619"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 607,
+      "sha256": "c77c9372751f73cf9aeeefd11b0f09a0ec138cf4e6a977adb56fc9913548b5e0"
+    },
+    {
+      "path": "pet/assistant-004/pet.json",
+      "bytes": 299,
+      "sha256": "7560aaab770e0127981e94534a0be1ae3a142a9e0aa90003ca0334bf56f38877"
+    },
+    {
+      "path": "pet/assistant-004/spritesheet.webp",
+      "bytes": 1875274,
+      "sha256": "9a3423b50e82b8a317c02ea06be801f208dd87f730717ef1f16416e73db3cfcd"
+    },
+    {
+      "path": "prompts/assistant-004-creation-prompt.md",
+      "bytes": 3574,
+      "sha256": "2ac7a3b0fa13fbaeaf3eaa24ee664bc3098e8f39ed2283668d529cc72553b83e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4476,
+      "sha256": "9f1943a48d6f5ef120007dc1510023a9980a488439ca904bc6a3ae0d508453d5"
+    },
+    {
+      "path": "scripts/install.bat",
+      "bytes": 188,
+      "sha256": "878e08ba9c79e9f979c992274585df5ebc60d56c0dc4d2274f1486a759870ef7"
+    },
+    {
+      "path": "scripts/install.ps1",
+      "bytes": 1108,
+      "sha256": "569fab33eb2b72bb78b4d2cb33aa263bba7eaf0ac7ae58cd3deddd8a3d0b8739"
+    },
+    {
+      "path": "scripts/install.py",
+      "bytes": 1588,
+      "sha256": "55a0b3f3e9de5f40b206d492fc9063d94cd5de33a7b26b6ccb3f61ac5026a3c9"
+    },
+    {
+      "path": "scripts/install.sh",
+      "bytes": 805,
+      "sha256": "1e256e230c2ca243a5716898aea4ca75ea919fde0c1d70063d603a733ce85fba"
+    }
+  ]
+}
