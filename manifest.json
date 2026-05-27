@@ -134,8 +134,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 5547,
-      "sha256": "e26930e6202757a5756bd1ff435f9cc21371dd0d5d69dfc4af3af1f22cf20ec3"
+      "bytes": 3782,
+      "sha256": "96e5c56d09556dd8e4b327559a34ff22265cfe7fa1b2a99cac6654f428aed26a"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "bytes": 3861,
+      "sha256": "1ab7e1cb2457695343fac1872cd9da6956a1cc2bed1389ef4e9b9a2a55396b58"
     },
     {
       "path": "schemas/catalog.schema.json",
