@@ -1,10 +1,12 @@
 {
-  "ok": true,
-  "source": "F:\\Codex_Project\\codex_anime_pets\\build.tmp\\march-7th-cutout.png",
-  "spritesheet": "F:\\Codex_Project\\codex_anime_pets\\pets\\march-7th-001\\spritesheet.webp",
-  "validation": "F:\\Codex_Project\\codex_anime_pets\\pets\\march-7th-001\\assets\\validation.json",
-  "contact_sheet": "F:\\Codex_Project\\codex_anime_pets\\pets\\march-7th-001\\assets\\contact-sheet.png",
-  "review": "F:\\Codex_Project\\codex_anime_pets\\pets\\march-7th-001\\assets\\review.json",
-  "package": "F:\\Codex_Project\\codex_anime_pets\\pets\\march-7th-001",
-  "generation_mode": "built-in image generation plus local sprite assembly"
+  "schema_version": 2,
+  "id": "march-7th-001",
+  "spritesheet": "../spritesheet.webp",
+  "legacy": "../compat/v1/spritesheet.webp",
+  "hd": "../hd/animation.json",
+  "validation": "validation.json",
+  "review": "review.json",
+  "contact_sheet": "contact-sheet.png",
+  "source": "../source/frames.json",
+  "build": "python scripts/build_pet.py pets/march-7th-001"
 }

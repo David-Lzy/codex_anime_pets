@@ -1,51 +1,56 @@
-# Assistant-004 独立桌宠
+# Assistant-004 Desktop
 
-[English](README.md) | [中文](README.zh-CN.md)
+[English](README.md) | **简体中文**
 
-**开发状态：**动画引擎和本机事件联动已实现；新版高清角色动画尚未通过验收，也尚未包含在项目中。正式启动需要两套已验收的高清素材，测试用几何图形不会进入发布包。
+独立透明置顶的 Electron/Canvas 高清桌宠，包含四款重制角色，不修改 Codex 客户端。每帧768x832，真实 RGBA，按实际时间和素材帧时长播放。
 
-## 源码运行
+## Windows 使用
 
-需要 Node.js 22.12+ 和 pnpm 11.19.0。在此目录运行：
+从 [Releases](https://github.com/David-Lzy/codex_anime_pets/releases/latest) 下载 **未签名** 的 Windows ZIP，核对 SHA-256 后完整解压，双击 **Assistant-004 Desktop.exe**。不要只移动 EXE，需要保留同目录资源。成品不依赖另行安装 Python 或 Node。
+
+拖动移动、单击挥手、双击轻跳。右键或托盘菜单可选角色、动作、大小（160至640像素）、暂停、鼠标朝向、鼠标穿透、跟随任务、重置位置和退出。启用穿透后仍可用托盘恢复。位置自动保存，重启会限制在当前显示器可见范围内。默认不开机启动。
+
+两款 Assistant 在工作、审阅、等待、挫败时穿白大褂，其他状态穿日常短外套。三月七和琪露诺保留各自服装与非官方同人声明。
+
+## 可选 Codex 联动
+
+1. 从托盘菜单选择 **Codex integration** 并确认。
+2. 程序先备份，再合并 `$CODEX_HOME/hooks.json`，未配置环境变量时使用 `~/.codex/hooks.json`。原有处理项保留。
+3. Codex 提示时，请审查并信任新增 Hooks；未信任的非托管 Hooks 不会执行。启用后开始新一轮任务。客户端能力或工作区策略可能限制 Hooks。
+4. 菜单区分关闭、设置失败不可用、已启用但尚无事件、已连接、长时间无事件待确认。
+
+只向 **127.0.0.1** 上随机端口发送最小事件，使用随机令牌校验。字段仅包括事件类型、可用的任务/轮次/调用标识、工具名、时间、工作区末级名称与结构化错误标记。不发送或记录题词、参数、完整工具输出、对话及凭据，不自动联动服务器任务。
+
+提交任务显示工作中；审批或输入请求显示等待；后续可观察的工具完成事件恢复工作；Stop/Interrupt 回闲置。明确工具错误短暂显示挫败，不代表整个任务失败。审阅保留手动选择。官方没有提供独立的“审批已完成”事件，因此审批后恢复显示可能滞后到匹配工具返回或其他可观察事件；后台事件也可能延迟。Hooks 是状态提示，不是完整执行追踪。静默30分钟后显示待确认，不标成失败。
+
+默认跟随最近有事件的任务，也可固定任务。Hooks 异步执行，不输出审批决定；程序未运行或发送失败时静默返回。接口依据：[官方 Hooks 文档](https://learn.chatgpt.com/zh-Hans/docs/hooks)。
+
+关闭联动只移除本工具标记的处理项，不删除其他 Hooks，备份保留。删除或移动程序前先关闭联动。单纯退出保留注册，供下次启动使用。不提供自动审批、抓取对话、远程页面或远程控制。
+
+## 源码运行与构建
+
+需要 Node.js 22.12+、pnpm 11.19.0 和包含 `pets/*/hd/` 的完整仓库：
 
 ```sh
+cd desktop
 pnpm install --frozen-lockfile
 pnpm start
-```
-
-需要 `pets/assistant-004/hd/` 和 `pets/assistant-004-anime/hd/`，各自包含 `animation.json`、无损 WebP 动作图及 `tray.png`。每帧为 768×832。装配脚本只接受已验收的原始帧，会拒绝假透明图、分辨率不足的图和重复静态图凑帧。
-
-## 本机 Codex 联动
-
-在托盘菜单选择 **Codex integration**。启用时会再次确认，先备份 `$CODEX_HOME/hooks.json`，未设置环境变量则使用 `~/.codex/hooks.json`，再追加观察事件的 Hooks。已有配置保留。启用后开始新一轮 Codex 任务。
-
-事件只发往绑定 `127.0.0.1` 的随机端口，通过保存在程序用户数据目录的随机令牌认证。发送内容仅包含事件类型、任务与轮次及工具调用标识、工具名、结构化错误标志、时间戳和工作目录末级名称。不发送提示词、工具参数、完整输出、凭据或聊天记录，不上传到任何服务。
-
-Hooks 在后台运行，不输出内容，也不会批准、拒绝或修改 Codex 操作。工具报错只触发短暂挫败动作，不判断整个任务失败；无法解析的错误不会靠文本猜测。连续30分钟没有事件时标记状态未确认，不当作失败。不会自动连接远程服务器任务。
-
-关闭联动仅移除带有完整 `Assistant004Hook` 标识的处理器，保留备份。删除或移动程序前应先关闭联动；正常退出会保留配置供下次启动使用，程序关闭期间的事件发送会静默结束。
-
-接口依据：[官方 Codex Hooks](https://learn.chatgpt.com/docs/hooks)。
-
-## 操作
-
-拖动角色移动位置，单击挥手，双击小跳。右键或托盘菜单可切换角色、动作、大小、暂停、鼠标朝向、鼠标穿透及跟随任务。开启穿透后仍可从托盘恢复。不设置开机启动。
-
-工作、审阅、等待和挫败动作使用白大褂；闲置、招手、跳跃与左右移动使用日常外套，服装随动作切换。
-
-## 测试与打包
-
-```sh
 pnpm test
-python ../scripts/make_test_art.py
-node smoke.cjs
 pnpm dist:win
 ```
 
-macOS/Linux 可执行 `pnpm build:dir`，为当前系统生成未归档程序目录；这些平台尚未经过实机验收。
+macOS/Linux 可在相应主机执行 `pnpm build:dir` 构建未打包目录，**本次未进行实机验收**。Linux 透明窗口、位置及托盘行为受合成器影响，不保证 Wayland 表现；这些平台源码启动的 Hooks 帮助程序需要 Codex 的 PATH 中可用 Node。
 
-可选的 Electron 冒烟测试还需要 Node 能找到 Playwright。几何测试图仅验证渲染、透明、计时动画、暂停、拖动、缩放和事件接收，**不代表美术验收**。设置 `TEST_DPR=1.25` 或 `2` 可检查显示缩放。
+## 验证
 
-Windows ZIP 未签名，运行前请核对源码和 SHA-256 校验值。macOS/Linux 目前仅提供源码和构建说明，不声称经过实机验收。Linux 的透明窗体、托盘与定位受桌面环境影响，Wayland 行为不作保证。macOS/Linux 从源码启动时，Codex 的 Hooks 进程需要能找到 `node`。
+参见[验收记录及剩余交互检查](https://github.com/David-Lzy/codex_anime_pets/blob/main/art/QA.md)。原生鼠标点击投递与真实 Codex
+信任、审批流程仍需交互桌面验证；本地模拟事件不等于真实任务联动验收。
 
-GitHub Actions 发布会检查两套高清素材均已验收；可执行文件不写入 Git 历史。渲染进程启用沙箱与隔离，禁用 Node 集成和远程页面跳转。
+```sh
+python -m unittest discover -s scripts -p 'test_*.py'
+node --test desktop/test.cjs
+```
+
+可选 `desktop/smoke.cjs` 需要 Playwright 位于 Node 模块路径。设置 `ASSISTANT004_REAL_ART=1`、`ASSISTANT004_ASSETS` 为 `pets` 的绝对路径、`ASSISTANT004_REVIEW_ALL=1`，检查深浅背景下内置和高清尺寸的所有动作循环。用 `TEST_DPR=1`、`1.25` 或 `2` 检查缩放。不启用真实素材模式时，用 `scripts/make_test_art.py` 生成几何测试夹具；夹具不能证明美术质量。
+
+GitHub Actions 仅在四款素材均有验收记录时发布 Windows ZIP 和校验值。EXE 不提交进 Git。渲染进程关闭 Node 集成，启用上下文隔离与沙箱，仅开放必要 IPC，禁止跳转远程页面。

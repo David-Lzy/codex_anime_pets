@@ -1,208 +1,82 @@
 # Codex Anime Pets
 
-[English](README.md) | [中文](README.zh-CN.md)
+**English** | [简体中文](README.zh-CN.md)
 
-A searchable collection of Codex desktop pets. Each pet is stored as a self-contained folder under `pets/<pet-id>/`, with install files, preview media, QA metadata, and the saved creation prompt.
+Four animated companions for Codex, with searchable bilingual metadata, saved generation prompts, and two ways to use them.
 
-Currently included:
+| Assistant-004 | Assistant-004 Anime | March 7th | Cirno |
+| --- | --- | --- | --- |
+| ![Semi-chibi](pets/assistant-004/assets/previews/idle.gif) | ![Anime](pets/assistant-004-anime/assets/previews/idle.gif) | ![March 7th](pets/march-7th-001/assets/previews/idle.gif) | ![Cirno](pets/cirno-009/assets/previews/idle.gif) |
+| Original, ~3.5-head proportions | Original, ~5-head proportions | Unofficial fan art | Unofficial fan art |
 
-- [Assistant-004](pets/assistant-004/README.md) - original chibi AI lab assistant, skeptical coding partner, retro sci-fi researcher.
-- [March 7th](pets/march-7th-001/README.md) - unofficial fan-made chibi Codex pet of the cheerful pink-haired Star Rail photographer.
-- [Cirno (009)](pets/cirno-009/README.md) - unofficial fan-made chibi Codex pet of the overconfident ice fairy.
+## Download
 
-![Assistant-004 contact sheet](pets/assistant-004/assets/contact-sheet.png)
-![March 7th contact sheet](pets/march-7th-001/assets/contact-sheet.png)
-![Cirno contact sheet](pets/cirno-009/assets/contact-sheet.png)
+[Latest release and SHA-256 checksums](https://github.com/David-Lzy/codex_anime_pets/releases/latest)
 
-## HD Remaster Development
+- **Codex-Anime-Pets.zip**: lightweight install bundle for the Codex pet picker. Includes v2 and v1 compatibility assets.
+- **Assistant-004-Desktop-2.0.0-win-x64.zip**: independent Windows HD companion. **Unsigned**. Extract the whole ZIP, then double-click **Assistant-004 Desktop.exe**. No Python or Node installation required.
+- Native source images, generation prompts and build code are in this repository. The Windows binary is built by GitHub Actions, not stored in Git history.
 
-Assistant-004's two-style remaster and independent desktop app are in development. See the [design drafts and saved prompts](art/README.md) and [desktop implementation](desktop/README.md). The engine, local Codex Hooks bridge, v1 compatibility installer option and release validation are implemented; the new transparent animation assets are **not yet ready**. The existing pets above remain the installable versions.
+## Install Into Codex
 
-The planned independent app uses genuine 768x832 frames; Codex itself still requires 192x208 cells. Draft images must not be mistaken for finished animation. The Windows release workflow refuses to publish without reviewed HD assets.
-
-## AI Search Catalog
-
-For AI agents, scripts, and search tools:
-
-- [`catalog.json`](catalog.json) - machine-readable pet registry
-- [`PETS.md`](PETS.md) - human-readable pet list
-- [`indexes/ai-search-index.json`](indexes/ai-search-index.json) - flattened retrieval index
-- [`indexes/tags.json`](indexes/tags.json) - tag-to-pet lookup table
-- [`schemas/catalog.schema.json`](schemas/catalog.schema.json) - lightweight schema for future entries
-- [`manifest.json`](manifest.json) - package file hashes
-
-Suggested AI search query examples:
-
-```text
-Find a Codex pet that feels like a skeptical AI lab assistant.
-Find a chibi coding partner pet with retro sci-fi research vibes.
-Find a desktop pet for AI engineers, code review, debugging, and model training.
-```
-
-## Quick Install
-
-Default installs `assistant-004`. Fan-made pets can be installed by passing their pet id.
-
-### Windows
-
-Double-click:
-
-```text
-scripts\install.bat
-```
-
-Or run:
+Extract the pet bundle first. On Windows, double-click `scripts/install.bat` to install Assistant-004, or select a pet:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\install.ps1
+powershell -ExecutionPolicy Bypass -File .\scripts\install.ps1 -PetId assistant-004-anime
+powershell -ExecutionPolicy Bypass -File .\scripts\install.ps1 -All
 ```
 
-Install a specific pet:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\install.ps1 -PetId assistant-004
-```
-
-List available pets:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\install.ps1 -List
-```
-
-For older Codex clients use `-Legacy`. Reinstallation backs up existing pet files under `$CODEX_HOME/pets/.backups/`.
-
-### macOS / Linux
+On macOS/Linux (Python 3.9+):
 
 ```sh
-chmod +x scripts/install.sh
-./scripts/install.sh
+sh scripts/install.sh --pet assistant-004
+sh scripts/install.sh --all
 ```
 
-Install a specific pet:
-
-```sh
-./scripts/install.sh --pet assistant-004
-```
-
-List available pets:
-
-```sh
-./scripts/install.sh --list
-```
-
-For older clients use `--legacy`. The shell/Python installer requires Python 3.9+.
-
-### Universal Python Installer
-
-```sh
-python scripts/install.py
-```
-
-Install a specific pet:
-
-```sh
-python scripts/install.py --pet assistant-004
-```
-
-Install all pets:
-
-```sh
-python scripts/install.py --all
-```
-
-List pets:
+Universal Python installer:
 
 ```sh
 python scripts/install.py --list
+python scripts/install.py --pet march-7th-001
 ```
 
-The installer copies each selected pet's `pet.json` and `spritesheet.webp` to:
+Use `--legacy` with Python/Shell or `-Legacy` with PowerShell for older clients. The installer copies only `pet.json` and `spritesheet.webp` to `$CODEX_HOME/pets/<id>/`, falling back to `~/.codex/pets/<id>/`. Existing files are backed up under `pets/.backups/`. Refresh the pet picker or restart Codex if necessary. A compatible Codex desktop client is required; the shell installer does not itself provide that client.
 
-```text
-~/.codex/pets/<pet-id>/
-```
+Manual installation: copy those two files from the pet folder. For v1, copy the pair from its `compat/v1/` folder instead.
 
-If `CODEX_HOME` is set, the installer uses:
+## Independent HD Desktop
 
-```text
-$CODEX_HOME/pets/<pet-id>/
-```
+The same four pets use true transparent **768x832** frames in an Electron/Canvas app. Default window height is 320 pixels. Drag to move; click to wave; double-click to hop. The native context/tray menu provides character, action, size, pause, pointer direction, click-through, task selection, position reset and exit.
 
-## Manual Install
+Optional **Codex integration** backs up and merges observer hooks only after confirmation. It sends minimal status events to a token-protected loopback port. No prompts or tool output are transmitted, no approval decision is changed, and remote tasks are not automatically connected. Without integration, all actions remain available manually.
 
-Copy:
+See [English desktop guide](desktop/README.md) for trust requirements, event limitations and builds. Windows binaries are unsigned. **macOS/Linux are source/build-instructions only, not hardware-validated.** No autostart is configured.
 
-```text
-pets/assistant-004/pet.json
-pets/assistant-004/spritesheet.webp
-```
+## Artwork And Animation
 
-to:
+Each pet has nine action clips and 16 idle look directions, starting up and proceeding clockwise. Both Assistants wear a lab coat for working, review, frustration and waiting; other states use a casual short jacket. March 7th and Cirno retain their signature fan-art outfits.
 
-```text
-~/.codex/pets/assistant-004/
-```
+The remaster uses native high-resolution green-screen pose drawings, locally matted into real RGBA. One common canvas scale is used; frames are translated onto a shared baseline, never independently enlarged to fill their bounding boxes. Jump crouches and airborne poses remain distinct drawings. Leftward movement mirrors the rightward cycle.
 
-Expected final layout:
+Codex v2: **1536x2288**, 8 columns by 11 rows, **192x208** per cell. v1 compatibility: **1536x1872**. These fixed-size Codex atlases are separate from HD playback; no client modification or custom Codex frame-rate behavior is promised. Earlier artwork remains in Git history.
 
-```text
-.codex/
-  pets/
-    assistant-004/
-      pet.json
-      spritesheet.webp
-```
+## Find A Pet
 
-## Repository Layout
+- [Pet list](PETS.md)
+- [Catalog](catalog.json)
+- [AI retrieval index](indexes/ai-search-index.json)
+- [Tag lookup](indexes/tags.json)
+- [Catalog schema](schemas/catalog.schema.json)
+- [Source and prompt notes](art/README.md)
+- [Validation and remaining interactive checks](art/QA.md)
+- [File hashes](manifest.json)
 
-```text
-catalog.json
-PETS.md
-indexes/
-  ai-search-index.json
-  tags.json
-manifest.json
-schemas/catalog.schema.json
-scripts/
-  install.bat
-  install.ps1
-  install.py
-  install.sh
-pets/
-  assistant-004/
-    README.md
-    pet.json
-    spritesheet.webp
-    creation-prompt.md
-    assets/
-      contact-sheet.png
-      previews/*.gif
-      validation.json
-      review.json
-```
+AI search example: "Find an original skeptical research-assistant Codex pet with HD animation." Searchable metadata helps retrieval; it does not guarantee inclusion in any search engine.
 
-## Adding More Pets
+## Build And Contribute
 
-To add another pet later:
+Add a folder under `pets/<id>/`, metadata to `catalog.json`, artwork provenance and applicable rights notices. Then run `python scripts/build_index.py` and the checks in [the art guide](art/README.md). Keep fan assets clearly distinguished from original characters. The install bundle has its own subset manifest; the repository manifest covers public source files.
 
-1. Create `pets/<new-pet-id>/`.
-2. Add `pet.json` and `spritesheet.webp`.
-3. Add preview media and prompt files if available.
-4. Add a new entry to `catalog.json`.
-5. Add a short listing to `PETS.md`.
-6. Regenerate `manifest.json`.
+## Rights
 
-## License and Fan Notice
-
-Repository code and original metadata are MIT-licensed unless stated otherwise. Fan-made character pets are unofficial derivative fan assets; the underlying characters and franchises remain owned by their respective rights holders. See `NOTICE.md` and each pet README before redistribution.
-
-## GitHub Sharing
-
-This repository is ready to clone, install, and extend:
-
-```sh
-git clone git@github.com:David-Lzy/codex_anime_pets.git
-cd codex_anime_pets
-python scripts/install.py --list
-python scripts/install.py --pet assistant-004
-```
+Code and original project metadata are MIT-licensed. Fan characters and their franchise rights are **not granted by MIT**. March 7th and Cirno remain unofficial fan-made assets for non-commercial personal desktop use under the existing [NOTICE](NOTICE.md). Assistant-004 is an original design. User-supplied franchise reference attachments are not redistributed.

@@ -8,14 +8,15 @@ import json
 import math
 from pathlib import Path
 
-from PIL import Image, ImageDraw
+from PIL import Image
 
 STATES = ["idle", "running-right", "running-left", "waving", "jumping", "failed", "waiting", "running", "review"]
 COUNTS = [6, 8, 8, 4, 5, 8, 6, 6, 6]
-DURATIONS = [[280, 110, 110, 140, 140, 320], [120] * 7 + [220], [120] * 7 + [220],
+DURATIONS = [[280, 110, 110, 140, 140, 320], [120] * 8, [120] * 8,
              [140] * 3 + [280], [140] * 4 + [280], [140] * 7 + [240], [150] * 5 + [260],
              [120] * 5 + [220], [150] * 5 + [280]]
 CELL = (768, 832)
+REMASTER_IDS = ("assistant-004", "assistant-004-anime", "march-7th-001", "cirno-009")
 
 
 def dump(file: Path, data: dict) -> None:
@@ -36,7 +37,7 @@ def load_frame(root: Path, entry: dict, source_size: tuple[int, int]) -> Image.I
             raise ValueError(f"Real RGBA transparency required: {file.name}")
         if source.size != source_size or source.width < CELL[0] or source.height < CELL[1]:
             raise ValueError(f"Native resolution/shared source canvas mismatch: {file.name}")
-        scale = min(CELL[0] / source.width, CELL[1] / source.height)
+        scale = min(1, CELL[0] / source.width, CELL[1] / source.height)
         size = (round(source.width * scale), round(source.height * scale))
         frame = Image.new("RGBA", CELL)
         dx, dy = entry.get("offset", [0, 0])
@@ -49,9 +50,9 @@ def load_frame(root: Path, entry: dict, source_size: tuple[int, int]) -> Image.I
     return frame
 
 
-def build(root: Path) -> dict:
+def build(root: Path, preview: bool = False) -> dict:
     spec = json.loads((root / "source" / "frames.json").read_text(encoding="utf-8"))
-    if spec.get("reviewed") is not True:
+    if spec.get("reviewed") is not True and not preview:
         raise ValueError("Art must pass visual review before release")
     source_size = tuple(spec["source_canvas"])
     if len(source_size) != 2:
@@ -67,11 +68,14 @@ def build(root: Path) -> dict:
             raise ValueError(f"Repeated static frames in {state}")
         rows[state] = frames
     # All inputs are checked before touching the installed-format output files.
+    if preview:
+        root = Path(__file__).resolve().parents[1] / "build/art-review" / root.name
+    root.mkdir(parents=True, exist_ok=True)
     hd = root / "hd"
     hd.mkdir(parents=True, exist_ok=True)
     atlas = Image.new("RGBA", (1536, 2288))
     animation = {"id": spec["id"], "displayName": spec["display_name"], "cellWidth": 768, "cellHeight": 832, "clips": {}}
-    report = {"schema_version": 2, "source_canvas": source_size, "output_cell": CELL, "per_frame_bbox_scaling": False, "states": {}}
+    report = {"schema_version": 2, "preview_only": preview, "source_canvas": source_size, "output_cell": CELL, "per_frame_bbox_scaling": False, "states": {}}
     previews = root / "assets" / "previews"
     previews.mkdir(parents=True, exist_ok=True)
     for row, (state, frames) in enumerate(rows.items()):
@@ -85,7 +89,7 @@ def build(root: Path) -> dict:
             smalls.append(small)
         strip.save(hd / f"{state}.webp", lossless=True, method=6)
         animation["clips"][state] = {"file": f"{state}.webp", "columns": 4, "durations": durations,
-            "outfit": "lab" if state in {"running", "review", "failed", "waiting"} else "casual"}
+            "outfit": spec.get("outfits", {}).get(state, "signature")}
         report["states"][state] = {"count": len(frames), "bounds": [frame.getchannel("A").getbbox() for frame in frames]}
         rendered = []
         for small in smalls:
@@ -119,5 +123,6 @@ def build(root: Path) -> dict:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("pet", type=Path)
+    parser.add_argument("--preview", action="store_true", help="Write unaccepted QA outputs only under build/art-review")
     args = parser.parse_args()
-    print(json.dumps(build(args.pet.resolve()), indent=2))
+    print(json.dumps(build(args.pet.resolve(), args.preview), indent=2))

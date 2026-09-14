@@ -1,0 +1,1010 @@
+[
+  {
+    "pet": "assistant-004",
+    "state": "idle",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 7
+  },
+  {
+    "pet": "assistant-004",
+    "state": "running-right",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004",
+    "state": "running-left",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004",
+    "state": "waving",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 4
+  },
+  {
+    "pet": "assistant-004",
+    "state": "jumping",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 5
+  },
+  {
+    "pet": "assistant-004",
+    "state": "failed",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004",
+    "state": "waiting",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004",
+    "state": "running",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004",
+    "state": "review",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004",
+    "state": "idle",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004",
+    "state": "running-right",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004",
+    "state": "running-left",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004",
+    "state": "waving",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 4
+  },
+  {
+    "pet": "assistant-004",
+    "state": "jumping",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 5
+  },
+  {
+    "pet": "assistant-004",
+    "state": "failed",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004",
+    "state": "waiting",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004",
+    "state": "running",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004",
+    "state": "review",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004",
+    "state": "idle",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 7
+  },
+  {
+    "pet": "assistant-004",
+    "state": "running-right",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004",
+    "state": "running-left",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004",
+    "state": "waving",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 4
+  },
+  {
+    "pet": "assistant-004",
+    "state": "jumping",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 5
+  },
+  {
+    "pet": "assistant-004",
+    "state": "failed",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004",
+    "state": "waiting",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004",
+    "state": "running",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004",
+    "state": "review",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004",
+    "state": "idle",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004",
+    "state": "running-right",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004",
+    "state": "running-left",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004",
+    "state": "waving",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 4
+  },
+  {
+    "pet": "assistant-004",
+    "state": "jumping",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 5
+  },
+  {
+    "pet": "assistant-004",
+    "state": "failed",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004",
+    "state": "waiting",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004",
+    "state": "running",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004",
+    "state": "review",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "idle",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 7
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "running-right",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "running-left",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "waving",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 4
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "jumping",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 5
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "failed",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "waiting",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "running",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "review",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "idle",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "running-right",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "running-left",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "waving",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 4
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "jumping",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 5
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "failed",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "waiting",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "running",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "review",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "idle",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 7
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "running-right",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "running-left",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "waving",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 4
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "jumping",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 5
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "failed",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "waiting",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "running",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "review",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "idle",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "running-right",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "running-left",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "waving",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 4
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "jumping",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 5
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "failed",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "waiting",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "running",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "assistant-004-anime",
+    "state": "review",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "cirno-009",
+    "state": "idle",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 7
+  },
+  {
+    "pet": "cirno-009",
+    "state": "running-right",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "cirno-009",
+    "state": "running-left",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "cirno-009",
+    "state": "waving",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 4
+  },
+  {
+    "pet": "cirno-009",
+    "state": "jumping",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 5
+  },
+  {
+    "pet": "cirno-009",
+    "state": "failed",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "cirno-009",
+    "state": "waiting",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "cirno-009",
+    "state": "running",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "cirno-009",
+    "state": "review",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "cirno-009",
+    "state": "idle",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "cirno-009",
+    "state": "running-right",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "cirno-009",
+    "state": "running-left",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "cirno-009",
+    "state": "waving",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 4
+  },
+  {
+    "pet": "cirno-009",
+    "state": "jumping",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 5
+  },
+  {
+    "pet": "cirno-009",
+    "state": "failed",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "cirno-009",
+    "state": "waiting",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "cirno-009",
+    "state": "running",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "cirno-009",
+    "state": "review",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "cirno-009",
+    "state": "idle",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 7
+  },
+  {
+    "pet": "cirno-009",
+    "state": "running-right",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "cirno-009",
+    "state": "running-left",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "cirno-009",
+    "state": "waving",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 4
+  },
+  {
+    "pet": "cirno-009",
+    "state": "jumping",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 5
+  },
+  {
+    "pet": "cirno-009",
+    "state": "failed",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "cirno-009",
+    "state": "waiting",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "cirno-009",
+    "state": "running",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "cirno-009",
+    "state": "review",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "cirno-009",
+    "state": "idle",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "cirno-009",
+    "state": "running-right",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "cirno-009",
+    "state": "running-left",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "cirno-009",
+    "state": "waving",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 4
+  },
+  {
+    "pet": "cirno-009",
+    "state": "jumping",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 5
+  },
+  {
+    "pet": "cirno-009",
+    "state": "failed",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "cirno-009",
+    "state": "waiting",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "cirno-009",
+    "state": "running",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "cirno-009",
+    "state": "review",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "idle",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 7
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "running-right",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "running-left",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "waving",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 4
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "jumping",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 5
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "failed",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "waiting",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "running",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "review",
+    "height": 208,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "idle",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "running-right",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "running-left",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "waving",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 4
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "jumping",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 5
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "failed",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "waiting",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "running",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "review",
+    "height": 208,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "idle",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 7
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "running-right",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "running-left",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "waving",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 4
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "jumping",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 5
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "failed",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "waiting",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "running",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "review",
+    "height": 320,
+    "background": "#ffffff",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "idle",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "running-right",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "running-left",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "waving",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 4
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "jumping",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 5
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "failed",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 8
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "waiting",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "running",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  },
+  {
+    "pet": "march-7th-001",
+    "state": "review",
+    "height": 320,
+    "background": "#17191c",
+    "uniqueDisplayedFrames": 6
+  }
+]

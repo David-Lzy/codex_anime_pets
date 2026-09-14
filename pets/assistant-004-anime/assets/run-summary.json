@@ -1,0 +1,12 @@
+{
+  "schema_version": 2,
+  "id": "assistant-004-anime",
+  "spritesheet": "../spritesheet.webp",
+  "legacy": "../compat/v1/spritesheet.webp",
+  "hd": "../hd/animation.json",
+  "validation": "validation.json",
+  "review": "review.json",
+  "contact_sheet": "contact-sheet.png",
+  "source": "../source/frames.json",
+  "build": "python scripts/build_pet.py pets/assistant-004-anime"
+}

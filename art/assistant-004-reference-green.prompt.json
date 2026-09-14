@@ -1,0 +1,11 @@
+{
+  "prompt": "Use case: stylized-concept. NEW high-resolution production image, not a recolor of the sheet. Reference image top row provides character identity ONLY. Draw EXACTLY TWO full-body figures side by side, NO second row, on a flat pure chroma green RGB 0,255,0 background. Portrait overall aspect ratio 1205:1305. Two equal vertical cells split at 50% width. In each cell the figure is centered, boots at 93% of image height, top of hair at 10%, 83% tall. Figures should be drawn at about 1080 actual pixels tall. Blank green margin all around, no floor shadow.\nBoth are the same ORIGINAL Assistant-004, refined semi-chibi exactly 3.5 heads tall, chestnut long layered hair with asymmetric curved fringe and tiny teal rectangular barrette her left, sharp blue-violet skeptical eyes. Crisp premium cel shaded anime, fine dark outlines, silky warm highlights, restrained cool shadows, distinct fingers. Left figure wears short charcoal jacket with gray cuffs over pale-gray collared shirt, short burgundy tie, black shorts, opaque dark tights and black ankle boots. Right figure wears white mid-thigh lab coat instead of charcoal jacket, exact same underlayer. Neutral frontal balanced pose, relaxed arms, composed skeptical face, same body proportions and face between both. No readable text, numbers, logo, symbols, accessories floating, checkerboard, shadows or green reflected light. Entire character fully opaque. No extra figures.",
+  "tool": "built-in imagegen",
+  "source_image": "art/assistant-004-design.png",
+  "output": "art/assistant-004-reference-green.png",
+  "native_size": [
+    1205,
+    1305
+  ],
+  "accepted_as": "identity reference; not a completed animation"
+}

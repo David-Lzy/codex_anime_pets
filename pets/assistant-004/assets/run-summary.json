@@ -1,9 +1,12 @@
 {
-  "ok": true,
-  "run_dir": "C:\\Users\\davidli\\Documents\\Codex\\2026-05-27\\use-the-hatch-pet-skill-to\\assistant-004-run",
-  "spritesheet": "C:\\Users\\davidli\\Documents\\Codex\\2026-05-27\\use-the-hatch-pet-skill-to\\assistant-004-run\\final\\spritesheet.webp",
-  "validation": "C:\\Users\\davidli\\Documents\\Codex\\2026-05-27\\use-the-hatch-pet-skill-to\\assistant-004-run\\final\\validation.json",
-  "contact_sheet": "C:\\Users\\davidli\\Documents\\Codex\\2026-05-27\\use-the-hatch-pet-skill-to\\assistant-004-run\\qa\\contact-sheet.png",
-  "review": "C:\\Users\\davidli\\Documents\\Codex\\2026-05-27\\use-the-hatch-pet-skill-to\\assistant-004-run\\qa\\review.json",
-  "package": "C:\\Users\\davidli\\.codex\\pets\\assistant-004"
+  "schema_version": 2,
+  "id": "assistant-004",
+  "spritesheet": "../spritesheet.webp",
+  "legacy": "../compat/v1/spritesheet.webp",
+  "hd": "../hd/animation.json",
+  "validation": "validation.json",
+  "review": "review.json",
+  "contact_sheet": "contact-sheet.png",
+  "source": "../source/frames.json",
+  "build": "python scripts/build_pet.py pets/assistant-004"
 }

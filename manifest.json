@@ -15,13 +15,13 @@
     },
     {
       "path": ".github/workflows/release.yml",
-      "bytes": 2125,
-      "sha256": "97972eb92883d4fab1cd4e19685264ee43546aa626f12f6ba735488c83733bc4"
+      "bytes": 2152,
+      "sha256": "cfd1572307392c398a9030bd6717637f49821768801b117745ae95c143a4bae4"
     },
     {
       "path": ".gitignore",
-      "bytes": 92,
-      "sha256": "75280a1ab0c2d7b5cdff7dfbd798f04425e3e3f9f389fc3357c0681f8ce4313e"
+      "bytes": 261,
+      "sha256": "de530d88eda39ef7cdb7f8f01ded3e7abc1ea5ad8800adc8476f4bb3195eb610"
     },
     {
       "path": "LICENSE",
@@ -30,28 +30,38 @@
     },
     {
       "path": "NOTICE.md",
-      "bytes": 1260,
-      "sha256": "f20bf56ac97ccea3d48122869e9a5cbd572a8653af341427790eba2b1b0f4de1"
+      "bytes": 1469,
+      "sha256": "147afdd7e5172760714c34ddf9d16506857bf4fb5892ce8e0359028ae7aae56d"
     },
     {
       "path": "PETS.md",
-      "bytes": 3108,
-      "sha256": "6ad1c9c180bbfef593b8caf86f5357aaf33888f20399a3e157858beea72e6989"
+      "bytes": 1986,
+      "sha256": "cfc2ba9bbb4a9295d1a189e8494250a29ebd81636284a3ea31e9ab0dde70b054"
     },
     {
       "path": "README.md",
-      "bytes": 5213,
-      "sha256": "cd3d6cd6a6af685b56adba53fb5dc92c913835212f6cff19a2d63fed1a30fe14"
+      "bytes": 5465,
+      "sha256": "0137081e8939ab921df80999ac25c362ac0c81d9df70cfbb9ee62e532d0dc068"
     },
     {
       "path": "README.zh-CN.md",
-      "bytes": 5148,
-      "sha256": "843c2203e47a75a24c41c3ada0c7a4636c225ecfdf1f488f8f527e3b5611b6bd"
+      "bytes": 4967,
+      "sha256": "735b940af31a4c53da0a00216d4aeeb17c00df025cda75643ecc316a8ae0c5b2"
+    },
+    {
+      "path": "art/QA.md",
+      "bytes": 3601,
+      "sha256": "2556a2a452b1d9111ac8e1a4b328b8df1f68cd5f8529edb6d3d6cd35c7e00063"
     },
     {
       "path": "art/README.md",
-      "bytes": 4576,
-      "sha256": "aa7756cae95ce16bb1d8094982c979dd16dcdef1aa7cb953439478e2f27293e3"
+      "bytes": 7919,
+      "sha256": "e84cac7b2c69a8b6088b44d6bd0be31589db07e8247310b9d9373ce79b316d2d"
+    },
+    {
+      "path": "art/animation-prompts.json",
+      "bytes": 13661,
+      "sha256": "01722ff15c206bb7ddfbcc8620ac893aada9039bb2d4ddec618da93229712ef5"
     },
     {
       "path": "art/assistant-004-casual-draft.png",
@@ -59,24 +69,69 @@
       "sha256": "c40eb75def7dac8946ec7ee0c2fa0dcb12cf29a2d43d2507fcc40d3a6ca28d9e"
     },
     {
+      "path": "art/assistant-004-compact-master.png",
+      "bytes": 1688420,
+      "sha256": "4e7538fc6ba36591703836475e8f57ad9cfb3c0bbd68d7c5a850ee15d0b7d052"
+    },
+    {
+      "path": "art/assistant-004-compact-master.prompt.json",
+      "bytes": 1657,
+      "sha256": "f4aa1363f6206a1067e673516de9358f4d73132cfc465542994f449f7eae092b"
+    },
+    {
+      "path": "art/assistant-004-compact-reference.png",
+      "bytes": 722915,
+      "sha256": "97a7f2b2be134c7d798f081785d8a2216ad500c74fa6afe418806f038f4a1b80"
+    },
+    {
+      "path": "art/assistant-004-compact-separated.png",
+      "bytes": 1582895,
+      "sha256": "1fb3a4b08730840d62ad11495b02e3b0542c220d670bf410bda42f7b697e9bc6"
+    },
+    {
+      "path": "art/assistant-004-compact-separated.prompt.json",
+      "bytes": 1219,
+      "sha256": "7ac11aea420b91c1636961d3bd3421f23dc506708da251723fa5de8f5e69a3d8"
+    },
+    {
       "path": "art/assistant-004-design.png",
       "bytes": 1951014,
       "sha256": "0444d01cb563c6c88fd5b90c5b5a6532c5fa155e9154eecb980b3c26769bc92f"
     },
     {
+      "path": "art/assistant-004-reference-green.png",
+      "bytes": 1574302,
+      "sha256": "6655141fca17014e136af5fd09bc4c17b896bb123613737f6624f91f421a54f9"
+    },
+    {
+      "path": "art/assistant-004-reference-green.prompt.json",
+      "bytes": 1692,
+      "sha256": "ffa13c8b86700e37bc4b4372ea5d63dbe29cb7335a4af39ce01dbc106a0f4c08"
+    },
+    {
+      "path": "art/playback-review.json",
+      "bytes": 20314,
+      "sha256": "fceeb49dea56d6f100717c36fadeb3f2a5df4a7676a85a94c6fab81e9eb14a60"
+    },
+    {
+      "path": "art/remaster-drafts/README.md",
+      "bytes": 463,
+      "sha256": "dfc23cdedf18556bce2bf54bbf17d39356973eec8d29d887b0747688e4f864f2"
+    },
+    {
       "path": "catalog.json",
-      "bytes": 12630,
-      "sha256": "abe934430b4e45959ce83bd37b40f5bab088ac9538bf5036beca5f4291ed4816"
+      "bytes": 20211,
+      "sha256": "d2569b0f64a04e05ba18bb4962aa14aab1bc51051400c6bef3d8319ddd822d96"
     },
     {
       "path": "desktop/README.md",
-      "bytes": 3808,
-      "sha256": "8e43cb9623a926720c75673355add0af4dced7dbe69458bb0f55e4452d20c0aa"
+      "bytes": 4730,
+      "sha256": "8ccaf25a663f659d8c8c73f1961e4dc3570284ae190fe99961797cb96bd93606"
     },
     {
       "path": "desktop/README.zh-CN.md",
-      "bytes": 3402,
-      "sha256": "1d296075299680013847abc62f8b6bf9256ae8ee427352dd8af633476deab662"
+      "bytes": 4433,
+      "sha256": "d61a59df28d4236b631ed0056e3c045baf8434cfcf85eb62d7ca16637bb71d0b"
     },
     {
       "path": "desktop/hooks/bridge.cjs",
@@ -100,13 +155,18 @@
     },
     {
       "path": "desktop/main.cjs",
-      "bytes": 12300,
-      "sha256": "de48f125e7e8bc46f1652c944b7a6d81d7494b0e235bfd25473d928271981e43"
+      "bytes": 12730,
+      "sha256": "693c514ea140041f0d062c27a94e713d61a0ebda7815a98398c08bf894a87cde"
+    },
+    {
+      "path": "desktop/native-smoke.ps1",
+      "bytes": 3115,
+      "sha256": "05265a94977fff7d126fca72902968636f2a2374291718f0f9ea981c09b524cd"
     },
     {
       "path": "desktop/package.json",
-      "bytes": 1176,
-      "sha256": "6e1e2314d46114c660c03c53118606ffded20319e51222708224fc9c7d45e78e"
+      "bytes": 1329,
+      "sha256": "caf7c44fb9d91791c14fcd61783f8b7a1d7f59b40e30d7ac41a9448d7601199e"
     },
     {
       "path": "desktop/pnpm-lock.yaml",
@@ -126,17 +186,17 @@
     {
       "path": "desktop/renderer.js",
       "bytes": 3662,
-      "sha256": "8f6195297e26930150c1ece29b31b320463ea810f16b7567bf85298f82c33054"
+      "sha256": "a7813f9e555ff0b67e576c4466912e1d1805ab98b0cccdfaf70aa9bb5a63ec10"
     },
     {
       "path": "desktop/smoke.cjs",
-      "bytes": 5185,
-      "sha256": "b130d2fb11c246594d8d321c8f7fe1d40855f73531264e72e70f384c10cd29b1"
+      "bytes": 10406,
+      "sha256": "3c5218022808fcc191977157320553ed890bfa96972aa8a579e69973282a8520"
     },
     {
       "path": "desktop/state.cjs",
-      "bytes": 3841,
-      "sha256": "4b7ea5c18349fc2cae4f7e156a2a85758bddfd8e140725aa59fde48ed7d65dbf"
+      "bytes": 3801,
+      "sha256": "cc5be3b4479f6624a3d67ffe8e017c1616e39965e3065bb48362694f1b2ab7a9"
     },
     {
       "path": "desktop/style.css",
@@ -145,273 +205,1998 @@
     },
     {
       "path": "desktop/test.cjs",
-      "bytes": 6441,
-      "sha256": "03f6201e515ba73585d36f21dfa9d9bd454ef080d5b7edce41d43a80031c94bb"
+      "bytes": 7890,
+      "sha256": "328834e175d42c53577cb65e95ec341ac4a78613648dfc47c59f78be053e0cb8"
     },
     {
       "path": "indexes/ai-search-index.json",
-      "bytes": 4789,
-      "sha256": "469addd229c8491384ab7cad6e5a87a0523b28dc940b26c0097c53f02454571a"
+      "bytes": 9576,
+      "sha256": "e0040eff91195660a644c2845fa40265f0f6dd86c3d77e9df80468aeddd626b3"
     },
     {
       "path": "indexes/tags.json",
-      "bytes": 2157,
-      "sha256": "ce431e4996f40f15415bedf8ef2369abb7991f62847b2f70ab66584376933ff7"
+      "bytes": 5166,
+      "sha256": "a702bcdc03c8ac86c08d22185156b628c6b30154a5dfbc36b0d139099d33cdb1"
+    },
+    {
+      "path": "pets/assistant-004-anime/README.md",
+      "bytes": 2542,
+      "sha256": "11133f48bd6eaa98eea4990460c273065a3926e197befd63e4c18ce271340560"
+    },
+    {
+      "path": "pets/assistant-004-anime/assets/contact-sheet.png",
+      "bytes": 1229650,
+      "sha256": "475f2465a99764d73025c699518dacd3b14b36ef5408c6c3854f225c573e18f1"
+    },
+    {
+      "path": "pets/assistant-004-anime/assets/previews/failed.gif",
+      "bytes": 76715,
+      "sha256": "fec88e18168557d26ec4b9c207cc26964e22e5c375b5e5ef8457418cc354b2ca"
+    },
+    {
+      "path": "pets/assistant-004-anime/assets/previews/idle.gif",
+      "bytes": 53325,
+      "sha256": "31d11eda6e9e815574440e0b3dbd179e6dc924365c91fe3463513a0022b61d17"
+    },
+    {
+      "path": "pets/assistant-004-anime/assets/previews/jumping.gif",
+      "bytes": 43097,
+      "sha256": "02b8ccb0273a0d0cb884460fc2da506222e783e8d76e8166f54294d0801fe01c"
+    },
+    {
+      "path": "pets/assistant-004-anime/assets/previews/look.gif",
+      "bytes": 142628,
+      "sha256": "ce6486e82923497ee16544d4ff55ca0f3689974886bd0e9bcca19abe1bf2e74e"
+    },
+    {
+      "path": "pets/assistant-004-anime/assets/previews/review.gif",
+      "bytes": 56023,
+      "sha256": "bda8fb614c06d954759b92974b11a5acd6805a21d6d6a099d58339d963fc15d7"
+    },
+    {
+      "path": "pets/assistant-004-anime/assets/previews/running-left.gif",
+      "bytes": 66822,
+      "sha256": "82ba1c71a5feb868c855aa7a493ad933344003568924a653ee714530eecc20b6"
+    },
+    {
+      "path": "pets/assistant-004-anime/assets/previews/running-right.gif",
+      "bytes": 66865,
+      "sha256": "96e0e2841d42ac7667e14960200706564942fdc3554b73d941071fc793732b0d"
+    },
+    {
+      "path": "pets/assistant-004-anime/assets/previews/running.gif",
+      "bytes": 56289,
+      "sha256": "aee3c0c963dc94ddc537d267bbde4c5ba43d2acc7042e1d35e20a53b6c35ff65"
+    },
+    {
+      "path": "pets/assistant-004-anime/assets/previews/waiting.gif",
+      "bytes": 56736,
+      "sha256": "126cbe6abda9a5b8974442b4dcab8f11af89ebba93513fbcf4a81f83d2aaccc7"
+    },
+    {
+      "path": "pets/assistant-004-anime/assets/previews/waving.gif",
+      "bytes": 35369,
+      "sha256": "f60e9c976f92842979cb0e001551f97a224fbd759e7ec5f2300227490b81ce89"
+    },
+    {
+      "path": "pets/assistant-004-anime/assets/review.json",
+      "bytes": 1078,
+      "sha256": "93447aa76f3c7ace48cd3bffa518d0e65cd77b8a4c493f4b3ffe4a406087d023"
+    },
+    {
+      "path": "pets/assistant-004-anime/assets/run-summary.json",
+      "bytes": 380,
+      "sha256": "0b0378a5b6b8376a3c4bc914d2bd6e60cf0b0be0c19868e8da804ba6c31bec23"
+    },
+    {
+      "path": "pets/assistant-004-anime/assets/validation.json",
+      "bytes": 6700,
+      "sha256": "d4af6808cadad1fb7eaa721490efc80712d46db1f0ca44445f39fd49481672af"
+    },
+    {
+      "path": "pets/assistant-004-anime/compat/v1/pet.json",
+      "bytes": 227,
+      "sha256": "c08145e6493a80fedfd39f51830937af2a47c0f77744581c16ba671b8974e4c9"
+    },
+    {
+      "path": "pets/assistant-004-anime/compat/v1/spritesheet.webp",
+      "bytes": 906108,
+      "sha256": "5b946f610e02b6f066ac8d3a4acebe828a54f6814c92c4e96ba5602bd82c63fe"
+    },
+    {
+      "path": "pets/assistant-004-anime/creation-prompt.md",
+      "bytes": 1352,
+      "sha256": "a69599bb7f9ad6a8183f856c24084510a54824dbcb9ee15c757f11252ed4aff0"
+    },
+    {
+      "path": "pets/assistant-004-anime/hd/animation.json",
+      "bytes": 2353,
+      "sha256": "1a2d848dc2fdf7fba3fb791c4fe91b43ea0e476318d42a8a6144b9c917068f93"
+    },
+    {
+      "path": "pets/assistant-004-anime/hd/failed.webp",
+      "bytes": 1292344,
+      "sha256": "b9ca19dfa8bbb4c92e943611970a2b6345f5258bb1c402d7953351ceb85a73f6"
+    },
+    {
+      "path": "pets/assistant-004-anime/hd/idle.webp",
+      "bytes": 904834,
+      "sha256": "47f2a784befa76b75cf0826eba5f9efc53a1fb38768e82238458b6979ac79d11"
+    },
+    {
+      "path": "pets/assistant-004-anime/hd/jumping.webp",
+      "bytes": 776100,
+      "sha256": "d957d9396f82ca25fde4da5dd092c03585ffde04225c1413c87b51625aea1da9"
+    },
+    {
+      "path": "pets/assistant-004-anime/hd/look.webp",
+      "bytes": 2397676,
+      "sha256": "8885464649710a5709edd9ed3d141f6c9283d629351e89c4306725289a4673c9"
+    },
+    {
+      "path": "pets/assistant-004-anime/hd/review.webp",
+      "bytes": 942284,
+      "sha256": "41375e4b701ec13beb3e7204e2566c3deef4062bd6cfc902aa4a8fc06f5c4b04"
+    },
+    {
+      "path": "pets/assistant-004-anime/hd/running-left.webp",
+      "bytes": 1156612,
+      "sha256": "68280c5910efd9491bea764af79b03f7051b582f8a38352e71c1b132330b7917"
+    },
+    {
+      "path": "pets/assistant-004-anime/hd/running-right.webp",
+      "bytes": 1155610,
+      "sha256": "b6701201ebcd67d918681414751dfb85ba4a3c40a5151fa982b0e713f5421533"
+    },
+    {
+      "path": "pets/assistant-004-anime/hd/running.webp",
+      "bytes": 957978,
+      "sha256": "aa342070051c8144646c40e647da411fd4343ac13cb09a362be4602fb359b00c"
+    },
+    {
+      "path": "pets/assistant-004-anime/hd/tray.png",
+      "bytes": 9142,
+      "sha256": "e20212b86a7ebd7860395dfa7a9d3de4ff848e3f5caefd80b74e303e61478b38"
+    },
+    {
+      "path": "pets/assistant-004-anime/hd/waiting.webp",
+      "bytes": 954622,
+      "sha256": "48dbe937f6070795336f19c953e1920cbc77e97f9e10af4ffe76d89048e3ef85"
+    },
+    {
+      "path": "pets/assistant-004-anime/hd/waving.webp",
+      "bytes": 593544,
+      "sha256": "9e8273298f2476a9bf861504e675095dac9ec1853646127ea1aa656e5f8dd591"
+    },
+    {
+      "path": "pets/assistant-004-anime/pet.json",
+      "bytes": 227,
+      "sha256": "1f65ed6ec5ab653617024f9e0c9ad863792c4119da5c7fa337cadbe5dafc53fb"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/frames.json",
+      "bytes": 10538,
+      "sha256": "80882f9399adb959318a3e085dfcbceea88d90ef6f910ea138babfcdc8341154"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/failed-00.png",
+      "bytes": 1610937,
+      "sha256": "7c3eb34bf011623c7c050c51fda5b55bdfd3dc74aec3c41341566641d70d07e8"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/failed-00.prompt.json",
+      "bytes": 2339,
+      "sha256": "f40d48f5a362eafcc42d0e9edf03ea8a1a1ca010182ba21bdfe6b19f3924c655"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/failed-02.png",
+      "bytes": 1620185,
+      "sha256": "439af346a4495d6cacc88a7b23d8daf56ffad3c0b9d8072fd7479e506a33b6af"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/failed-02.prompt.json",
+      "bytes": 2385,
+      "sha256": "346d10b9c805baacd763f1c4ca98da62bb0d11edbde3104a099a4c9743a7085c"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/failed-04.png",
+      "bytes": 1611969,
+      "sha256": "6b32df7720a0fbb957dcea4a204be8855c9554994988ecc7e39cdc493aa746e0"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/failed-04.prompt.json",
+      "bytes": 2388,
+      "sha256": "76ce919e17189a4f58daa45f7a3123975eefa2e1ea566f71ac5f387f347c6391"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/failed-06.png",
+      "bytes": 1633345,
+      "sha256": "b9362546d9aabae57b9c5ebe1854f357d63f47c052739fe7a1e403fcb56880f6"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/failed-06.prompt.json",
+      "bytes": 2390,
+      "sha256": "b5f4dd98834c848a9811eeb4d307f8c8a98bd630bde8561aa9e221db70461f12"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/idle-00.png",
+      "bytes": 1564593,
+      "sha256": "fc7cfe093edc8e8475f228e5fe6e6731c22160f7edfa0aa983c1cf50ae946acd"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/idle-00.prompt.json",
+      "bytes": 2274,
+      "sha256": "46961c9fdbcb47ea33719aaa82835c01accd043ca9a90ea64e35706a4ca06e2f"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/idle-02.png",
+      "bytes": 1582676,
+      "sha256": "fe374eca09b1a55ce0c4bf877cc8e90e7e385359300394f740accdc59eff420b"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/idle-02.prompt.json",
+      "bytes": 2271,
+      "sha256": "90ad392d9cd461f9527ecaeb8c8756e94dedf23f8272ea16a21194f95b53eb9d"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/idle-04.png",
+      "bytes": 1585396,
+      "sha256": "b0248846bd5c68dff396193be65edc58bad16bdc02273cc6aaab74f944f84c8a"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/idle-04.prompt.json",
+      "bytes": 2328,
+      "sha256": "4f8d6951838f4852a6a01fe7796278bba49b1ed07a8e024881a5c8b547d2ed9b"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/jumping-00.png",
+      "bytes": 1598202,
+      "sha256": "60e9942d31e13a5cc869b8d2eb4731fa0437b002bf63c674e56f49da02522485"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/jumping-00.prompt.json",
+      "bytes": 2382,
+      "sha256": "bb41840c1104eb30fce4b41e38d742f68efb8f134ae3a5464cf0ffe8d5082064"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/jumping-02.png",
+      "bytes": 1636628,
+      "sha256": "0b67412bfc3adb01d8a1a7687297b3b6934ae9355286b2fb024976906c103150"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/jumping-02.prompt.json",
+      "bytes": 2450,
+      "sha256": "ae2a584b24d54a6a24e5ea613e9027786841dae1fb47e7e61ce62d838e0c991d"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/jumping-04.png",
+      "bytes": 1608890,
+      "sha256": "49ff8cf5c23ac6199cb4cc26d4dadac72f3f241356e6ae1b80b9bfc2b2ae5c8e"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/jumping-04.prompt.json",
+      "bytes": 2337,
+      "sha256": "b12e17d377f05cbf72f2ff0f2522857559e3c5aab69d95c8ab1e7c2fe9ab5ab8"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/look-00.png",
+      "bytes": 1569479,
+      "sha256": "ff6f4ae1bfe9acc68f6aa3dd6a6cbab33fa1d1b4b1de22028e00f24fcc9fc0f7"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/look-00.prompt.json",
+      "bytes": 2331,
+      "sha256": "7de315a73545b62199fe3c6ff14ec4aee869af37e8e6417080d0e035ad9d70dd"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/look-02.png",
+      "bytes": 1572030,
+      "sha256": "4d6293a288e5d78e98d3c75ef7d67ed9d22f9de73100677094bf4b454913b5a7"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/look-02.prompt.json",
+      "bytes": 2359,
+      "sha256": "48d434ec480d03f011ccde1a95935d3b6fb8826854de69541faafb3f196c7268"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/look-04.png",
+      "bytes": 1589902,
+      "sha256": "aecc0f427ddf0df03ca7dde2844b5119525ff3407d572b0ad724b2672387b698"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/look-04.prompt.json",
+      "bytes": 2374,
+      "sha256": "dd5c7cc5dbc7b5ab3dee60a0811ab72a0b71712e6913e003c86387f0741fc050"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/look-06.png",
+      "bytes": 1586535,
+      "sha256": "1ac15e78faf18fc8e7933fe83b039d95beff53cc064573843065242e7725c281"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/look-06.prompt.json",
+      "bytes": 2366,
+      "sha256": "dd23e6e47fa779e1257f363e76d91431755c8e6d1b1730e325ea274f242aaa6e"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/look-08.png",
+      "bytes": 1580067,
+      "sha256": "30346d6a382a198e1e7a54c494e81c9f3bbb9a6cd8c7755e0601a55470246af9"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/look-08.prompt.json",
+      "bytes": 2360,
+      "sha256": "29bc25269a9669446d14ecc3b7fdaf817587d2fbf933c1c1a8f35051584bf82b"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/look-10.png",
+      "bytes": 1566962,
+      "sha256": "2578360cbf972bb9b4ba026b7306c171b3297224ea3558153436a79d6a8cf518"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/look-10.prompt.json",
+      "bytes": 2365,
+      "sha256": "616af5fe1c13504f30ced72f15d9eefdc24e58765fe52d347a5db1407903eccb"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/look-12.png",
+      "bytes": 1565718,
+      "sha256": "fda5b403545712d8e0660f38b2e1b7ee96c5f389f9434670cc0842481bbf71bb"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/look-12.prompt.json",
+      "bytes": 2372,
+      "sha256": "84d2acf0076e7d8ba59285dce1c4add03f2e2d89e5f7090a1253f58916d83512"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/look-14.png",
+      "bytes": 1562997,
+      "sha256": "0fdd13002324dd8d64f151b69917468373a421891b2c09742151e3af4ce39451"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/look-14.prompt.json",
+      "bytes": 2360,
+      "sha256": "5d1aede6494d54545e522de4c4eb7864970a8b574fcd5516952dc909a8974d7d"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/review-00.png",
+      "bytes": 1593721,
+      "sha256": "a3bd1c8ec09ca1a0d1d5959a69d2f445a35a67844390f59baa46071ec02daf5d"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/review-00.prompt.json",
+      "bytes": 2403,
+      "sha256": "9ac6ff9a6f5540f3c73148e52820e4a93bd95690b524d23964f2b089bf967371"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/review-02.png",
+      "bytes": 1596462,
+      "sha256": "d6bebd7672c7d265aa3676e3f79541358f7bfea5dcc35ede101df5da28773708"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/review-02.prompt.json",
+      "bytes": 2409,
+      "sha256": "be308828a7cb51a72fe04a9a585448be03d56113aab287771d18fc99efbdc6eb"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/review-04.png",
+      "bytes": 1603453,
+      "sha256": "2950ca3e20bb009d364d1d47b657a0a2845a52f8f4d4ddcee1b9e009f32a3923"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/review-04.prompt.json",
+      "bytes": 2411,
+      "sha256": "39d45113979d13cce29afc329a6afd11a73256080429d56c279be7ea6aaae1a1"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/running-00.png",
+      "bytes": 1609295,
+      "sha256": "7304cba8cccc9698ddcfa557b0d14d4d2d5bb830ecc07636e67c6f7fd2b1e3b6"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/running-00.prompt.json",
+      "bytes": 2492,
+      "sha256": "61805bf75d6dd27e4fb2fc2effafaec45304461291d3c2e922cdc4621d8e4ade"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/running-02.png",
+      "bytes": 1610711,
+      "sha256": "c74fbc1d76ef83be1d487db085102a2f6ccbc878efe819b6c4ea44e4a05f54a9"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/running-02.prompt.json",
+      "bytes": 2427,
+      "sha256": "b9b7da9aedbe09fe12599807a82600f52febe984c838b1fbcca92696bbc6bb68"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/running-04.png",
+      "bytes": 1631685,
+      "sha256": "59a415d7854d1449aad03580c51b9de0c0e4de38be54b64e7c41168264e824cf"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/running-04.prompt.json",
+      "bytes": 2430,
+      "sha256": "c17641e8c69d2c7c0d1329137ea5e590284874fc30721dafc447f4f5c07b494d"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/running-right-00.png",
+      "bytes": 1600202,
+      "sha256": "3bbc1ad18b9a768054866459d8c37932eff8bbaf1d6dd27f261008f74317726f"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/running-right-00.prompt.json",
+      "bytes": 2365,
+      "sha256": "259a66744cd65bf142d77a4b5e78819710b9df7a655607234953e4c9fef0221c"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/running-right-02.png",
+      "bytes": 1579384,
+      "sha256": "de50432f6804bb8a371712f2989d7e8e12a3fc4d3569f71418193abe93e997f1"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/running-right-02.prompt.json",
+      "bytes": 3905,
+      "sha256": "a15ac5fb5307b5a22b0974c2e04cef0b2eb8801b74e75467020002c43a5d4f85"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/running-right-04.png",
+      "bytes": 1608338,
+      "sha256": "0bec4242bd9985cb47ab8701b010627832148e77a57bf9559858833c3bf7f046"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/running-right-04.prompt.json",
+      "bytes": 2349,
+      "sha256": "2ce380c56ed513b4b6bfa012c02ee95505aaba8d738dd1406f539ee2d7a6e04d"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/running-right-06.png",
+      "bytes": 1569946,
+      "sha256": "3a951566c2a814c7e13027a77e4c8cf331dc1fce1af94db402d147dc14cf41ec"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/running-right-06.prompt.json",
+      "bytes": 3782,
+      "sha256": "0ce2b0a458ac3a41fc6dcf2aecc3c743f1ceff9e0e7584adee5f41622c202add"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/waiting-00.png",
+      "bytes": 1613946,
+      "sha256": "44c68c6ea96730bdedb9ffb6aea82069eb43a9f64dff450d83b4b70cababab9e"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/waiting-00.prompt.json",
+      "bytes": 2349,
+      "sha256": "4d80e237b2e0763b9f4907cbb574a6572306b5d65954e75be78ba9a7c0e62a4e"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/waiting-02.png",
+      "bytes": 1612181,
+      "sha256": "5b0c19d69bd347f687bc627dc86ebdb5282591503ba78703a3cab922b2baef20"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/waiting-02.prompt.json",
+      "bytes": 2362,
+      "sha256": "dde03c5340f58836d4e8aa5eac013838315184169fe1874a50573e2faa091c32"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/waiting-04.png",
+      "bytes": 1598391,
+      "sha256": "57883d25ac6333f25b53de19ff016f8494854511d05ac9463edaeb8c5342ca89"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/waiting-04.prompt.json",
+      "bytes": 2390,
+      "sha256": "769c029e9f65f750b7e58fa82ab17884b772de91485e60c6e7da1c14eee10dce"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/waving-00.png",
+      "bytes": 1593963,
+      "sha256": "17efc5b862e1f8e4a4fba69a7d7ea94a431040b7ecf5b6b598e3be85466f6374"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/waving-00.prompt.json",
+      "bytes": 2312,
+      "sha256": "35641005e16af8b54a18e5c777f687d6ff0098f900fd04710b65b876e1b44327"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/waving-02.png",
+      "bytes": 1570562,
+      "sha256": "a58a9c333bfd6110c9b0ae73664879cec5169eb8efc9ea5b72e001fb5d0ed258"
+    },
+    {
+      "path": "pets/assistant-004-anime/source/pairs/waving-02.prompt.json",
+      "bytes": 2393,
+      "sha256": "e1efa7964eb2513cb616d9646651d833c0ef101ab29dc86e2a309a9aa54e2ea5"
+    },
+    {
+      "path": "pets/assistant-004-anime/spritesheet.webp",
+      "bytes": 1155234,
+      "sha256": "bc18a7df2aa58a4a9e6feed0f11a77c5cfe1a82d527d5c80fe8d7e501b7d4ac1"
     },
     {
       "path": "pets/assistant-004/README.md",
-      "bytes": 1336,
-      "sha256": "eb976f58e0733d2c8d8271d22b8b29689b68a88c7acf56c00ce7fc9cfa6a7e73"
+      "bytes": 2528,
+      "sha256": "6fe48ad60e5f502973f86234508f923b54b737e4db01d369cfabcb023440f41c"
     },
     {
       "path": "pets/assistant-004/assets/contact-sheet.png",
-      "bytes": 674171,
-      "sha256": "f3d75f0cce4cef74aba58c126aa2fe073ea2411c14ed73bd7de7cf8edbb9ffe9"
+      "bytes": 1294517,
+      "sha256": "24907d50bcc211ae28a3d7dff7b84bbe0919b88eb262b30ccc47bf58a05ec43a"
     },
     {
       "path": "pets/assistant-004/assets/previews/failed.gif",
-      "bytes": 91148,
-      "sha256": "7d030f998451c4abdb0773624696d6e8e03fe8d2411542314ee6e20d366eec82"
+      "bytes": 77277,
+      "sha256": "84445bbfa0053dd27fd1f67f180e60b233c668795e5125d5cbb820212604aaf5"
     },
     {
       "path": "pets/assistant-004/assets/previews/idle.gif",
-      "bytes": 75693,
-      "sha256": "1a38c4d00e9f54e3cbdf1ba27122616e319ea690611799f731a5594660f42e75"
+      "bytes": 57464,
+      "sha256": "0a08346323ebac17e2c10241317697c67449b8fa74986d02f72d3f51eb4f2a51"
     },
     {
       "path": "pets/assistant-004/assets/previews/jumping.gif",
-      "bytes": 64005,
-      "sha256": "ff318da6fc831e918e10f9122fd1b70d068017c465acae0675284d2c20b5750c"
+      "bytes": 44622,
+      "sha256": "cbfb851f5ae89719f1ccfabbbf6e740a7c76bd3e3b70fde034a995d32f4577d7"
+    },
+    {
+      "path": "pets/assistant-004/assets/previews/look.gif",
+      "bytes": 159070,
+      "sha256": "e350217b6c1fba49177e062ba42ee6fcb04b302b8db1a8b77327ef43ec80e8be"
     },
     {
       "path": "pets/assistant-004/assets/previews/review.gif",
-      "bytes": 65788,
-      "sha256": "51228440f0cf56a110c96848e2ef1a053670364a3fd4c850ea03c2ceafbc106b"
+      "bytes": 58766,
+      "sha256": "537d295b7c65635dadaf9f9e9074ea325ffdcf773f915fccd2f079357404c89e"
     },
     {
       "path": "pets/assistant-004/assets/previews/running-left.gif",
-      "bytes": 87150,
-      "sha256": "a3798f91247280ce8d7296093f074864ef2d1152f463bb82ae2b259bc1a5e57b"
+      "bytes": 72108,
+      "sha256": "16bfb4bb336ff0c7f89e796a42917b720d18a403a1f282641280f7746179a25e"
     },
     {
       "path": "pets/assistant-004/assets/previews/running-right.gif",
-      "bytes": 87271,
-      "sha256": "dfa18878dffe60aa54aaf181622d53cb2a4c423005435abcb9888e047401848e"
+      "bytes": 72129,
+      "sha256": "f29ba2dd36c720880e01d164c85378f16127c8ec8caea66ac14464f68e8a6aee"
     },
     {
       "path": "pets/assistant-004/assets/previews/running.gif",
-      "bytes": 66762,
-      "sha256": "7de8365ec153cec94853ca50924e828ed1a147362c69094772b3ef375cad00be"
+      "bytes": 58617,
+      "sha256": "65bbfec81c5c78d4ef19a3a4a98f88e749d3182b85dc9d0ca9a7fd76a2d3adda"
     },
     {
       "path": "pets/assistant-004/assets/previews/waiting.gif",
-      "bytes": 65151,
-      "sha256": "cb50db35676e479dd53379ab31536ceed2f8eda4de0b623b18a9a250d452f56c"
+      "bytes": 57179,
+      "sha256": "eb6c9fdbb28ba8c6f00dec7939b8ea571d7a4aba4a278efec2fb47dd57440910"
     },
     {
       "path": "pets/assistant-004/assets/previews/waving.gif",
-      "bytes": 44741,
-      "sha256": "5a5f69ff34fa9d83369410532274d69593ebebfca96c716a59ab15fd87e8e4d1"
+      "bytes": 39050,
+      "sha256": "ac0f186a558763ce62cca86b31dc55da81051968445b5f67cf0d07efcef8b834"
     },
     {
       "path": "pets/assistant-004/assets/review.json",
-      "bytes": 27348,
-      "sha256": "12bcba52eba2d544cd60c6d095d535d0b85fa10e762600659a7529b762eb4d08"
+      "bytes": 1072,
+      "sha256": "808b7c462753dd4d244c9186fc46b3529094538274aa94778803e1686c23f554"
     },
     {
       "path": "pets/assistant-004/assets/run-summary.json",
-      "bytes": 742,
-      "sha256": "99af2e9ab7e114b60c609fb3addb50b0d35e32e974611d27120ba7ba8e23c243"
+      "bytes": 368,
+      "sha256": "2926393abf5c3f8d3e854dd60e1bfa8bc8f84e79c228fabdec8121b0b18653e9"
     },
     {
       "path": "pets/assistant-004/assets/validation.json",
-      "bytes": 9741,
-      "sha256": "715a10274d9a06026bd719ff23ffd97acc49b1df8912ee80148757d754e609bc"
+      "bytes": 6702,
+      "sha256": "d12e60e28104f1b63b4a5ebed7dbbd21ebf4828d3c524f3a940119abeb531ede"
+    },
+    {
+      "path": "pets/assistant-004/compat/v1/pet.json",
+      "bytes": 321,
+      "sha256": "c954579437247aed4d2224f96b63bca205d869c890042cf6a0db6414a6e34072"
+    },
+    {
+      "path": "pets/assistant-004/compat/v1/spritesheet.webp",
+      "bytes": 923030,
+      "sha256": "dbc7bcf443c8fa8694341ffa0f51708e00d4cea51894ca3fd12f5428c6505a33"
     },
     {
       "path": "pets/assistant-004/creation-prompt.md",
-      "bytes": 3574,
-      "sha256": "2ac7a3b0fa13fbaeaf3eaa24ee664bc3098e8f39ed2283668d529cc72553b83e"
+      "bytes": 3995,
+      "sha256": "d5c150f32ea13b619fd99e4496634219e8e9851f58cb5c98aa48106b8d30436e"
+    },
+    {
+      "path": "pets/assistant-004/hd/animation.json",
+      "bytes": 2341,
+      "sha256": "30ab3d194a166d659d9c5719afa8e8433af5ed60e51ceeb6050017e91c575351"
+    },
+    {
+      "path": "pets/assistant-004/hd/failed.webp",
+      "bytes": 1296602,
+      "sha256": "0adc355227824701e9ba5abab3333d4e72413bafd662c7e2639509419f99cb19"
+    },
+    {
+      "path": "pets/assistant-004/hd/idle.webp",
+      "bytes": 960690,
+      "sha256": "cb4b1cb46f8d191d49dfc990106e948673c9934fc936aaeebc1bfd4234a8cc30"
+    },
+    {
+      "path": "pets/assistant-004/hd/jumping.webp",
+      "bytes": 784206,
+      "sha256": "7e26dc89fe7983ae62a57605d9b8ae52c7bea0b1748360e66db36008c0dacefa"
+    },
+    {
+      "path": "pets/assistant-004/hd/look.webp",
+      "bytes": 2661742,
+      "sha256": "246278b184ffadf31b47af8566d5ba860643f22336ddd0abfb7f8cfa4d5b1b6f"
+    },
+    {
+      "path": "pets/assistant-004/hd/review.webp",
+      "bytes": 983352,
+      "sha256": "06e471ec1e958faa54275e4d076e57d05afc00eef0c0faeac9a6ef2374f930bc"
+    },
+    {
+      "path": "pets/assistant-004/hd/running-left.webp",
+      "bytes": 1202526,
+      "sha256": "65fb6d9df049b95c52f279f9446406d47dbb039a224cb79b8dead8ce43dce5db"
+    },
+    {
+      "path": "pets/assistant-004/hd/running-right.webp",
+      "bytes": 1202592,
+      "sha256": "72dc4afb024a9600a4a27248c0e1a06fdb0ec72af850af9af933f79a87e71710"
+    },
+    {
+      "path": "pets/assistant-004/hd/running.webp",
+      "bytes": 988368,
+      "sha256": "3929fda721bfd9a6617474b658a1a38b493e5b2c9924d0600387404cc79eb5ca"
+    },
+    {
+      "path": "pets/assistant-004/hd/tray.png",
+      "bytes": 9414,
+      "sha256": "9594519e11c90afa2c5816254345cabe69839bf8cf394bd394d112b8a8fa1c25"
+    },
+    {
+      "path": "pets/assistant-004/hd/waiting.webp",
+      "bytes": 957128,
+      "sha256": "98daadf9cb06c16e0ae0ddbe0f339a9a64456b34402775286bebdb1c0cc575dd"
+    },
+    {
+      "path": "pets/assistant-004/hd/waving.webp",
+      "bytes": 641216,
+      "sha256": "2e00976c4939888efa9046972d62cddeeca600ecc8bbb279b5fef188a066d67b"
     },
     {
       "path": "pets/assistant-004/pet.json",
-      "bytes": 293,
-      "sha256": "a7c1b5b7e0516b0883a27a671cc22e674f91af0d23f755d3dec5b47f6d987328"
+      "bytes": 321,
+      "sha256": "5f9b7b34176076df502a4409c366ce5e44947fc1638d6a6d1bc49f58d4532310"
+    },
+    {
+      "path": "pets/assistant-004/source/frames.json",
+      "bytes": 10556,
+      "sha256": "68c02f0db28c049fb55a8837f09c3e8868f20b0b57fece745f6a750faea9ec9f"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/failed-00.png",
+      "bytes": 1597089,
+      "sha256": "58103718e8fda5207daf673d31991667579996d94c511c7af4b5ddef59424c6a"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/failed-00.prompt.json",
+      "bytes": 2487,
+      "sha256": "99fae76575c55873d92b88bf70295680771ea28b674c9fec67ba8d8eebe110ac"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/failed-02.png",
+      "bytes": 1614468,
+      "sha256": "ddc3724f0776d87ba2f704cb9e968334d1c3dd23bd224b74dc8eae47fbb2f58f"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/failed-02.prompt.json",
+      "bytes": 2533,
+      "sha256": "016505080faf88eaf1c4060d9d306595a06fe3a38ad7b6d3bd7d1bd4acaa7832"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/failed-04.png",
+      "bytes": 1587230,
+      "sha256": "883be897b577d9b2f4e5efa7b60a667dd8d5ad2e329ffa590ab501281a2124ec"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/failed-04.prompt.json",
+      "bytes": 2536,
+      "sha256": "2a795ec24e999711eed60e4f1f02a0c3c14baf4b839c73d2f5d58a4fdd7348cb"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/failed-06.png",
+      "bytes": 1611859,
+      "sha256": "3d6f0b0876ea45d98fc67b4d41c8657b808db889803c6c864a57da4c513f4c08"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/failed-06.prompt.json",
+      "bytes": 2538,
+      "sha256": "fafd46ca38ff76131ad1e15a96e6591b1146d2eebb1c07d8afc9c169e76f4964"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/idle-00.png",
+      "bytes": 1574151,
+      "sha256": "22115fd936c468b8dd88c46d681bffe740683d2654813c3e18500c9f3376d147"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/idle-00.prompt.json",
+      "bytes": 2422,
+      "sha256": "933ba444b7cd1db90d0816795e58c8e04130ca0b07b67afae511930add9c8871"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/idle-02.png",
+      "bytes": 1617416,
+      "sha256": "bf67fc6b39ea8571439cddd7850081d33d954cd82dc551e0aa427258095ed961"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/idle-02.prompt.json",
+      "bytes": 2417,
+      "sha256": "59f4a6e34feaf8d07ba40e6ea9602c38a654eeb90112f60ae9116737707ac351"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/idle-04.png",
+      "bytes": 1592081,
+      "sha256": "77e538ebe6115be2fbd28ee221a431fea0604d490d6d270ab07b192d82563a08"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/idle-04.prompt.json",
+      "bytes": 2474,
+      "sha256": "74a0c3168e65297582732a502124031c7188b212f667d67cd61895d098f75a86"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/jumping-00.png",
+      "bytes": 1607095,
+      "sha256": "a9324006cc109942ce498b01c7ad9afb59949e089e5d2414e0e3f7944e3ba782"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/jumping-00.prompt.json",
+      "bytes": 2528,
+      "sha256": "26c49056f05b5e50225b39ce465453f069f3cc775a177569e49643ebb09a5bd4"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/jumping-02.png",
+      "bytes": 1644911,
+      "sha256": "d4638f184ff81102f48b1e7d7aa4e2b6dbc402984c8d1840daacf7426381f562"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/jumping-02.prompt.json",
+      "bytes": 3009,
+      "sha256": "5c24c07827ca62462a724b33bed08e914a7d5881e2c5b5b04afa09d0e599903c"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/jumping-04.png",
+      "bytes": 1611266,
+      "sha256": "f6e85aaae5385443f81fa36b0165c2dd947db0332d5206dfa1ca32506c3d8e3d"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/jumping-04.prompt.json",
+      "bytes": 2483,
+      "sha256": "f2aeed90128b961beb1229f49f8f02290ff4a9068737e2fb6104a7d52083e934"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/look-00.png",
+      "bytes": 1607305,
+      "sha256": "3a48e4279328da9540bb683ce942afa2e6c671b742b4cea962bfc7ec165b1a4e"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/look-00.prompt.json",
+      "bytes": 2417,
+      "sha256": "9e533fa7a56052f8ff930348ce636a12564b4445dacd3bcfb4b44e8d6847a170"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/look-02.png",
+      "bytes": 1621438,
+      "sha256": "c975c5d9e3006d0997d37d4de98604e133fee06494c6d4b595d2da78864be5de"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/look-02.prompt.json",
+      "bytes": 2439,
+      "sha256": "f38d959358d509a70ed0d12bd19e6118471d4a7c949077b18bfe9548cc530605"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/look-04.png",
+      "bytes": 1633694,
+      "sha256": "fbdfdecb136c7320a021e2824e8269102c8d3d43a4c760dcbe619d2a27587256"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/look-04.prompt.json",
+      "bytes": 2454,
+      "sha256": "1046a0784378cc050f5463fe189bff0939a02f3ac95bd9b5a6b3cbd55dcbdf7d"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/look-06.png",
+      "bytes": 1631279,
+      "sha256": "28b10b87cbe7fc341193ec42135cac25ebdf36fb8f5cc6986cb338c87d2ba4fa"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/look-06.prompt.json",
+      "bytes": 2857,
+      "sha256": "dd891e6c94ba2b141532359a8c2f9c936734cc2a594dd31b86c2b4774dcc8aac"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/look-08.png",
+      "bytes": 1632846,
+      "sha256": "e34b6342965a00dda5cf88070554af0a5fd072c1f472c26fb43fcda3727c10f4"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/look-08.prompt.json",
+      "bytes": 2440,
+      "sha256": "88f09ca2935b704b5622f59fa193b6767e2e4d7c7991018cd1a434096e19b183"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/look-10.png",
+      "bytes": 1635904,
+      "sha256": "50768c2f4fcb2c5ad03b1bfef1cf351911f2f16641936d0448dc48b2ed92a471"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/look-10.prompt.json",
+      "bytes": 2445,
+      "sha256": "95ce608af847eb4a5335958aaa56db3054123548634be5862b454e4d4e3c57bb"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/look-12.png",
+      "bytes": 1621475,
+      "sha256": "876dc848dda2bfcd3572601345a50ef8ba04e09f54ffb1d9de89ee395d5bf256"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/look-12.prompt.json",
+      "bytes": 2452,
+      "sha256": "4fc654bc97ecc6db80cadce87f4944642c41dace1582bcfbe9b7514a9f0541ad"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/look-14.png",
+      "bytes": 1624310,
+      "sha256": "33f4330f0ed355c3dc400793ee3c67144b1addc79b1902260c7f820d81782a4b"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/look-14.prompt.json",
+      "bytes": 2440,
+      "sha256": "4ea80eba7248cc3a7d74d2cb4c358afd5d567c71e89f8b36172ca9f48336aeb9"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/review-00.png",
+      "bytes": 1606970,
+      "sha256": "e888dc1872d86c6741ced38e438653b6df5230af48b911c3cca4b7f438971602"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/review-00.prompt.json",
+      "bytes": 2551,
+      "sha256": "a9df548a69e82cef3cb53189f95ad9bffac7de9f8a73cb82cdd75bf0664d1537"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/review-02.png",
+      "bytes": 1610093,
+      "sha256": "1fd9371ca552cfc69fe75593c56e177fb7c8235a38ed98f2a736c4117fc7499c"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/review-02.prompt.json",
+      "bytes": 2557,
+      "sha256": "ac40911df0acbece00cccbec3aa37d6b7f5781b925cd3e792396db0e2d080cbe"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/review-04.png",
+      "bytes": 1615319,
+      "sha256": "24eb33e5ff1641158a83e248a40976b85c5072297b3d146de4740924735fa8cb"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/review-04.prompt.json",
+      "bytes": 2559,
+      "sha256": "81536c67e7972c163a58fcb00903ca3459d7d1704feea2671be1d457d9008d91"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/running-00.png",
+      "bytes": 1608773,
+      "sha256": "93a8d5eb83077bca1a0c4af47bc25ee5fb88f418a50c9f83332a8136b557f1b1"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/running-00.prompt.json",
+      "bytes": 2640,
+      "sha256": "4eb52b919864f1473c3ee0b896a80694eab88c472bded6868d04ce0ea1182f34"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/running-02.png",
+      "bytes": 1617296,
+      "sha256": "cc3564f2c3ca564aa7d49bd032da1ccd1092bf87b07f94beb0ed6087c6ad786e"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/running-02.prompt.json",
+      "bytes": 2575,
+      "sha256": "68856f5394c5dfe65a72b9eb30e879218a1b45ff707b9c2a8f06330fc175754c"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/running-04.png",
+      "bytes": 1618033,
+      "sha256": "6c3445a231a2cda9fb146702955cbec5f687c4b3b2d25934514570788a9322e3"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/running-04.prompt.json",
+      "bytes": 2578,
+      "sha256": "be446452ab3053d2f1591056728c06a28fbf237b6e0303cb33af9ae9d334be4e"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/running-right-00.png",
+      "bytes": 1575591,
+      "sha256": "be402c3da45160d2d1130ebc7b2b88501eb70ead7f7c2b43eae0809d5ffa8cf4"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/running-right-00.prompt.json",
+      "bytes": 2511,
+      "sha256": "b2aafc0b11d42b2ecc870b44664cd146ad5ab1d1f9c102f6c00bd74b9722a736"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/running-right-02.png",
+      "bytes": 1582760,
+      "sha256": "bc1ba566b5dd9fbc92133e6cd7cda93b5d5ff5de5313ed03e1f57c9b7c541275"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/running-right-02.prompt.json",
+      "bytes": 3316,
+      "sha256": "71ab7957daad9df52fb11bf2c8c12e3e775be39653ccb87a15cdfc664dfb9e67"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/running-right-04.png",
+      "bytes": 1618495,
+      "sha256": "2e3a798c980d09df279bd5916cd488867111517cd5c53189f56f4b10d251bbf2"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/running-right-04.prompt.json",
+      "bytes": 2495,
+      "sha256": "0a263b99413f43524f3efb41a740491f68d2f01ec393a28344258cd26de940ce"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/running-right-06.png",
+      "bytes": 1565923,
+      "sha256": "57a16b5c0a82bf20f0ce3892eecd79d91117e834f9eaae882bf3ff4e8d5e757a"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/running-right-06.prompt.json",
+      "bytes": 3866,
+      "sha256": "fc414b544308243a45dbf7a1775b309515b056e57866dbce52a70961349656c6"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/waiting-00.png",
+      "bytes": 1596566,
+      "sha256": "bb1d976f12d282de0218728d8fabbd95536b18b8a8e0c86ebaf1889eedf3ef5e"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/waiting-00.prompt.json",
+      "bytes": 2497,
+      "sha256": "834e5b79b68a655de1b907755068e6aebb13151686eac5e5c0d1f64b82a49349"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/waiting-02.png",
+      "bytes": 1605319,
+      "sha256": "3e785d0fac53c1ba5cd500addf336ad8487ca3075a328323bcb2eed39238ce9e"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/waiting-02.prompt.json",
+      "bytes": 2510,
+      "sha256": "299f469d455d687bb0922094c22bc3c2d686945b25d3cac10c5845de6ccc1f92"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/waiting-04.png",
+      "bytes": 1596353,
+      "sha256": "d38fa0b26b934632ae73a91b12f8eed8064d2a4e12e9f0ba1537750f0494ad3d"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/waiting-04.prompt.json",
+      "bytes": 2693,
+      "sha256": "ac27a2617a3c2d51946635e6c5b6da29a347a1dce2953c2be184c2dc66c6fc5e"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/waving-00.png",
+      "bytes": 1605363,
+      "sha256": "af9711b8bc86329c66e0603bc0e0160456b2c5d232325d70592f019317a148aa"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/waving-00.prompt.json",
+      "bytes": 2458,
+      "sha256": "d78fd2f68f319187d7002c5b0e0c5cf5bf7eb941ee1b28260cb4a0c855f74bb5"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/waving-02.png",
+      "bytes": 1600825,
+      "sha256": "c1c1e1f61cb13f12888828fe77f1cacb07512dc76351f5373f3747d2843cdb16"
+    },
+    {
+      "path": "pets/assistant-004/source/pairs/waving-02.prompt.json",
+      "bytes": 2539,
+      "sha256": "b475088c886beb12194088ceec9be1272577be54c5370b3e897deb4a6334c4d1"
     },
     {
       "path": "pets/assistant-004/spritesheet.webp",
-      "bytes": 1875274,
-      "sha256": "9a3423b50e82b8a317c02ea06be801f208dd87f730717ef1f16416e73db3cfcd"
+      "bytes": 1193744,
+      "sha256": "45fae7c5b8d44d22c9c1100b10de0d1761c096f1c153ebb7836a16bb93d1e481"
     },
     {
       "path": "pets/cirno-009/README.md",
-      "bytes": 1488,
-      "sha256": "2e18c7378b8411ba095171716ffdd102e91a03fc6011af566bc955f96422fe95"
+      "bytes": 2655,
+      "sha256": "3742a5c86ce3398cb8f732dc332048b8bfe0b794e151ad3a26871295bd2b3ab1"
     },
     {
       "path": "pets/cirno-009/assets/contact-sheet.png",
-      "bytes": 533690,
-      "sha256": "e59abe3b8c5bb2131755924484d6f7da52fb77bfbb2e54d75ae71009adcda8b7"
+      "bytes": 1258778,
+      "sha256": "065e58ec80bf277884bea3c59d3450a9a8663f326555ada7f29bee20ea4ee558"
     },
     {
       "path": "pets/cirno-009/assets/previews/failed.gif",
-      "bytes": 108524,
-      "sha256": "7b801909601e42803fcb6f41e68142bd209bd503108cde76b2fb89820f475e75"
+      "bytes": 77026,
+      "sha256": "fb9dd3f025fed3fc1ba6cafeac72b9d5f2ef3de230773e97af6856212c3dcb07"
     },
     {
       "path": "pets/cirno-009/assets/previews/idle.gif",
-      "bytes": 54921,
-      "sha256": "0d48725900f78e05869fce873cecc75d996701adcbd6d813e25dfee9cdee1fef"
+      "bytes": 57761,
+      "sha256": "fb2336a625a5c46845703cc9f9921da0027b4905780dc177e6b01d7fb4a8be96"
     },
     {
       "path": "pets/cirno-009/assets/previews/jumping.gif",
-      "bytes": 68162,
-      "sha256": "c340ddfc7b38ea9d6b7627f6b4bc12951dfbaff51671091363c42c28b7dada2c"
+      "bytes": 45194,
+      "sha256": "1d47fa1081ce05a1f0c99822cbbd80e5b77f9052b1fda89df8041c8711d49c96"
+    },
+    {
+      "path": "pets/cirno-009/assets/previews/look.gif",
+      "bytes": 150756,
+      "sha256": "c4cd0b5b31e93ff063e708fff6fa2abe041560bb702a194759b5ed859006f30b"
     },
     {
       "path": "pets/cirno-009/assets/previews/review.gif",
-      "bytes": 82815,
-      "sha256": "46ed6e6bbd5fbfed562a93047362a6b1aa26748fe28fbdcc515ce96f99742efd"
+      "bytes": 57112,
+      "sha256": "ee2549a620746497f16c18b41b884c39e967717a4c409a2cb76fbc231c41ba13"
     },
     {
       "path": "pets/cirno-009/assets/previews/running-left.gif",
-      "bytes": 114307,
-      "sha256": "b287f74363447483bf45f6ae503df6b87296d06ae82ee93abaddabe5e8d62f33"
+      "bytes": 64406,
+      "sha256": "17f34252014e5033d70e98fbc1750d55c4fef060d46c57a30567dd051234fb82"
     },
     {
       "path": "pets/cirno-009/assets/previews/running-right.gif",
-      "bytes": 114373,
-      "sha256": "5d1535a5e58b6e1d5de5aba3f99033d37117090b5f1162240fb9d82c03228e7b"
+      "bytes": 64499,
+      "sha256": "6c86b3bf25263e75d671e7d48f74371c4933f0db2c1032bf3c3882aa35ae86ff"
     },
     {
       "path": "pets/cirno-009/assets/previews/running.gif",
-      "bytes": 86972,
-      "sha256": "0eef0437a69a75e3cc0e3cacf26bbba38223ac607df4370beda55a5acf50e9a5"
+      "bytes": 58223,
+      "sha256": "3327376af87c1fdc188cffc8f97442cfb84b56a5351d48630d2da0944f621abf"
     },
     {
       "path": "pets/cirno-009/assets/previews/waiting.gif",
-      "bytes": 83073,
-      "sha256": "d49b3e3f23fd6414eeef85fbb30c495a734e873606a66bbbbc20b2bf7c76ffd0"
+      "bytes": 56469,
+      "sha256": "626c93d61ce2172c0a008faf7d2256fc02329a995016dbf73dacdf2afbf5eac4"
     },
     {
       "path": "pets/cirno-009/assets/previews/waving.gif",
-      "bytes": 55208,
-      "sha256": "7e669c182fd6c4ef0b02723a65199e6518ee12acf0e8d720742ec91315d436ec"
+      "bytes": 38445,
+      "sha256": "b54d2dc38de46cc7fd8ffc3c4d40fcc3d65d5b11b012f5066396aa1734b71e9a"
     },
     {
       "path": "pets/cirno-009/assets/review.json",
-      "bytes": 16897,
-      "sha256": "15a2332c0307ff5b283664aa96c826fdfdd8324212223524999de27a07b2006d"
+      "bytes": 1068,
+      "sha256": "9486085888b0a4435e96f021b9f4d5090f0258b1d330fb995fae968c65216fb6"
     },
     {
       "path": "pets/cirno-009/assets/run-summary.json",
-      "bytes": 626,
-      "sha256": "314f2b8bdfc1bd6769fe1d8b2a7b866c524f1f42a4cac18f30e497f5ab480385"
+      "bytes": 360,
+      "sha256": "e41cb2b7eea6a79d68c58b5118c4ac8932193ffbd91cff5345768349c8702d13"
     },
     {
       "path": "pets/cirno-009/assets/validation.json",
-      "bytes": 14165,
-      "sha256": "c09b03b00097a9256e5746f1293d09edef172f86bba8f63e679f51eb44e78ac1"
+      "bytes": 6702,
+      "sha256": "ec0d3b32929c505e822fd915d5f2e4a2233957f1f78958ad1d998f2fb9ade598"
+    },
+    {
+      "path": "pets/cirno-009/compat/v1/pet.json",
+      "bytes": 278,
+      "sha256": "b40075cb4326131642767450b75cdaad9cf8153c0ad83c2f98498b9ba68079ca"
+    },
+    {
+      "path": "pets/cirno-009/compat/v1/spritesheet.webp",
+      "bytes": 1043062,
+      "sha256": "218248f782289e8bbb136c5f5a76fcab711815ab99c130e067aacefa54dc74a3"
     },
     {
       "path": "pets/cirno-009/creation-prompt.md",
-      "bytes": 866,
-      "sha256": "56e8fa5fa2c1c46daa35c4e69351d2a20a7870d39624862bd06cc3325efadf15"
+      "bytes": 1288,
+      "sha256": "48dd82ceb8905aabc96451ee9527e77762b6542d5ba81c0e0ff721c23b6419e9"
+    },
+    {
+      "path": "pets/cirno-009/hd/animation.json",
+      "bytes": 2377,
+      "sha256": "838e8052ca39f78fb641c419361adebebe19d7885bc827fa0dd8d699878c9689"
+    },
+    {
+      "path": "pets/cirno-009/hd/failed.webp",
+      "bytes": 1442854,
+      "sha256": "16df952ecc228bb3ed09bd0a58a4a96762e4aae76adb91c80522de90f95c1ef6"
+    },
+    {
+      "path": "pets/cirno-009/hd/idle.webp",
+      "bytes": 1089228,
+      "sha256": "ba0b01359d0eb597bc5e3c68cd0e6be3eda3ea5bbf5886cf7c6c226661e2f829"
+    },
+    {
+      "path": "pets/cirno-009/hd/jumping.webp",
+      "bytes": 889306,
+      "sha256": "83dcf68ddc65207e980b1c2cbd459b9a1750b0008f013b67b6ea12e0130d1549"
+    },
+    {
+      "path": "pets/cirno-009/hd/look.webp",
+      "bytes": 2840242,
+      "sha256": "133502b909cdc099115a2b9262fedb35712a3202b5b9142a84b6d4b040e0873f"
+    },
+    {
+      "path": "pets/cirno-009/hd/review.webp",
+      "bytes": 1076610,
+      "sha256": "1f4ca8b04d6febcaac0f3df6198b8c1cfcd4ce82f40c57f56e2851301aa673e5"
+    },
+    {
+      "path": "pets/cirno-009/hd/running-left.webp",
+      "bytes": 1145496,
+      "sha256": "e091e9576a39fd8807af27ce220c0b2bce071c5b8e9bc87d81a7d2a483933778"
+    },
+    {
+      "path": "pets/cirno-009/hd/running-right.webp",
+      "bytes": 1144542,
+      "sha256": "8f7cd54b705e2563b2c8d851a22c78d3c02c8ab9a5f6bc3fd96d78299f9c0e30"
+    },
+    {
+      "path": "pets/cirno-009/hd/running.webp",
+      "bytes": 1110348,
+      "sha256": "9d24856baea37299518bcd04f4cce7e5d8e12df59d9e2708d20a1c559cc20e13"
+    },
+    {
+      "path": "pets/cirno-009/hd/tray.png",
+      "bytes": 11015,
+      "sha256": "96fa8a1ed79416c65268e5d4c71aeb97ab7b5734703c21a56a682c0073fd4632"
+    },
+    {
+      "path": "pets/cirno-009/hd/waiting.webp",
+      "bytes": 1065538,
+      "sha256": "1a2d92d9b97eb6c0af0656fc18d68447d0ea16a111d28f348e89233bca1491dd"
+    },
+    {
+      "path": "pets/cirno-009/hd/waving.webp",
+      "bytes": 705004,
+      "sha256": "bfae0e842de7c03d40f37fcb18205680a5d749334bfa8d3f34d6dde6a989893c"
     },
     {
       "path": "pets/cirno-009/pet.json",
-      "bytes": 250,
-      "sha256": "81eb63a555bf6f782413867ea2e64b71a078e4327eed905c7219bf5c0517f8bc"
+      "bytes": 278,
+      "sha256": "15771d822e728b101d121fe5ec35a583df6ff42f7cdc69d772094b090233d028"
+    },
+    {
+      "path": "pets/cirno-009/source/frames.json",
+      "bytes": 10285,
+      "sha256": "b946b82e1c3ed3bfae7117747fc0b7c3a656544ff4c36b8caecf0019b103d7bf"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/failed-00.png",
+      "bytes": 1679519,
+      "sha256": "20da4bd09f68dff1c159a82727befc545362e0bcde27b4eb2866253a7f4e9d50"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/failed-00.prompt.json",
+      "bytes": 2405,
+      "sha256": "5d16f96898ed65cabb7f8d07628cb51857411f676518f9925a29ec651a8353fb"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/failed-02.png",
+      "bytes": 1619446,
+      "sha256": "91a8e16ad06d322c1c019f9c350d25ea105a47762b026c11c8f39aaed6666823"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/failed-02.prompt.json",
+      "bytes": 2447,
+      "sha256": "900f3c10c6c605561f5982295ad2b1a2ca46f584636131af7da604ba8e16ead9"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/failed-04.png",
+      "bytes": 1626771,
+      "sha256": "bcaad80bb46e72e50ba70ed2ede2f3fb19c8d94989675021a6d44a4e7a1e2e59"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/failed-04.prompt.json",
+      "bytes": 2450,
+      "sha256": "325ff1730b26c133de8ff180ed817907a351e522ef8f0638b14e9169299e3cbb"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/failed-06.png",
+      "bytes": 1634737,
+      "sha256": "aeb85df3d0dd3484742162d9c326b6146ddbd5a5d307961540f2e4d865759c06"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/failed-06.prompt.json",
+      "bytes": 2452,
+      "sha256": "d00aa3d040b6a1934e222f58903bd9a00637021c939563717b9070cff581b83f"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/idle-00.png",
+      "bytes": 1632249,
+      "sha256": "004a50c27bb99ce59c453061bfdbf844c79f60da09c28026742a05fbaa991ab8"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/idle-00.prompt.json",
+      "bytes": 2411,
+      "sha256": "491698ac3e812f0f3c342e5eb4e59c07958c40370e6a96535c36b0fb35ffe268"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/idle-02.png",
+      "bytes": 1669768,
+      "sha256": "c0b5e61be134d0a9721f6ecbf50469e7056296eaa4c282a8bfe3c5dbb01b50ac"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/idle-02.prompt.json",
+      "bytes": 2406,
+      "sha256": "039e5f17c89efd2279d58263688211ebd0b0114b0c1d11af1cfad0aa449e0fb9"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/idle-04.png",
+      "bytes": 1640790,
+      "sha256": "0e105d6939ff1ebd42be9fa317a2ab50299e0b8f6254a20cfe99fbf378993331"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/idle-04.prompt.json",
+      "bytes": 2459,
+      "sha256": "121b18b2bb0cdcc83859eed0f8dca00809cf02b12504c36141f86e2e23bab497"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/jumping-00.png",
+      "bytes": 1644967,
+      "sha256": "0cb8b819d451f78fdee63ad305d57c9cdc9efabbff834068333ced76b4a286cc"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/jumping-00.prompt.json",
+      "bytes": 2517,
+      "sha256": "452c369d0b991dc7ec7f2a21c743458388b01ba1ec6dedb3fc555a9dd53ebd15"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/jumping-02.png",
+      "bytes": 1657942,
+      "sha256": "dca6fec52ea0410a2df06e13e40dd3221a60bb88c14ee10845ce6e8861334821"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/jumping-02.prompt.json",
+      "bytes": 2581,
+      "sha256": "81db36b57d840c0822a5f151dbef9e620f3ec2be91e7dbb37b6db2bdd9ec68e7"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/jumping-04.png",
+      "bytes": 1683950,
+      "sha256": "ae608ff553c4674833963e3c1db9da0f82960351bc949d0992805a547d7bc759"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/jumping-04.prompt.json",
+      "bytes": 2468,
+      "sha256": "dd04fdd0ef768562744fbeb17b21a5fbdc40c116f765ffbf98fcd37866d78910"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/look-00.png",
+      "bytes": 1666449,
+      "sha256": "88a0a492e888e12ce8eb1fecb82838b381559361175ad0d0aadfe81d65b6cbc3"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/look-00.prompt.json",
+      "bytes": 2404,
+      "sha256": "d4ab02c675b059e1ff3d66db0b82e92bf9939c34098979065a03b3770565ab4c"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/look-02.png",
+      "bytes": 1638083,
+      "sha256": "aca4ad5fc3272337164da2f413d041e0d5ce893a4a733df927814ccc86735555"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/look-02.prompt.json",
+      "bytes": 2422,
+      "sha256": "368680d184d947600cedf2739b93d4c56241878cc99ead317604f2f174e2df7d"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/look-04.png",
+      "bytes": 1601752,
+      "sha256": "aaa3a40672602694fe1df975a510a87977c23ef7928904a180513c60b41c4ded"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/look-04.prompt.json",
+      "bytes": 2437,
+      "sha256": "6ed4f2cbec17a2adab4e0a2427235cb35950087f10a9bc072a752a4c7f3ed8bb"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/look-06.png",
+      "bytes": 1620957,
+      "sha256": "2a985a40c1b5152167c503555847e7eafeb22c2554898d69c612cb70565dec3b"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/look-06.prompt.json",
+      "bytes": 2429,
+      "sha256": "14527e4cea8a1593417d3fd8816baaabbdca787d75c39c0ad608e1fbfe8f578c"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/look-08.png",
+      "bytes": 1690749,
+      "sha256": "93a16f006b2139c25537e438cf8ca9954b2ed79702db9286a72538d50617a200"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/look-08.prompt.json",
+      "bytes": 2649,
+      "sha256": "1b9774b216c64cfd5c86e2c5959186ede89babff33963403f788258c8532421e"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/look-10.png",
+      "bytes": 1613797,
+      "sha256": "4a67a9d75bc15f64f2b084e75a5b17f091913ba2f162998620833abc77e2f271"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/look-10.prompt.json",
+      "bytes": 2428,
+      "sha256": "35595aee9542b1ee6bbfff632c9c28aeaf97724ad3629922fd886f157f1cc743"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/look-12.png",
+      "bytes": 1616284,
+      "sha256": "bf6e3038dce5db09e6a46ce54534f4e120e36962b94ca22050cf0c63e98d024d"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/look-12.prompt.json",
+      "bytes": 2435,
+      "sha256": "5574900a022f8e592e7a20b51951f2d03c1eee799f4e97c23a10c7c15e7b1f40"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/look-14.png",
+      "bytes": 1659854,
+      "sha256": "0e2d5571909be84c3844978ef7fe77d58949a5be996b92a8d094089516a3bbab"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/look-14.prompt.json",
+      "bytes": 2423,
+      "sha256": "3269fdd3585639d49a3bd85695046a0e46403c64d9bd1306f0ac0823ee252c35"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/review-00.png",
+      "bytes": 1653812,
+      "sha256": "163dd0520dfae7a97b8baa09fb0234507dd07706a199cbd2afe09ccec69364b9"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/review-00.prompt.json",
+      "bytes": 2469,
+      "sha256": "2c818e06739e0b0fd09adc33e3398c52595b9db0e102438cbbadfa776895c524"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/review-02.png",
+      "bytes": 1622828,
+      "sha256": "74a50e98f7f8114618a1ee3b6577c1c47f70d8dad1543724c99fa158c5ee3720"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/review-02.prompt.json",
+      "bytes": 2471,
+      "sha256": "15a50daa2b7c70ec3fa46b1cebdc5e6d8b9b84b0960dfdc430fcc2725560463c"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/review-04.png",
+      "bytes": 1628921,
+      "sha256": "0df04a4f89f73f30fafe38b329ed8086e1891fac487d88c03cdcca913012208d"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/review-04.prompt.json",
+      "bytes": 2473,
+      "sha256": "27e0848e142700e19321b00414d30454b05d576909c7b1f8ca7fc6a54dbc0328"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/running-00.png",
+      "bytes": 1653706,
+      "sha256": "526c39e413dbe221fa83ae72998443b64785a853ed718e16d82d2373538508b8"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/running-00.prompt.json",
+      "bytes": 2558,
+      "sha256": "e3678e26973e09c73502a14756452805ca4289d2960eb503debfc62a31961b8a"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/running-02.png",
+      "bytes": 1685076,
+      "sha256": "e64f64a65f9cb1352c2c5f952ceadd290ae0bbe3c2f5d287d4389dc0fdde27b6"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/running-02.prompt.json",
+      "bytes": 2489,
+      "sha256": "fb1f0ce0e903cf5a45184ee9499a650ea3bf85f80eb6832e381be92f7d862ed4"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/running-04.png",
+      "bytes": 1695960,
+      "sha256": "7002fedfb11a61c3ecdb46b58372717249dedd8f1bb01e79b3d58ce03e00e8f8"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/running-04.prompt.json",
+      "bytes": 2492,
+      "sha256": "073065593c3351a99ce89071ee3c7a2d83a8c3d909e68542f9b636239e051246"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/running-right-00.png",
+      "bytes": 1479760,
+      "sha256": "e774dd5eaadcb56e75f1b187b7ebd64c3fc0c77a0880d2cc18d21852ef510d3a"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/running-right-00.prompt.json",
+      "bytes": 2723,
+      "sha256": "2a5a574cf8a9ef76de3eba42d4b80fbe439f01a6c3a56f31da94cba88f979bbf"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/running-right-02.png",
+      "bytes": 1511228,
+      "sha256": "34bf982e9a9239004a4302c970faace922f234628d4233bcb16bcf2a9d815e3d"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/running-right-02.prompt.json",
+      "bytes": 3196,
+      "sha256": "0b282fc61c5d17f2416460b13f1b98ee2f7e8fc8603e625f7c44543c5a696ce9"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/running-right-04.png",
+      "bytes": 1493517,
+      "sha256": "9a994798a364d85f19f560e1a152feacfe4e674807cebc7d4a37e92d0e3b9a50"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/running-right-04.prompt.json",
+      "bytes": 2656,
+      "sha256": "b660e1353b83ec1856fc681f2eece7a6f4f392431f29873737fcff4fbda8eefa"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/running-right-06.png",
+      "bytes": 1516746,
+      "sha256": "d0d066f3a57b31b751145529d4b66d254501bf5fe3b0efeb239fc64f75a4250b"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/running-right-06.prompt.json",
+      "bytes": 3073,
+      "sha256": "cd1cd3f3dc77bf50b8545dc81b669d64c4e78852af7169722a48447236200597"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/waiting-00.png",
+      "bytes": 1635419,
+      "sha256": "5cd80d6fec27ef2a74c4362317d9e9fd477e8664132eb0c6575e2cbc3c8cffa4"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/waiting-00.prompt.json",
+      "bytes": 2878,
+      "sha256": "211db7c806623dac9d156b8b5ffbcf899207650a9c2e6053f54a90380aa5331b"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/waiting-02.png",
+      "bytes": 1630287,
+      "sha256": "336a5df38b4fe601d8844fcb9adf09f5d9225342e2a7f4906762e1795f8af292"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/waiting-02.prompt.json",
+      "bytes": 2424,
+      "sha256": "63f029931e90a0febfb1f596897bd382eac55b85d78987c6f1bdae83849aa28a"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/waiting-04.png",
+      "bytes": 1685045,
+      "sha256": "ba9d8b1fd5e14334859f979360fbe836aa5032b3f848f39012eec8f8d9a5ef8f"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/waiting-04.prompt.json",
+      "bytes": 2539,
+      "sha256": "88680402ddcbc718f83a350eba4d62f0f0a8e9cf1a7ec11591be128f0ae9f7b1"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/waving-00.png",
+      "bytes": 1634498,
+      "sha256": "d815c525474fa8c03860146e2c8b06fdf1642c794da6ff7cfae1e0aff8c2c757"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/waving-00.prompt.json",
+      "bytes": 2447,
+      "sha256": "63f174d9f3d5b6a19f679c1be105be96e86f4e00fd962d9e474cd8895025186f"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/waving-02.png",
+      "bytes": 1634635,
+      "sha256": "b7bc01a05ba13757275c55220e6bf45b72bcaa8ea7a0ed54864c0be59d73fd94"
+    },
+    {
+      "path": "pets/cirno-009/source/pairs/waving-02.prompt.json",
+      "bytes": 2524,
+      "sha256": "3533dad7e073de25fe5386931137eb1e15adc4eb8e8b6428bf07e4724f159236"
     },
     {
       "path": "pets/cirno-009/spritesheet.webp",
-      "bytes": 1809176,
-      "sha256": "911e021b186952d0d118d47e91dddcb1697f3a5f705afa0dd06771f605d45bc4"
+      "bytes": 1345358,
+      "sha256": "1dd1a94777b60941790c1042871c1c6b1b38ab3a80164ec6d71316d7efc1dd6e"
     },
     {
       "path": "pets/march-7th-001/README.md",
-      "bytes": 1465,
-      "sha256": "d3e9304390ddddf8527eb1eff25d2afd387f7aec18a2f80c70535b643f44b16b"
+      "bytes": 2630,
+      "sha256": "df6989c0ac2b423cfc76665387168cc18288f9faf1e27b79b2da0d476588016a"
     },
     {
       "path": "pets/march-7th-001/assets/contact-sheet.png",
-      "bytes": 434946,
-      "sha256": "708090067fdd08ae7f438641e3a320f89c591ef636884ff955f281dc889aefbb"
+      "bytes": 1093134,
+      "sha256": "4310119e2e61ae52e89a0c41ff6fe98c7b1a744b4d99b56e22a0f6b0e86bbd96"
     },
     {
       "path": "pets/march-7th-001/assets/previews/failed.gif",
-      "bytes": 95552,
-      "sha256": "589cb0b3dffe025252cd4d01cbae2a6e239b291b2c71b0bdafd3afdf31bcb672"
+      "bytes": 65988,
+      "sha256": "9b43614d2aa8ea4f9dc4a0f9059060f9d74ffe6f6eb4f5b21d569e22f93c5190"
     },
     {
       "path": "pets/march-7th-001/assets/previews/idle.gif",
-      "bytes": 50440,
-      "sha256": "4909a220fc30b255c37f88067aa5adaaa7cebc83207d24241e531dbf338b7839"
+      "bytes": 49459,
+      "sha256": "8b611c7543167bcdd99e2eb1943b13110fedb80a823fadaedb962321435a9f62"
     },
     {
       "path": "pets/march-7th-001/assets/previews/jumping.gif",
-      "bytes": 62135,
-      "sha256": "715b2e04aa52efc3d5f294e6f051019c5a951ac04dbad6919a199b137af6c119"
+      "bytes": 41640,
+      "sha256": "a25a02c0188fb390556383aa7fd5275f2adfe499cf4927c30c53341c6f7cb241"
+    },
+    {
+      "path": "pets/march-7th-001/assets/previews/look.gif",
+      "bytes": 132601,
+      "sha256": "f6f6671f04db626650918f5e2bc496ed57d865d48ffa2db59ac25330e2baeec8"
     },
     {
       "path": "pets/march-7th-001/assets/previews/review.gif",
-      "bytes": 76136,
-      "sha256": "a55988ef32d8d28c76974fb90bfb2972cf635943b3189652794c63c99354e0b0"
+      "bytes": 47882,
+      "sha256": "8399ebb660b610544b2c29ea9a437f1db08773b3818f6b863c645520ed5ba906"
     },
     {
       "path": "pets/march-7th-001/assets/previews/running-left.gif",
-      "bytes": 102488,
-      "sha256": "db9bd0370cc1a99e00654149dd782e1081f4e2705f3db6556e7028571b63db8d"
+      "bytes": 60498,
+      "sha256": "12a3540c9315395f4eadc48df334a26abf6deadcd430639aa799c39e259a76c8"
     },
     {
       "path": "pets/march-7th-001/assets/previews/running-right.gif",
-      "bytes": 102558,
-      "sha256": "b4a4a9748596e770679f5ddebc91ecd5beaebb80378783634b941f1bc8b9542a"
+      "bytes": 60448,
+      "sha256": "e6ae8defd5040aba68b64d2fa2dfe9e0379187291a34206dea314fa8e79597c0"
     },
     {
       "path": "pets/march-7th-001/assets/previews/running.gif",
-      "bytes": 77258,
-      "sha256": "8c05da6233b7a3f05e277d7a2deef58c3939046d103e6735bd663472bd80c229"
+      "bytes": 47389,
+      "sha256": "1462758b758c0d202db328f9881b0d5fb102ce5f0572d315a5d1862e96bf5225"
     },
     {
       "path": "pets/march-7th-001/assets/previews/waiting.gif",
-      "bytes": 75486,
-      "sha256": "6919a4a91e1e3e69bc41fc7303043c5eb4872fc622e2669923c72972888195ae"
+      "bytes": 47424,
+      "sha256": "27915e596f52b07aa0912fdd1c54c5f526355ea059dc8b82e92d553ced3dbc93"
     },
     {
       "path": "pets/march-7th-001/assets/previews/waving.gif",
-      "bytes": 50718,
-      "sha256": "81d862432dc50a65f0d7fd1f8ee9312d88f4e063af5b27e45125b2ca07cf8c0b"
+      "bytes": 32947,
+      "sha256": "18d12359a9312e788e35561420282d7fc28d4ac7486fda96de9af9d4a7024c01"
     },
     {
       "path": "pets/march-7th-001/assets/review.json",
-      "bytes": 16897,
-      "sha256": "9a9a8c591dfb92eb23996990843cb2f5cc0a0ea9c4d2499999c3b3aba3368613"
+      "bytes": 1072,
+      "sha256": "83ff1dce0cb204b864fd4264e56b10dc69babc8d4df1c51556115d8429d0f61e"
     },
     {
       "path": "pets/march-7th-001/assets/run-summary.json",
-      "bytes": 646,
-      "sha256": "c9360a3269ee11cfdf6ad6a0bf05de49224aaa27ae9f6dac2d20923d52b3bd3f"
+      "bytes": 368,
+      "sha256": "437954cda3da786000e292d73d789dc2b12c0c31631a9eb8ac2b0ae723812bc4"
     },
     {
       "path": "pets/march-7th-001/assets/validation.json",
-      "bytes": 14169,
-      "sha256": "e552e9f014717e72321adc85b34bf42f6d03fa2563ba2f574c7db8fa303e237a"
+      "bytes": 6647,
+      "sha256": "9caeea3faf8c84dc22bc15221cb323fe040295bbb3a5f3ed16ce3ad5a15d43ea"
+    },
+    {
+      "path": "pets/march-7th-001/compat/v1/pet.json",
+      "bytes": 267,
+      "sha256": "fb0e61253d72369f527a1dc7080f017df1ca9a36ad4e49550882920c1ab2a7cd"
+    },
+    {
+      "path": "pets/march-7th-001/compat/v1/spritesheet.webp",
+      "bytes": 915282,
+      "sha256": "6039612516b4c2cbaffb5aeb4b640722266c4162568f4c4d31aa33034b205a5c"
     },
     {
       "path": "pets/march-7th-001/creation-prompt.md",
-      "bytes": 824,
-      "sha256": "6e003487de6bcd6ad7ef573e4d25c3978e82d5989bc047b4579bb28221796a8a"
+      "bytes": 1246,
+      "sha256": "3c6ee9d1536c42224e7f5f0b0a3a6f3b286ec1378ff7055d79b6a6a3228e3463"
+    },
+    {
+      "path": "pets/march-7th-001/hd/animation.json",
+      "bytes": 2379,
+      "sha256": "3eff29b92c932d4bba5e758b165d6cacca1e2f9536065f83a62e56393eaa25fb"
+    },
+    {
+      "path": "pets/march-7th-001/hd/failed.webp",
+      "bytes": 1332244,
+      "sha256": "4b83d4512af60c8e492dbc2689a7858485ced1fd961d4b5ec3a1d50abfb09c0e"
+    },
+    {
+      "path": "pets/march-7th-001/hd/idle.webp",
+      "bytes": 996174,
+      "sha256": "ff20b1f93d7a6c1d797e1d243aa1d3ffec401f0bba17504f3c87b5263b91d34d"
+    },
+    {
+      "path": "pets/march-7th-001/hd/jumping.webp",
+      "bytes": 918246,
+      "sha256": "597073075a2e05c10d6172003c1ed08186051193ef8c9051f598ee84144a2b1c"
+    },
+    {
+      "path": "pets/march-7th-001/hd/look.webp",
+      "bytes": 2675182,
+      "sha256": "cbb20c0939d3fe0288d0ca26994d67925b13c7cc3a5f28f9f7a16a04860c30bc"
+    },
+    {
+      "path": "pets/march-7th-001/hd/review.webp",
+      "bytes": 967018,
+      "sha256": "cc201e7d6b06e5ea0eee5a402994e6e425c12e88c1e5bdecb377743bcdaedb56"
+    },
+    {
+      "path": "pets/march-7th-001/hd/running-left.webp",
+      "bytes": 1241910,
+      "sha256": "1c9f0e49c958f3a158d2614e7cfdabb26c0a1d79ba4b95e816e648239188c9ee"
+    },
+    {
+      "path": "pets/march-7th-001/hd/running-right.webp",
+      "bytes": 1239698,
+      "sha256": "4030e5c86bd0b310de63a4d11cbb8c26a9ac254b18cec9ac7497ecfd2211603e"
+    },
+    {
+      "path": "pets/march-7th-001/hd/running.webp",
+      "bytes": 951774,
+      "sha256": "4813b558a2308e2664d7997b2fde6750e50edaebac618dde185c675bfdae960b"
+    },
+    {
+      "path": "pets/march-7th-001/hd/tray.png",
+      "bytes": 9022,
+      "sha256": "4291eb3e20b9965f5fc47f2d06bac2043039abf7e89a44078e26af9c92a369e8"
+    },
+    {
+      "path": "pets/march-7th-001/hd/waiting.webp",
+      "bytes": 941770,
+      "sha256": "343f8be6b627188c6046ebb0e024987089e1d74ee1a88e8d4fa38da4c27dd4c0"
+    },
+    {
+      "path": "pets/march-7th-001/hd/waving.webp",
+      "bytes": 653386,
+      "sha256": "57555ee3079be920d5a3f9c3d87c25ed96f5989a71a6bf0109f3ecb8c71e0f52"
     },
     {
       "path": "pets/march-7th-001/pet.json",
-      "bytes": 239,
-      "sha256": "3700b39241a8153075b51fbd7be191516e3d55e4ce5675b40cfcf8a84f7937d0"
+      "bytes": 267,
+      "sha256": "06233edb0c8113f22da6a9483406629ba9af05acee6c6c0058b7c10cd8474ae3"
+    },
+    {
+      "path": "pets/march-7th-001/source/frames.json",
+      "bytes": 10278,
+      "sha256": "340d376ea69ed1721400e84431147172b384a0ce804e0bc6a54825118814c29a"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/failed-00.png",
+      "bytes": 1653607,
+      "sha256": "79c7883243e35e53f8d07e7ea99df7fb629ce3efd61276fc1a975974b21064f4"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/failed-00.prompt.json",
+      "bytes": 2382,
+      "sha256": "882ef0974908fa5e94f357fc4341c26b8f12ce90019220b1271ba549e47a26e0"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/failed-02.png",
+      "bytes": 1643136,
+      "sha256": "0c8ca134b0e2f1ec0eeb5f102aaf9b4f5ac73299ea9ae04266134cb19adf95f3"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/failed-02.prompt.json",
+      "bytes": 2428,
+      "sha256": "61f62d39a2301c015b87226b97b8e001ddc3190d0ec3e1dc190f10aa200be074"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/failed-04.png",
+      "bytes": 1643029,
+      "sha256": "a6ce5d0cddeea93f0b13481d91a730138a008874e6e8afd56d90ccd8e76aef15"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/failed-04.prompt.json",
+      "bytes": 2431,
+      "sha256": "c6ad13beccf2b34118e0ea52625138984bb1e7b2fd6ecef7e6f8eeb134122c9d"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/failed-06.png",
+      "bytes": 1644844,
+      "sha256": "f1ca29ce23cac3f5a700d91b812c82eea6751197a4ea562bde8990ecbaf68376"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/failed-06.prompt.json",
+      "bytes": 2433,
+      "sha256": "82a2402f4d53fd12863d58ffac28cee38d2d7f4ed7e67f6341ed3b28bd7309ba"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/idle-00.png",
+      "bytes": 1668928,
+      "sha256": "2454e4815888a733e823c04c6869e5c7f676031c3d09a3834fefe69c489746d1"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/idle-00.prompt.json",
+      "bytes": 2390,
+      "sha256": "1a5ecdd1f4561195da7b11a6416de980e7d92da26b4d68191abb620d99774bb2"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/idle-02.png",
+      "bytes": 1641423,
+      "sha256": "b9cfd5047e6fe37f74e2b07a35c442a892142ead961e276bee0898368d71f787"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/idle-02.prompt.json",
+      "bytes": 2383,
+      "sha256": "a9260b06c4148e350a568c407f8c903e0b22db32172d53dc6dce0b40397d98e8"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/idle-04.png",
+      "bytes": 1640785,
+      "sha256": "0e980bc4e3e4fde51f439459456e1eb71ad4c37c990e0928f80521544da8dfba"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/idle-04.prompt.json",
+      "bytes": 2440,
+      "sha256": "b878f6010870c122c07c24ffafcff7d777048ad3236f53dda6e6a0366ba30a26"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/jumping-00.png",
+      "bytes": 1704952,
+      "sha256": "a1848f87ee48524dda8dd45d2207033fb64e308fb8becb6f6096d5f8fc2f33cf"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/jumping-00.prompt.json",
+      "bytes": 2494,
+      "sha256": "aa7e78c49b896106dffeece878ca2665014420fc9c9c317ed3227f7d1f9c6dfc"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/jumping-02.png",
+      "bytes": 1788681,
+      "sha256": "9ca43cbdbdfcae6682ce2f598e62ae73379516a85fc57092bcb99a0fd58bc253"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/jumping-02.prompt.json",
+      "bytes": 2562,
+      "sha256": "a9fc152a8d3389607eb8b0dcff378ac6554ba3a4d058b794667a59b7c6374e40"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/jumping-04.png",
+      "bytes": 1710241,
+      "sha256": "aabbfe97966bd1003738ee609f7cde9ea4c7dc7b05606c5e5b7e65d07befa4bc"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/jumping-04.prompt.json",
+      "bytes": 2449,
+      "sha256": "0af3aed5cd4881ae65576f5d3d7f1af84cbec6049b1db3f0ba6f72af07a911f9"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/look-00.png",
+      "bytes": 1640453,
+      "sha256": "acc4168ad4869e5de6d6ef3511f4a08cad589deb03af5ae0a6be1f17228de60a"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/look-00.prompt.json",
+      "bytes": 2381,
+      "sha256": "3cf19a5c4b8d49178eb3a89743abcf684219007ac143933ec824f46e83108e51"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/look-02.png",
+      "bytes": 1645454,
+      "sha256": "cb78372171446426f463e5a7f56b54aa485adaec845f959b3f9e5b851be802b1"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/look-02.prompt.json",
+      "bytes": 2403,
+      "sha256": "ffed6bc14914605dc912eef5e84cd16c936046f870bef8242c774dc6d0965ecf"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/look-04.png",
+      "bytes": 1638821,
+      "sha256": "e711b97b4f9d74cf32406ef356fe9324b61220ee037943f0a9b09c23fc92e9b0"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/look-04.prompt.json",
+      "bytes": 2418,
+      "sha256": "c5bd3fd57f6b90275f44172adb915ede02d60783d578ac8fd17bb56f6446c9a4"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/look-06.png",
+      "bytes": 1643990,
+      "sha256": "97be4748fed91c10b934b94a4883f091164cdc61df9459f0188d66e85ee1295f"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/look-06.prompt.json",
+      "bytes": 2410,
+      "sha256": "53bb3fcafa630f26cbffaf35da92d930ad09a64bcb278bb68ca359337d187635"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/look-08.png",
+      "bytes": 1629952,
+      "sha256": "f9b3a1ba47cd0a5dafc08ec7979dfa1ee3ff5ba6877f489e8fbcc05c1ba82e30"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/look-08.prompt.json",
+      "bytes": 2404,
+      "sha256": "ec4585bba7c21ceca900178ba5453bec7a6683129d962965bd4f45989a20a975"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/look-10.png",
+      "bytes": 1641842,
+      "sha256": "43375830f287ba90de20dbce756d724af6c054608b80f560ab43ea5a794f9a00"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/look-10.prompt.json",
+      "bytes": 2409,
+      "sha256": "7aa706b217f2e0015b0f25443ad2b0c48bc7f3dcc4bb652ca2cfcdec29bb49b9"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/look-12.png",
+      "bytes": 1640562,
+      "sha256": "c1afd3ea67719b0540453cddb66fe10ae982e4a9fa04c906a6e9d2af7961ae8d"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/look-12.prompt.json",
+      "bytes": 2416,
+      "sha256": "c9d4fe36d14af4b84294b8e9e1e5c6a6ef7425383d642ce235c31a1e70aed9d6"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/look-14.png",
+      "bytes": 1650030,
+      "sha256": "8a003df0547728836622972d0a442399f84280419ff90cdab3f101eda7783405"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/look-14.prompt.json",
+      "bytes": 2404,
+      "sha256": "a43dcf628e49cdc5fc9d2c3bdfd0c7974569c392e7a6a2afff7ebad2db6982a5"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/review-00.png",
+      "bytes": 1634894,
+      "sha256": "6dcfe7218ac445447e749e41a3bbbb038eab7af2ce2e0f18c9bafc89ff3d3f9a"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/review-00.prompt.json",
+      "bytes": 2446,
+      "sha256": "256ca2d6a509639d35d24a240c331102bdf67a6792912a6efa188afdc4bc8c8c"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/review-02.png",
+      "bytes": 1633042,
+      "sha256": "8e0ed105477467910d07bd579ea592877936627a10b66c4181bc3c3d9ef79a64"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/review-02.prompt.json",
+      "bytes": 2452,
+      "sha256": "239b5b88d957458ff8d3d93a40c4ff52330ba4761f5741fd18bd65cd6f749367"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/review-04.png",
+      "bytes": 1637080,
+      "sha256": "187dd21b6891dd2e10dfe08760ccec6fa76b4b53aaf41cec80cd9866707f6514"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/review-04.prompt.json",
+      "bytes": 2454,
+      "sha256": "623f26b044e288c3ff4a3c18decc55fef7eae6e682f557bdbf378fb542b78ec3"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/running-00.png",
+      "bytes": 1609664,
+      "sha256": "c2f325bb789793126df3d9f3080ccde19b659055a0d9742f5da41afd40b1b4e6"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/running-00.prompt.json",
+      "bytes": 2535,
+      "sha256": "bc7fb069cbb894698c2f87a2121de96cc047e3fdac4e88169c017d94a16aca92"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/running-02.png",
+      "bytes": 1628028,
+      "sha256": "3e939c624190a23d2dd36c1c85e358a6dd84a333102a54ce8ceb74957baee761"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/running-02.prompt.json",
+      "bytes": 2470,
+      "sha256": "c6ed029580667ca136c41f0e74e8e2772c46cff769fd5b92dc13360dc5ec2453"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/running-04.png",
+      "bytes": 1611622,
+      "sha256": "23eeaa63aa108266291f90450654e5538c491a3a847b83fce6c886da409b8887"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/running-04.prompt.json",
+      "bytes": 2473,
+      "sha256": "e053c992c279ebfb84a248054d21ae8368f7d15871d5a15eed6738fff47ce266"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/running-right-00.png",
+      "bytes": 1625571,
+      "sha256": "838e20900cbea3b274e498ca85874b4b136e7b1e7e35f35b9685040c1d293530"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/running-right-00.prompt.json",
+      "bytes": 2477,
+      "sha256": "5a0ef78895dcbd8a58fd8650090585a1771a7818828bbafda126fb345226eb39"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/running-right-02.png",
+      "bytes": 1580880,
+      "sha256": "e7bebe0fa34c0b5f3a987f1545ab9177f73aae586ce3d31e39238dfa0db630de"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/running-right-02.prompt.json",
+      "bytes": 3784,
+      "sha256": "3a5baa4f865aa874755cb0ea23c5162df25c5c9fc27158c02fec46bfe1eafc6b"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/running-right-04.png",
+      "bytes": 1646103,
+      "sha256": "574fcc372ed0abf4bc18ae1fc2b9328b59a96bca39ea14f46ec6c232e73ace51"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/running-right-04.prompt.json",
+      "bytes": 2782,
+      "sha256": "c277325c3e3e105aaf9038416b887608c482a83e0b99e956152de10200f54fec"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/running-right-06.png",
+      "bytes": 1588136,
+      "sha256": "98a60c52d5002808dd1f0177ba9c9b05154353e715be8d769d71e10223048ca5"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/running-right-06.prompt.json",
+      "bytes": 3661,
+      "sha256": "720cf701f8ac1fd6ff68af16865693b1fc55ca9d2a39a19e48620adb13d0f2d1"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/waiting-00.png",
+      "bytes": 1623200,
+      "sha256": "2780a02d22b8d5bd035e64515e52391914df550a6370ce569203d26568ff2d0f"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/waiting-00.prompt.json",
+      "bytes": 2392,
+      "sha256": "faea237388d4d9d8750d40b5bf3d877ae972257c70e3d4f087fbf7a6e759600f"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/waiting-02.png",
+      "bytes": 1613586,
+      "sha256": "0acbd623dac717158bbdd348216eb19c510722f5dfc9bc71ebd503e4290be605"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/waiting-02.prompt.json",
+      "bytes": 2405,
+      "sha256": "09892d49df95911a3ab15e3b4099ca6ee12c2d295853b9a73677872115058508"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/waiting-04.png",
+      "bytes": 1603467,
+      "sha256": "4a8f8704584340020326be0ee43df8154e1c66ef2b64a61738c675d218e9505a"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/waiting-04.prompt.json",
+      "bytes": 2520,
+      "sha256": "797f2a0366d4983c40f4ebd92decfef3ad9316d42a44d0d1cbbd0f47e44642a2"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/waving-00.png",
+      "bytes": 1643585,
+      "sha256": "55918174129c1cc2ff170456d8d021624d952059c4e2dfdbc27fbed3f77ec65d"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/waving-00.prompt.json",
+      "bytes": 2424,
+      "sha256": "9c8ff3c883389d2a14815ed254b5a6ddcc82c5e3f46477f83e1e5164768bd2bc"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/waving-02.png",
+      "bytes": 1641632,
+      "sha256": "af2aa5be429686533c4b586b855e2003752e0d59eef6cffe7ee8b30f5c9e3f44"
+    },
+    {
+      "path": "pets/march-7th-001/source/pairs/waving-02.prompt.json",
+      "bytes": 2505,
+      "sha256": "b6ca29d9074055cae9d000b69eaf12acd74460c0e6743f1582a741396ef56544"
     },
     {
       "path": "pets/march-7th-001/spritesheet.webp",
-      "bytes": 1474314,
-      "sha256": "c2e7420626ea6bff6b3f8b3272dffda047c599035fa474346506d579cc47fcae"
+      "bytes": 1180750,
+      "sha256": "2359e7ae4f14085ae1d2ce5800e22f4af43dddec6ad53f626682ebf94adef767"
     },
     {
       "path": "schemas/catalog.schema.json",
@@ -419,14 +2204,19 @@
       "sha256": "fcabace3100cf8c705f43218a7c668fd5a97506eb048de393c7c2a80fadc5421"
     },
     {
+      "path": "scripts/build_index.py",
+      "bytes": 1837,
+      "sha256": "89e760637cc4b982c807770be3fd35370ee3ed470ee5f231c3da73abfbe7d9a7"
+    },
+    {
       "path": "scripts/build_pet.py",
-      "bytes": 6453,
-      "sha256": "f5d631680535bbf5d313e9dd4d4058a9480658a8220c6e4e20fd290c63d68cb0"
+      "bytes": 6832,
+      "sha256": "277147c563c7effcab1ac1b5d5508cac21529fd0eaee4e570bf7ac8982eed850"
     },
     {
       "path": "scripts/build_release.py",
-      "bytes": 5601,
-      "sha256": "4f85e6b509c680eb7202b3e9991d2f08770bda744ef19bc55078a6c8dbaf6d48"
+      "bytes": 7102,
+      "sha256": "e4cca9230bf3e3762908ded99ade7722444686cd87c36d0f756209fd3ce42ca5"
     },
     {
       "path": "scripts/install.bat",
@@ -450,13 +2240,28 @@
     },
     {
       "path": "scripts/make_test_art.py",
-      "bytes": 1207,
-      "sha256": "9be1fa434a0b481ebd65dbd83accaa2b96ffa9dd66220823a96482ed2efe16d8"
+      "bytes": 1193,
+      "sha256": "6b06309ca3c055b63df02ec46b10c29579887b6c441ec620fb6063f241e9d634"
+    },
+    {
+      "path": "scripts/matte_pet.py",
+      "bytes": 5362,
+      "sha256": "2b74f11a52477481abaebfa605e1bd8c7ce7a9549cbe9da83e8338226b04dbf9"
+    },
+    {
+      "path": "scripts/register_art.py",
+      "bytes": 4042,
+      "sha256": "f73f3e50f378f0c4d5c0a4c7792b94bf09b74dcb9d535d2405a39dd716f11bdf"
+    },
+    {
+      "path": "scripts/test_matte.py",
+      "bytes": 3143,
+      "sha256": "e79302d4c04ef7d320b415c7b6dfb7b252365df6b75ae6f6cb16c310fb6bbbbf"
     },
     {
       "path": "scripts/test_package.py",
-      "bytes": 3388,
-      "sha256": "2a1f1f07811112f18e1b76e07b0886a14ba911c0b9ecb81799e6c2f6399cffe6"
+      "bytes": 5333,
+      "sha256": "b46517a609a3c2524ce68814872d225b8fb40a8021b24833c242e81553eb590e"
     }
   ],
   "text_bytes": "Git checkout line endings: CRLF for .ps1/.bat, LF for other text"

@@ -42,6 +42,11 @@ test('busy, concurrent approval, input, transient failure, stop and delayed hook
   assert.equal(states.current('unknown').status, 'Awaiting events');
   assert.equal(validateEvent(event('Invalid')), false);
   assert.equal(validateEvent(event('Stop', {at: 1})), false);
+  states.accept(event('UserPromptSubmit', {sessionId: 'older'}));
+  states.accept(event('UserPromptSubmit', {sessionId: 'newest'}));
+  states.accept(event('Stop', {sessionId: 'newest'}));
+  assert.equal(states.current().state, 'idle');
+  assert.equal(states.current('older').state, 'running');
 });
 
 test('hook normalization excludes conversations and preserves only structured errors', () => {
@@ -99,10 +104,26 @@ test('receiver requires token, rejects invalid or large payloads, and real bridg
   if (process.platform === 'win32') await run('powershell.exe', ['-NoProfile', '-NonInteractive', '-ExecutionPolicy', 'Bypass',
     '-File', path.join(__dirname, 'hooks/bridge.ps1'), '-EndpointFile', endpointFile, '-Assistant004Hook']);
   assert.equal(received.filter(e => e.sessionId === 'bridge-session').length, process.platform === 'win32' ? 2 : 1);
+  receiver.close();
+  await run(process.execPath, [path.join(__dirname, 'hooks/bridge.cjs'), '--endpoint', endpointFile]);
 });
 
 test('removed monitors and extreme saved coordinates remain visible', () => {
   const area = {x: -1920, y: 0, width: 1920, height: 1080};
   assert.deepEqual(clampBounds({x: 9000, y: 9000, width: 300, height: 320}, [area]),
     {x: -300, y: 760, width: 300, height: 320});
+});
+
+test('returning to a cached action cancels a pending image decode', async () => {
+  const vm = require('node:vm'), pending = [];
+  const canvas = {getContext: () => ({}), addEventListener() {}};
+  const context = vm.createContext({document: {querySelector: () => canvas}, performance: {now: () => 0},
+    requestAnimationFrame() {}, window: {pet: {onUpdate() {}, ready: () => new Promise(() => {}), loaded() {}}},
+    Image: class {decode() {return new Promise(resolve => pending.push(resolve));}}});
+  vm.runInContext(fs.readFileSync(path.join(__dirname, 'renderer.js'), 'utf8'), context);
+  const update = state => vm.runInContext(`update({state: '${state}', look: null, model: {id: 'test', cellWidth: 768, cellHeight: 832,
+    clips: {idle: {url: 'idle'}, running: {url: 'running'}}}})`, context);
+  const idle = update('idle'); pending.shift()(); await idle;
+  const running = update('running'); await update('idle'); pending.shift()(); await running;
+  assert.equal(vm.runInContext('displayedKey', context), 'test:idle');
 });

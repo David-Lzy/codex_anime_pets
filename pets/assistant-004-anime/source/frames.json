@@ -1,0 +1,565 @@
+{
+  "id": "assistant-004-anime",
+  "display_name": "Assistant-004 Anime",
+  "description": "Original anime research assistant with state-dependent outfits.",
+  "reviewed": true,
+  "source_canvas": [
+    768,
+    1536
+  ],
+  "per_frame_bbox_scaling": false,
+  "registration": "Translation only: shared foot baseline, head-registered walk, 45/110 native-pixel takeoff/apex lift. Drawn body proportions and crouch heights retained.",
+  "frames": {
+    "idle": [
+      {
+        "file": "source/frames/idle-00-0.png",
+        "offset": [
+          -41,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/idle-00-1.png",
+        "offset": [
+          -3,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/idle-02-0.png",
+        "offset": [
+          -40,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/idle-02-1.png",
+        "offset": [
+          -4,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/idle-04-0.png",
+        "offset": [
+          -41,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/idle-04-1.png",
+        "offset": [
+          -3,
+          12
+        ]
+      }
+    ],
+    "running-right": [
+      {
+        "file": "source/frames/running-right-00-0.png",
+        "offset": [
+          -21,
+          24
+        ]
+      },
+      {
+        "file": "source/frames/running-right-00-1.png",
+        "offset": [
+          -15,
+          20
+        ]
+      },
+      {
+        "file": "source/frames/running-right-02-0.png",
+        "offset": [
+          -16,
+          22
+        ]
+      },
+      {
+        "file": "source/frames/running-right-02-1.png",
+        "offset": [
+          18,
+          27
+        ]
+      },
+      {
+        "file": "source/frames/running-right-04-0.png",
+        "offset": [
+          -6,
+          25
+        ]
+      },
+      {
+        "file": "source/frames/running-right-04-1.png",
+        "offset": [
+          -15,
+          25
+        ]
+      },
+      {
+        "file": "source/frames/running-right-06-0.png",
+        "offset": [
+          11,
+          24
+        ]
+      },
+      {
+        "file": "source/frames/running-right-06-1.png",
+        "offset": [
+          19,
+          27
+        ]
+      }
+    ],
+    "running-left": [
+      {
+        "file": "source/frames/running-left-00.png",
+        "offset": [
+          21,
+          24
+        ],
+        "mirrored_from": "source/frames/running-right-00-0.png"
+      },
+      {
+        "file": "source/frames/running-left-01.png",
+        "offset": [
+          15,
+          20
+        ],
+        "mirrored_from": "source/frames/running-right-00-1.png"
+      },
+      {
+        "file": "source/frames/running-left-02.png",
+        "offset": [
+          16,
+          22
+        ],
+        "mirrored_from": "source/frames/running-right-02-0.png"
+      },
+      {
+        "file": "source/frames/running-left-03.png",
+        "offset": [
+          -18,
+          27
+        ],
+        "mirrored_from": "source/frames/running-right-02-1.png"
+      },
+      {
+        "file": "source/frames/running-left-04.png",
+        "offset": [
+          6,
+          25
+        ],
+        "mirrored_from": "source/frames/running-right-04-0.png"
+      },
+      {
+        "file": "source/frames/running-left-05.png",
+        "offset": [
+          15,
+          25
+        ],
+        "mirrored_from": "source/frames/running-right-04-1.png"
+      },
+      {
+        "file": "source/frames/running-left-06.png",
+        "offset": [
+          -11,
+          24
+        ],
+        "mirrored_from": "source/frames/running-right-06-0.png"
+      },
+      {
+        "file": "source/frames/running-left-07.png",
+        "offset": [
+          -19,
+          27
+        ],
+        "mirrored_from": "source/frames/running-right-06-1.png"
+      }
+    ],
+    "waving": [
+      {
+        "file": "source/frames/waving-00-0.png",
+        "offset": [
+          -41,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/waving-00-1.png",
+        "offset": [
+          -4,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/waving-02-0.png",
+        "offset": [
+          -40,
+          11
+        ]
+      },
+      {
+        "file": "source/frames/waving-02-1.png",
+        "offset": [
+          -4,
+          11
+        ]
+      }
+    ],
+    "jumping": [
+      {
+        "file": "source/frames/jumping-00-0.png",
+        "offset": [
+          -29,
+          13
+        ]
+      },
+      {
+        "file": "source/frames/jumping-00-1.png",
+        "offset": [
+          -2,
+          -4
+        ]
+      },
+      {
+        "file": "source/frames/jumping-02-0.png",
+        "offset": [
+          -27,
+          -44
+        ]
+      },
+      {
+        "file": "source/frames/jumping-02-1.png",
+        "offset": [
+          -2,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/jumping-04-0.png",
+        "offset": [
+          -29,
+          12
+        ]
+      }
+    ],
+    "failed": [
+      {
+        "file": "source/frames/failed-00-0.png",
+        "offset": [
+          -41,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/failed-00-1.png",
+        "offset": [
+          -5,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/failed-02-0.png",
+        "offset": [
+          -41,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/failed-02-1.png",
+        "offset": [
+          -4,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/failed-04-0.png",
+        "offset": [
+          -41,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/failed-04-1.png",
+        "offset": [
+          -4,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/failed-06-0.png",
+        "offset": [
+          -40,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/failed-06-1.png",
+        "offset": [
+          -4,
+          12
+        ]
+      }
+    ],
+    "waiting": [
+      {
+        "file": "source/frames/waiting-00-0.png",
+        "offset": [
+          -41,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/waiting-00-1.png",
+        "offset": [
+          -4,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/waiting-02-0.png",
+        "offset": [
+          -41,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/waiting-02-1.png",
+        "offset": [
+          -4,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/waiting-04-0.png",
+        "offset": [
+          -41,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/waiting-04-1.png",
+        "offset": [
+          -4,
+          11
+        ]
+      }
+    ],
+    "running": [
+      {
+        "file": "source/frames/running-00-0.png",
+        "offset": [
+          -42,
+          11
+        ]
+      },
+      {
+        "file": "source/frames/running-00-1.png",
+        "offset": [
+          -6,
+          11
+        ]
+      },
+      {
+        "file": "source/frames/running-02-0.png",
+        "offset": [
+          -42,
+          11
+        ]
+      },
+      {
+        "file": "source/frames/running-02-1.png",
+        "offset": [
+          -5,
+          11
+        ]
+      },
+      {
+        "file": "source/frames/running-04-0.png",
+        "offset": [
+          -42,
+          11
+        ]
+      },
+      {
+        "file": "source/frames/running-04-1.png",
+        "offset": [
+          -5,
+          11
+        ]
+      }
+    ],
+    "review": [
+      {
+        "file": "source/frames/review-00-0.png",
+        "offset": [
+          -44,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/review-00-1.png",
+        "offset": [
+          -26,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/review-02-0.png",
+        "offset": [
+          -42,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/review-02-1.png",
+        "offset": [
+          -16,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/review-04-0.png",
+        "offset": [
+          -40,
+          12
+        ]
+      },
+      {
+        "file": "source/frames/review-04-1.png",
+        "offset": [
+          -13,
+          11
+        ]
+      }
+    ],
+    "look": [
+      {
+        "file": "source/frames/look-00-0.png",
+        "offset": [
+          -30,
+          10
+        ]
+      },
+      {
+        "file": "source/frames/look-00-1.png",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      {
+        "file": "source/frames/look-02-0.png",
+        "offset": [
+          -28,
+          10
+        ]
+      },
+      {
+        "file": "source/frames/look-02-1.png",
+        "offset": [
+          -14,
+          10
+        ]
+      },
+      {
+        "file": "source/frames/look-04-0.png",
+        "offset": [
+          -32,
+          10
+        ]
+      },
+      {
+        "file": "source/frames/look-04-1.png",
+        "offset": [
+          -8,
+          11
+        ]
+      },
+      {
+        "file": "source/frames/look-06-0.png",
+        "offset": [
+          -30,
+          10
+        ]
+      },
+      {
+        "file": "source/frames/look-06-1.png",
+        "offset": [
+          -9,
+          10
+        ]
+      },
+      {
+        "file": "source/frames/look-08-0.png",
+        "offset": [
+          -28,
+          10
+        ]
+      },
+      {
+        "file": "source/frames/look-08-1.png",
+        "offset": [
+          1,
+          10
+        ]
+      },
+      {
+        "file": "source/frames/look-10-0.png",
+        "offset": [
+          -33,
+          11
+        ]
+      },
+      {
+        "file": "source/frames/look-10-1.png",
+        "offset": [
+          -5,
+          11
+        ]
+      },
+      {
+        "file": "source/frames/look-12-0.png",
+        "offset": [
+          -33,
+          11
+        ]
+      },
+      {
+        "file": "source/frames/look-12-1.png",
+        "offset": [
+          -3,
+          11
+        ]
+      },
+      {
+        "file": "source/frames/look-14-0.png",
+        "offset": [
+          -33,
+          11
+        ]
+      },
+      {
+        "file": "source/frames/look-14-1.png",
+        "offset": [
+          1,
+          11
+        ]
+      }
+    ]
+  },
+  "outfits": {
+    "idle": "casual",
+    "running-right": "casual",
+    "running-left": "casual",
+    "waving": "casual",
+    "jumping": "casual",
+    "failed": "lab",
+    "waiting": "lab",
+    "running": "lab",
+    "review": "lab",
+    "look": "casual"
+  }
+}

@@ -52,7 +52,7 @@ class TaskStates {
   }
   current(fixedId, now = Date.now()) {
     const values = [...this.tasks.values()];
-    const task = fixedId ? this.tasks.get(fixedId) : values.filter(t => !t.closed).at(-1) || values.at(-1);
+    const task = fixedId ? this.tasks.get(fixedId) : values.at(-1);
     if (!task) return {state: 'idle', status: 'Awaiting events', task: null};
     // A silent long-running job is not a failure. The status explicitly becomes unconfirmed.
     if (!task.closed && now - task.at > 30 * 60 * 1000) return {state: 'idle', status: 'No recent events (state unconfirmed)', task};

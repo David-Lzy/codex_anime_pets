@@ -1,0 +1,115 @@
+{
+  "method": "Built-in imagegen, user-approved solid green background and local matting. No upscaling, no static-image motion substitutes.",
+  "layout": "Exactly TWO separate full-body animation drawings side by side in one portrait image, aspect 1205:1305. Two equal vertical cells. Figure centers at 25% and 75% of total width. Keep all hair, hands, clothing and accessories inside each cell, with an empty green gap between them. Full native detail, about 1000 pixels figure height, no thumbnail sheet. Neutral standing boots at y=1200, top of hair around y=180. Preserve this scale for EVERY pose; crouching is shorter, jumping is displaced upward, never zoom a pose to fill its cell. Flat pure chroma green RGB(0,255,0), no floor, cast shadow, gradient, green reflection, checkerboard, writing, symbols, UI, bubbles, watermarks or extra figures. Opaque character with crisp fine cel-shaded outlines, polished eyes, accurate hands, coherent hair locks and fabric folds. Left and right images are two successive ANIMATION DRAWINGS of the SAME identity and outfit, not different costume designs.",
+  "models": {
+    "assistant-004": {
+      "reference": "art/assistant-004-compact-separated.png",
+      "identity": "ORIGINAL Assistant-004 COMPACT semi-chibi exactly 3.5 heads tall as reference. Head is 29 percent of standing height; chin-to-soles only 2.5 head-heights. Keep SHORT thighs and calves and large head; NEVER lengthen legs into a fashion anime figure. Chestnut long layered hair, asymmetric curved fringe, small plain teal barrette on her left, narrow blue-violet eyes, restrained skeptical scientist expression, not a baby. Preserve reference face, hair, boot style and compact body proportions precisely.",
+      "casual": "Short charcoal jacket with gray cuffs, pale-gray collared shirt, short burgundy tie, black shorts, opaque dark tights and black ankle boots with small teal trim.",
+      "lab": "Bright WHITE mid-thigh laboratory coat over pale-gray collared shirt, short burgundy tie, black shorts, opaque dark tights and black ankle boots. No charcoal outer jacket in lab states."
+    },
+    "assistant-004-anime": {
+      "reference": "art/assistant-004-design.png",
+      "identity": "ORIGINAL Assistant-004 slender anime version, exactly about 5 heads tall, adult elegant proportions, head about 20 percent of total standing height. Reference bottom row only. Chestnut long layered hair, asymmetric curved fringe, small plain teal barrette on her left, narrow blue-violet eyes, restrained skeptical scientist expression. Preserve face, hair shape, boot style and proportions across drawings.",
+      "casual": "Short charcoal jacket with gray cuffs, pale-gray collared shirt, short burgundy tie, black shorts, opaque dark tights and black ankle boots with small teal trim.",
+      "lab": "Bright WHITE mid-thigh laboratory coat over pale-gray collared shirt, short burgundy tie, black shorts, opaque dark tights and black ankle boots. No charcoal outer jacket in lab states."
+    },
+    "march-7th-001": {
+      "reference": "pets/march-7th-001/assets/contact-sheet.png",
+      "identity": "Fan-made March 7th chibi. Redraw in refined high-detail anime cel animation, about 3 heads tall. Pink bob haircut with pale highlights, bright blue-pink eyes, cheerful inquisitive expression, small icy flower hair ornament. Preserve the supplied existing pet identity; reference is for outfit and colors only, NOT its repeated static poses. Genuine new hand, leg, face and hair drawings in each frame.",
+      "casual": "Signature blue and pale-pink adventurer outfit with white blouse, short layered blue skirt, blue-pink jacket, small hanging camera and strap, pale stockings and blue ankle shoes. Keep the same outfit in ALL states; no lab coat."
+    },
+    "cirno-009": {
+      "reference": "pets/cirno-009/assets/contact-sheet.png",
+      "identity": "Fan-made Cirno chibi. Refined clean anime cel animation, about 3 heads tall, short ice-blue bob hair, large dark-blue bow, bright blue eyes, playfully overconfident face. Six compact pale-blue faceted ice wings, three on each side, attached behind shoulders and always contained in her cell. Wing geometry follows shoulder motion. Preserve existing pet identity, NOT its repeated static poses; draw actual new poses.",
+      "casual": "Signature blue dress with white short-sleeved blouse, short red necktie, white triangular skirt trim, white socks and blue shoes. Same outfit and compact crystalline wings in ALL states, no lab coat. No floating snowflakes, letters or marks."
+    }
+  },
+  "poses": {
+    "idle": [
+      "Front-facing quiet rest, arms lowered naturally, eyes open, shoulders relaxed, hair settled.",
+      "Same planted feet and body axis, gentle inhale raises shoulders a tiny amount, eyelids half lowered, fingertips relax.",
+      "Blink fully closed, shoulders at inhale peak, hair tips drift gently outward; same neutral grounded stance.",
+      "Eyes half reopen after blink, shoulders softly exhaling, hair tips follow the settling motion.",
+      "Eyes fully open, tiny glance to viewer-right with no head translation, relaxed elbows and hands.",
+      "Gaze returns near center, quiet breath settles, hands and hair nearly return to first pose for a seamless loop."
+    ],
+    "running-right": [
+      "Full-body RIGHT-facing profile walking in place: left leg forward heel contact, right leg back toe contact, opposite arm swing. Head looks right, not front.",
+      "RIGHT profile: weight lowers onto left foot, right heel lifts behind, both knees flex slightly, arms move toward passing.",
+      "RIGHT profile WALK PASSING pose: left support leg STRAIGHT VERTICALLY directly under hips. Right thigh raised FORWARD to the RIGHT, right knee ahead of the body, right shin vertical and right boot dangling UNDER that forward knee. Both arms nearly vertical passing the hips. NOT a wide stride, NOT a heel curled behind. Support foot planted. Draw this precise new leg pose, not reference legs.",
+      "RIGHT profile WALK UP pose: left support ankle on toe directly under hips, right knee and right boot AHEAD of the torso to the RIGHT, right shin starts extending toward next contact, boot still airborne. Right arm swings slightly backward, left arm forward. Torso rises slightly, hair and hem trail left. NO rear heel curl, no wide grounded stride.",
+      "RIGHT profile: right heel contacts forward, left toes behind, arms at opposite swing extreme to frame one.",
+      "RIGHT profile: weight lowers onto right foot, left heel lifts behind, both knees flex slightly.",
+      "RIGHT profile WALK PASSING opposite-leg pose: right support leg STRAIGHT VERTICALLY under hips. Left thigh raised FORWARD toward RIGHT, left knee ahead of body, left shin vertical, boot dangling UNDER forward knee. Both arms passing hips. NOT wide stride or rear heel curl. Support foot planted. Draw this precise new pose.",
+      "RIGHT profile WALK UP opposite-leg pose: right support ankle on toe under hips; left knee and left boot AHEAD of torso toward RIGHT, shin starts extending for contact, boot airborne. Left arm slightly backward, right arm forward. Hair and hem lag left. No rear heel curl or wide grounded stride."
+    ],
+    "waving": [
+      "Frontal grounded stance, right elbow bends and hand lifts beside shoulder, palm beginning to face viewer, restrained greeting.",
+      "Right palm fully raised beside cheek, wrist tilts outward, fingers together and clearly drawn; left arm relaxed.",
+      "Same shoulder and elbow position, waving right wrist tilts inward across cheek, small reserved smile, hair follows slight head inclination.",
+      "Right hand lowers to shoulder level, palm turns inward as greeting settles, composed expression returning, feet remain planted."
+    ],
+    "jumping": [
+      "Anticipation: small crouch, BOTH knees bent, hips and head lower about 70 pixels, boots stay at ground y1200, arms swing slightly back. Do not enlarge the crouched figure.",
+      "Takeoff: ankles extend, body rises, both boots now about 65 pixels above ground y1200, arms start lifting, hair and hem trail downward.",
+      "Apex: compact controlled hop, boots about 140 pixels above ground y1200, knees softly tucked, head higher, hair and hem flare gently, small pleased expression. No motion lines.",
+      "Landing: both boots back on y1200, knees bent to absorb landing, hips and head lower about 55 pixels, hair and hem still suspended from the hop.",
+      "Recovery: straighten knees to neutral standing height, arms and hair settle with residual follow-through, both boots grounded."
+    ],
+    "failed": [
+      "Composed frustration begins, eyebrows draw together, lips press, shoulders slightly tense, arms relaxed.",
+      "Right hand starts rising toward forehead, elbow bends, eyes narrow in embarrassed disbelief.",
+      "Right fingertips reach temple, head tilts down slightly, annoyed skeptical eyes.",
+      "Small facepalm: right fingers rest against forehead, eyes close briefly, shoulders held, no dramatic symbols.",
+      "Quiet sigh: shoulders lower, right hand slides toward temple, eyes remain closed, mouth slightly open.",
+      "Eyes reopen with a sideways embarrassed glance, right hand begins lowering away from face.",
+      "Right forearm lowers halfway, chin lifts back, expression regains composure, hair follows.",
+      "Hand returns near side, calm but mildly annoyed expression, posture nearly returns to start, not crying."
+    ],
+    "waiting": [
+      "Arms comfortably crossed at chest, weight balanced, one eyebrow raised, skeptical waiting expression.",
+      "Same crossed-arm stance, chin lifts a little, eyes glance toward viewer-right, shoulders softly inhale.",
+      "Crossed hands adjust subtly on sleeves, raised eyebrow remains, eyelids half close.",
+      "Brief blink with arms still crossed, chin tilts slightly down, hair tips settle.",
+      "Eyes reopen looking near center, crossed hands remain on opposite upper arms, index finger curls slightly against plain unmarked fabric. No tapping marks, no motion lines, no symbols.",
+      "Crossed hands settle and chin returns close to first pose, composed patient-but-skeptical face."
+    ],
+    "running": [
+      "Focused processing, NOT sprinting. Both forearms forward at waist height as if typing on an invisible keyboard, right index finger extended downward, left fingers lifted, head inclined toward hands. No visible device or UI.",
+      "Same grounded processing pose, right fingers lift while left index presses down, eyes tracking work, wrists at fixed height.",
+      "Both hands shift slightly toward center, right middle finger presses, left hand curls naturally, hair follows small forward head tilt.",
+      "Left middle finger presses while right hand relaxes, shoulders and eyes focused, mouth closed.",
+      "Small calculating pause, fingers hover, head lifts a tiny amount, one eyebrow tightens in concentration.",
+      "Hands resume first typing pattern with left fingers up and right index descending, head settles back toward hands for the loop."
+    ],
+    "review": [
+      "Leaning slightly forward inspecting closely, right hand near chin, left forearm folded across waist, sharp focused eyes scan viewer-left.",
+      "Lean a little farther, right index rests beneath chin, eyes narrow toward center, knees remain straight and boots grounded.",
+      "Small thoughtful head tilt toward viewer-right, right fingers lightly touch chin, eyebrows intent, hair follows.",
+      "Eyes move slightly down as if reading the next line, chin lowers, same body axis and folded left arm.",
+      "Right index lifts a little from chin as if noticing a detail, eyes sharpen, shoulders lift subtly.",
+      "Right hand returns close to initial chin pose, eyes scan back toward viewer-left, lean eases toward initial position."
+    ],
+    "look": [
+      "Idle frontal body and relaxed arms, face and eyes look directly UP, chin raised. Cursor direction 0 degrees.",
+      "Idle frontal body, face looks mostly UP and slightly RIGHT, 22.5 degrees clockwise from up.",
+      "Idle frontal body, face looks diagonally UP-RIGHT, chin raised and head turned right, 45 degrees.",
+      "Idle frontal body, face looks mostly RIGHT and slightly UP, 67.5 degrees.",
+      "Idle frontal body, face and eyes look directly RIGHT, head turned right with neutral chin height, 90 degrees.",
+      "Idle frontal body, face looks mostly RIGHT and slightly DOWN, 112.5 degrees.",
+      "Idle frontal body, face looks diagonally DOWN-RIGHT, chin lowered and head turned right, 135 degrees.",
+      "Idle frontal body, face looks mostly DOWN and slightly RIGHT, 157.5 degrees.",
+      "Idle frontal body and relaxed arms, face and eyes look directly DOWN, chin lowered, 180 degrees.",
+      "Idle frontal body, face looks mostly DOWN and slightly LEFT, 202.5 degrees.",
+      "Idle frontal body, face looks diagonally DOWN-LEFT, chin lowered and head turned left, 225 degrees.",
+      "Idle frontal body, face looks mostly LEFT and slightly DOWN, 247.5 degrees.",
+      "Idle frontal body, face and eyes look directly LEFT, head turned left with neutral chin height, 270 degrees.",
+      "Idle frontal body, face looks mostly LEFT and slightly UP, 292.5 degrees.",
+      "Idle frontal body, face looks diagonally UP-LEFT, chin raised and head turned left, 315 degrees.",
+      "Idle frontal body, face looks mostly UP and slightly LEFT, 337.5 degrees."
+    ]
+  },
+  "left_walk": "Mirror the eight actually drawn right-walk frames consistently; no invented static translations.",
+  "lab_states": ["running", "review", "failed", "waiting"]
+}

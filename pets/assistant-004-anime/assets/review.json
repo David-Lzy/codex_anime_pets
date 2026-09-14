@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "id": "assistant-004-anime",
+  "version": "2.0.0",
+  "art_reviewed": true,
+  "method": "Native green-background pose pairs, local RGBA matting, one shared scale and translation-only registration.",
+  "automated_playback": {
+    "cases": 36,
+    "loops_per_case": 2,
+    "states": 9,
+    "backgrounds": [
+      "#ffffff",
+      "#17191c"
+    ],
+    "heights": [
+      208,
+      320
+    ],
+    "evidence": "../../../art/playback-review.json"
+  },
+  "visual_review": [
+    "All contact-sheet frames",
+    "Representative light/dark HD screenshots",
+    "Profile walk passing poses and unclipped shoes",
+    "Grounded foot stability and distinct airborne/crouched jump poses",
+    "Sixteen clockwise look poses"
+  ],
+  "limits": [
+    "Authored low-frame-count animation; not skeletal motion or interpolated 60fps.",
+    "Small per-frame drawing variations remain.",
+    "Native Windows pointer injection unavailable in the test session; transparent style and hit testing passed.",
+    "Codex built-in playback timing is controlled by the client."
+  ]
+}

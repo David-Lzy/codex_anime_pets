@@ -1,0 +1,7 @@
+{
+  "prompt": "Edit target: attached two-outfit compact character sheet. KEEP EXACT character design, face, 3.5-head body proportions, head size RELATIVE to body, hair design, clothing, colors and poses. Change ONLY framing and separation: render both entire figures uniformly at 84% of their current pixel size, place the LEFT figure center at x=300 and RIGHT figure center at x=905 on a native1205x1305 portrait canvas. Both boot soles at y=1200. Both figures now about1000pixels tall, leaving about200pixels clear green above. Their hair silhouettes must not touch: at least60pixels of uninterrupted pure RGB(0,255,0) green between the closest hairs, all the way top to bottom. At least30pixels green at outer edges. Opaque characters, no green spill, no floor shadow, no text, no other alteration. This is the master reference for compact chibi animation, not the long-legged anime variant. Preserve shortened thighs/calves and large skeptical face. Left charcoal casual jacket, right white labcoat, exactly as attached.",
+  "tool": "built-in imagegen",
+  "source": "art/assistant-004-compact-master.png",
+  "output": "art/assistant-004-compact-separated.png",
+  "purpose": "Separated compact identity reference"
+}

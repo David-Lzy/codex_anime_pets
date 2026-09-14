@@ -8,3 +8,7 @@ node_modules/
 desktop/dist/
 build/
 *.log
+# Reproducible transparent intermediates; native pose pairs and final atlases remain in Git.
+pets/*/source/frames/
+art/remaster-drafts/**
+!art/remaster-drafts/README.md

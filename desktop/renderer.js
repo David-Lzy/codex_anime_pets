@@ -10,8 +10,8 @@ async function update(next) {
   const clipName = next.look == null ? next.state : 'look';
   const clip = next.model.clips[clipName];
   const key = `${next.model.id}:${clipName}`;
-  if (displayedKey === key) return;
   const request = ++loadingId;
+  if (displayedKey === key) return;
   try {
     let image = cache.get(key);
     if (!image) {

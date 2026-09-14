@@ -1,0 +1,15 @@
+{
+  "tool": "built-in imagegen",
+  "model": "cirno-009",
+  "state": "waiting",
+  "frames": [
+    0,
+    1
+  ],
+  "prompt": "Generate a NEW pose pair in a wider 1400x1305 composition. Match reference identity and exact individual head/body scale, but not its page layout. Keep all shoes and hair complete. Compact action silhouette: no horizontal sprawling hair or wide long strides. Use short steps. The image edge must remain pure green.\nUse case: identity-preserve. Production animation pose pair.\nExactly TWO separate full-body animation drawings side by side in one WIDER image, exactly 1400 pixels wide and 1305 pixels tall. Two equal vertical cells. Figure centers x=350 and x=1050. Each figure's silhouette width MUST be less than 550 pixels. Leave a 50-pixel outer green border and a clear central green corridor. Keep all hair, hands, clothing and accessories inside each cell, with an empty green gap between them. Full native detail, about 1000 pixels figure height, no thumbnail sheet. Neutral standing boots at y=1200, top of hair around y=180. Preserve this scale for EVERY pose; crouching is shorter, jumping is displaced upward, never zoom a pose to fill its cell. Flat pure chroma green RGB(0,255,0), no floor, cast shadow, gradient, green reflection, checkerboard, writing, symbols, UI, bubbles, watermarks or extra figures. Opaque character with crisp fine cel-shaded outlines, polished eyes, accurate hands, coherent hair locks and fabric folds. Left and right images are two successive ANIMATION DRAWINGS of the SAME identity and outfit, not different costume designs.\nFan-made Cirno chibi. Refined clean anime cel animation, about 3 heads tall, short ice-blue bob hair, large dark-blue bow, bright blue eyes, playfully overconfident face. Six compact pale-blue faceted ice wings, three on each side, attached behind shoulders and always contained in her cell. Wing geometry follows shoulder motion. Preserve existing pet identity, NOT its repeated static poses; draw actual new poses.\nOUTFIT IN BOTH CELLS: Signature blue dress with white short-sleeved blouse, short red necktie, white triangular skirt trim, white socks and blue shoes. Same outfit and compact crystalline wings in ALL states, no lab coat. No floating snowflakes, letters or marks.\nLEFT CELL: Arms comfortably crossed at chest, weight balanced, one eyebrow raised, skeptical waiting expression.\nRIGHT CELL: Same crossed-arm stance, chin lifts a little, eyes glance toward viewer-right, shoulders softly inhale.\n\nOnly these two poses. Do not reuse identical neutral standing art for active poses. Precise same head size, leg length, eye shape and hair silhouette. Never add failure X marks, wave lines or a visible keyboard.",
+  "references": [
+    "pets/cirno-009/source/pairs/waiting-02.png"
+  ],
+  "output": "source/pairs/waiting-00.png",
+  "user_approved_local_matting": true
+}

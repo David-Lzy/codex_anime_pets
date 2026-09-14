@@ -1,0 +1,15 @@
+{
+  "tool": "built-in imagegen",
+  "model": "assistant-004",
+  "state": "look",
+  "frames": [
+    6,
+    7
+  ],
+  "prompt": "Generate a NEW pose pair in a wider 1400x1305 composition. Match reference identity and exact individual head/body scale, but not its page layout. Keep all shoes and hair complete. Compact action silhouette: no horizontal sprawling hair or wide long strides. Use short steps. The image edge must remain pure green.\nUse case: identity-preserve. Production animation pose pair.\nExactly TWO separate full-body animation drawings side by side in one WIDER image, exactly 1400 pixels wide and 1305 pixels tall. Two equal vertical cells. Figure centers x=350 and x=1050. Each figure's silhouette width MUST be less than 550 pixels. Leave a 50-pixel outer green border and a clear central green corridor. Keep all hair, hands, clothing and accessories inside each cell, with an empty green gap between them. Full native detail, about 1000 pixels figure height, no thumbnail sheet. Neutral standing boots at y=1200, top of hair around y=180. Preserve this scale for EVERY pose; crouching is shorter, jumping is displaced upward, never zoom a pose to fill its cell. Flat pure chroma green RGB(0,255,0), no floor, cast shadow, gradient, green reflection, checkerboard, writing, symbols, UI, bubbles, watermarks or extra figures. Opaque character with crisp fine cel-shaded outlines, polished eyes, accurate hands, coherent hair locks and fabric folds. Left and right images are two successive ANIMATION DRAWINGS of the SAME identity and outfit, not different costume designs.\nORIGINAL Assistant-004 COMPACT semi-chibi exactly 3.5 heads tall as reference. Head is 29 percent of standing height; chin-to-soles only 2.5 head-heights. Keep SHORT thighs and calves and large head; NEVER lengthen legs into a fashion anime figure. Chestnut long layered hair, asymmetric curved fringe, small plain teal barrette on her left, narrow blue-violet eyes, restrained skeptical scientist expression, not a baby. Preserve reference face, hair, boot style and compact body proportions precisely.\nOUTFIT IN BOTH CELLS: Short charcoal jacket with gray cuffs, pale-gray collared shirt, short burgundy tie, black shorts, opaque dark tights and black ankle boots with small teal trim.\nLEFT CELL: Idle frontal body, face looks diagonally DOWN-RIGHT, chin lowered and head turned right, 135 degrees.\nRIGHT CELL: Idle frontal body, face looks mostly DOWN and slightly RIGHT, 157.5 degrees.\n\nOnly these two poses. Do not reuse identical neutral standing art for active poses. Precise same head size, leg length, eye shape and hair silhouette. Never add failure X marks, wave lines or a visible keyboard.",
+  "references": [
+    "pets/assistant-004/source/pairs/idle-00.png"
+  ],
+  "output": "source/pairs/look-06.png",
+  "user_approved_local_matting": true
+}

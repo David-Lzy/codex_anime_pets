@@ -20,7 +20,9 @@
     "artifactName": "Assistant-004-Desktop-${version}-${os}-${arch}.${ext}",
     "files": ["main.cjs", "state.cjs", "integration.cjs", "preload.cjs", "renderer.js", "index.html", "style.css", "hooks/**"],
     "asarUnpack": ["hooks/**"],
-    "extraResources": [{"from": "../pets", "to": "pets", "filter": ["assistant-004/hd/**", "assistant-004-anime/hd/**"]}],
+    "extraResources": [{"from": "../pets", "to": "pets", "filter": ["*/hd/**"]},
+      {"from": "../NOTICE.md", "to": "NOTICE.md"}, {"from": "../LICENSE", "to": "LICENSE"},
+      {"from": "README.md", "to": "README.md"}, {"from": "README.zh-CN.md", "to": "README.zh-CN.md"}],
     "win": {"target": "zip", "signAndEditExecutable": false},
     "mac": {"category": "public.app-category.utilities"},
     "linux": {"category": "Utility"}

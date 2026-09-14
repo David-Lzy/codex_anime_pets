@@ -1,29 +1,61 @@
 {
+  "16-directions": [
+    "assistant-004",
+    "assistant-004-anime",
+    "march-7th-001",
+    "cirno-009"
+  ],
+  "16方向": [
+    "assistant-004",
+    "assistant-004-anime",
+    "march-7th-001",
+    "cirno-009"
+  ],
+  "5-head-proportions": [
+    "assistant-004-anime"
+  ],
+  "5头身": [
+    "assistant-004-anime"
+  ],
   "9": [
     "cirno-009"
   ],
   "AI 助理": [
-    "assistant-004"
+    "assistant-004",
+    "assistant-004-anime"
   ],
   "AI 工程师": [
-    "assistant-004"
+    "assistant-004",
+    "assistant-004-anime"
   ],
   "ai-assistant": [
-    "assistant-004"
+    "assistant-004",
+    "assistant-004-anime"
   ],
   "ai-engineer": [
-    "assistant-004"
+    "assistant-004",
+    "assistant-004-anime"
   ],
   "ai-engineering": [
-    "assistant-004"
+    "assistant-004",
+    "assistant-004-anime"
+  ],
+  "anime chibi": [
+    "assistant-004",
+    "assistant-004-anime"
   ],
   "anime-chibi": [
     "assistant-004",
+    "assistant-004-anime",
     "march-7th-001",
     "cirno-009"
   ],
+  "anime-slender": [
+    "assistant-004-anime"
+  ],
   "assistant": [
-    "assistant-004"
+    "assistant-004",
+    "assistant-004-anime"
   ],
   "blue-hair": [
     "cirno-009"
@@ -34,20 +66,35 @@
   "cirno": [
     "cirno-009"
   ],
+  "code-review": [
+    "assistant-004",
+    "assistant-004-anime"
+  ],
   "codex 宠物": [
-    "assistant-004"
+    "assistant-004",
+    "assistant-004-anime"
   ],
   "codex-pet": [
-    "assistant-004"
+    "assistant-004",
+    "assistant-004-anime"
+  ],
+  "codex-v2": [
+    "assistant-004",
+    "assistant-004-anime",
+    "march-7th-001",
+    "cirno-009"
   ],
   "coding-partner": [
-    "assistant-004"
+    "assistant-004",
+    "assistant-004-anime"
   ],
   "debugging": [
-    "cirno-009"
+    "assistant-004",
+    "assistant-004-anime"
   ],
   "desktop-pet": [
     "assistant-004",
+    "assistant-004-anime",
     "march-7th-001",
     "cirno-009"
   ],
@@ -56,6 +103,12 @@
     "cirno-009"
   ],
   "fan-art": [
+    "march-7th-001",
+    "cirno-009"
+  ],
+  "hd-desktop-pet": [
+    "assistant-004",
+    "assistant-004-anime",
     "march-7th-001",
     "cirno-009"
   ],
@@ -72,23 +125,53 @@
   "ice-wings": [
     "cirno-009"
   ],
+  "infrastructure": [
+    "assistant-004",
+    "assistant-004-anime"
+  ],
   "lab-assistant": [
-    "assistant-004"
+    "assistant-004",
+    "assistant-004-anime"
   ],
   "march-7th": [
     "march-7th-001"
   ],
-  "photographer": [
-    "march-7th-001"
+  "model-training": [
+    "assistant-004",
+    "assistant-004-anime"
   ],
   "pink-hair": [
     "march-7th-001"
   ],
   "researcher": [
-    "assistant-004"
+    "assistant-004",
+    "assistant-004-anime"
+  ],
+  "retro-sci-fi": [
+    "assistant-004",
+    "assistant-004-anime"
   ],
   "sanyueqi": [
     "march-7th-001"
+  ],
+  "sarcastic": [
+    "assistant-004",
+    "assistant-004-anime"
+  ],
+  "scientist": [
+    "assistant-004",
+    "assistant-004-anime"
+  ],
+  "server-watcher": [
+    "assistant-004",
+    "assistant-004-anime"
+  ],
+  "skeptical": [
+    "assistant-004",
+    "assistant-004-anime"
+  ],
+  "slender-anime": [
+    "assistant-004-anime"
   ],
   "touhou": [
     "cirno-009"
@@ -96,17 +179,40 @@
   "touhou-project": [
     "cirno-009"
   ],
+  "tsundere": [
+    "assistant-004",
+    "assistant-004-anime"
+  ],
+  "worldline-observer": [
+    "assistant-004",
+    "assistant-004-anime"
+  ],
   "⑨": [
     "cirno-009"
   ],
   "三月七": [
     "march-7th-001"
   ],
+  "世界线观察者": [
+    "assistant-004",
+    "assistant-004-anime"
+  ],
   "东方": [
     "cirno-009"
   ],
   "东方Project": [
     "cirno-009"
+  ],
+  "代码审查": [
+    "assistant-004",
+    "assistant-004-anime"
+  ],
+  "修长动漫": [
+    "assistant-004-anime"
+  ],
+  "傲娇": [
+    "assistant-004",
+    "assistant-004-anime"
   ],
   "冰之妖精": [
     "cirno-009"
@@ -118,22 +224,58 @@
     "march-7th-001"
   ],
   "动漫 chibi": [
-    "march-7th-001"
+    "march-7th-001",
+    "cirno-009"
+  ],
+  "动画重制": [
+    "assistant-004",
+    "assistant-004-anime",
+    "march-7th-001",
+    "cirno-009"
   ],
   "助理": [
-    "assistant-004"
+    "assistant-004",
+    "assistant-004-anime"
+  ],
+  "吐槽": [
+    "assistant-004",
+    "assistant-004-anime"
+  ],
+  "基础设施": [
+    "assistant-004",
+    "assistant-004-anime"
+  ],
+  "复古科幻": [
+    "assistant-004",
+    "assistant-004-anime"
   ],
   "实验室助理": [
-    "assistant-004"
+    "assistant-004",
+    "assistant-004-anime"
   ],
   "崩坏星穹铁道": [
     "march-7th-001"
   ],
+  "怀疑主义": [
+    "assistant-004",
+    "assistant-004-anime"
+  ],
   "星穹铁道": [
     "march-7th-001"
   ],
+  "服务器监控": [
+    "assistant-004",
+    "assistant-004-anime"
+  ],
   "桌面宠物": [
-    "assistant-004"
+    "assistant-004",
+    "assistant-004-anime",
+    "march-7th-001",
+    "cirno-009"
+  ],
+  "模型训练": [
+    "assistant-004",
+    "assistant-004-anime"
   ],
   "琪露诺": [
     "cirno-009"
@@ -142,15 +284,31 @@
     "march-7th-001"
   ],
   "研究员": [
-    "assistant-004"
+    "assistant-004",
+    "assistant-004-anime"
+  ],
+  "科学家": [
+    "assistant-004",
+    "assistant-004-anime"
   ],
   "粉发": [
     "march-7th-001"
   ],
   "编程伙伴": [
-    "assistant-004"
+    "assistant-004",
+    "assistant-004-anime"
   ],
   "蓝发": [
+    "cirno-009"
+  ],
+  "调试": [
+    "assistant-004",
+    "assistant-004-anime"
+  ],
+  "高清桌宠": [
+    "assistant-004",
+    "assistant-004-anime",
+    "march-7th-001",
     "cirno-009"
   ]
 }

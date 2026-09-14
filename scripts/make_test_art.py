@@ -3,10 +3,10 @@ import json
 from pathlib import Path
 
 from PIL import Image, ImageDraw
-from build_pet import STATES, COUNTS, DURATIONS, dump
+from build_pet import STATES, COUNTS, DURATIONS, REMASTER_IDS, dump
 
 ROOT = Path(__file__).resolve().parents[1] / "build" / "engine-test" / "pets"
-for pet in ["assistant-004", "assistant-004-anime"]:
+for pet in REMASTER_IDS:
     folder = ROOT / pet / "hd"
     folder.mkdir(parents=True, exist_ok=True)
     animation = {"cellWidth": 768, "cellHeight": 832, "displayName": f"TEST FIXTURE {pet}", "clips": {}}

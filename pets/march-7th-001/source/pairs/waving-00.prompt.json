@@ -1,0 +1,15 @@
+{
+  "tool": "built-in imagegen",
+  "model": "march-7th-001",
+  "state": "waving",
+  "frames": [
+    0,
+    1
+  ],
+  "prompt": "\nUse case: identity-preserve. Production animation pose pair.\nExactly TWO separate full-body animation drawings side by side in one portrait image, aspect 1205:1305. Two equal vertical cells. Figure centers at 25% and 75% of total width. Keep all hair, hands, clothing and accessories inside each cell, with an empty green gap between them. Full native detail, about 1000 pixels figure height, no thumbnail sheet. Neutral standing boots at y=1200, top of hair around y=180. Preserve this scale for EVERY pose; crouching is shorter, jumping is displaced upward, never zoom a pose to fill its cell. Flat pure chroma green RGB(0,255,0), no floor, cast shadow, gradient, green reflection, checkerboard, writing, symbols, UI, bubbles, watermarks or extra figures. Opaque character with crisp fine cel-shaded outlines, polished eyes, accurate hands, coherent hair locks and fabric folds. Left and right images are two successive ANIMATION DRAWINGS of the SAME identity and outfit, not different costume designs.\nFan-made March 7th chibi. Redraw in refined high-detail anime cel animation, about 3 heads tall. Pink bob haircut with pale highlights, bright blue-pink eyes, cheerful inquisitive expression, small icy flower hair ornament. Preserve the supplied existing pet identity; reference is for outfit and colors only, NOT its repeated static poses. Genuine new hand, leg, face and hair drawings in each frame.\nOUTFIT IN BOTH CELLS: Signature blue and pale-pink adventurer outfit with white blouse, short layered blue skirt, blue-pink jacket, small hanging camera and strap, pale stockings and blue ankle shoes. Keep the same outfit in ALL states; no lab coat.\nLEFT CELL: Frontal grounded stance, right elbow bends and hand lifts beside shoulder, palm beginning to face viewer, restrained greeting.\nRIGHT CELL: Right palm fully raised beside cheek, wrist tilts outward, fingers together and clearly drawn; left arm relaxed.\nOnly these two poses. Do not reuse identical neutral standing art for active poses. Precise same head size, leg length, eye shape and hair silhouette. Never add failure X marks, wave lines or a visible keyboard.",
+  "references": [
+    "pets/march-7th-001/source/pairs/idle-00.png"
+  ],
+  "output": "source/pairs/waving-00.png",
+  "user_approved_local_matting": true
+}

@@ -8,12 +8,39 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw
 from install import install_pet, load_catalog
-from build_pet import load_frame, resize_rgba
+from build_pet import load_frame, resize_rgba, REMASTER_IDS, STATES, COUNTS
+from build_release import install_bundle
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 class PackageTests(unittest.TestCase):
+    def test_release_art_contract(self):
+        for id in REMASTER_IDS:
+            pet = ROOT / "pets" / id
+            meta = json.loads((pet / "pet.json").read_text(encoding="utf-8"))
+            self.assertEqual(meta["spriteVersionNumber"], 2)
+            with Image.open(pet / "spritesheet.webp") as atlas:
+                self.assertEqual(atlas.size, (1536, 2288))
+                self.assertEqual(atlas.getchannel("A").getextrema(), (0, 255))
+            with Image.open(pet / "compat/v1/spritesheet.webp") as legacy:
+                self.assertEqual(legacy.size, (1536, 1872))
+            clips = json.loads((pet / "hd/animation.json").read_text())["clips"]
+            report = json.loads((pet / "assets/validation.json").read_text())["states"]
+            for state, count in zip(STATES + ["look"], COUNTS + [16]):
+                self.assertEqual(len(clips[state]["durations"]), count)
+                bounds = report[state]["bounds"]
+                if state != "jumping":
+                    self.assertLessEqual(max(b[3] for b in bounds) - min(b[3] for b in bounds), 1)
+            hop = report["jumping"]["bounds"]
+            self.assertLess(hop[2][1], hop[1][1])
+            self.assertLess(hop[1][1], hop[0][1])
+            self.assertLess(hop[2][3], hop[1][3])
+            self.assertLess(hop[1][3], hop[0][3])
+        self.assertFalse(install_bundle("pets/assistant-004/hd/idle.webp"))
+        self.assertFalse(install_bundle("pets/assistant-004/source/pairs/idle-00.png"))
+        self.assertTrue(install_bundle("pets/assistant-004/compat/v1/pet.json"))
+
     def test_install_all_and_backup(self):
         with tempfile.TemporaryDirectory() as folder:
             home = Path(folder)
@@ -24,6 +51,10 @@ class PackageTests(unittest.TestCase):
                 self.assertTrue((target / "spritesheet.webp").is_file())
                 install_pet(ROOT, home, pet, legacy=True)
                 self.assertEqual(json.loads((target / "pet.json").read_text()).get("spriteVersionNumber", 1), 1)
+                old_pet = {**pet, "files": pet["files"]["legacy"]}
+                for legacy in (False, True):
+                    install_pet(ROOT, home, old_pet, legacy=legacy)
+                    self.assertEqual(json.loads((target / "pet.json").read_text()).get("spriteVersionNumber", 1), 1)
             self.assertTrue(any((home / "pets" / ".backups").iterdir()))
 
     def test_path_escape_rejected(self):

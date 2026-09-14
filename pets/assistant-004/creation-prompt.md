@@ -1,5 +1,9 @@
 # Assistant-004 Creation Prompt / Assistant-004 创作题词
 
+## Remaster Record / 重制记录
+
+Current production: [shared specification](../../art/animation-prompts.json), native drawings and exact prompts in [source/pairs](source/pairs/), and [production notes](../../art/README.md). The original brief below is retained for history; it is not the sole prompt used for the remaster. / 当前重制的实际题词与原图映射见上述记录，下方保留历史创作简述。
+
 ## Original Creative Brief / 原始创作简述
 
 Pet name: Assistant-004
@@ -75,4 +79,3 @@ Assistant-004 的最终形象是原创 chibi AI 实验室助理，重点特征�
 - 深色下装和靴子
 - 附着在衣服上的小型青绿色设备点缀
 - 无可读文字、无 logo、无任何系列专属符号
-

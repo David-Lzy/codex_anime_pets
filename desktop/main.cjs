@@ -34,7 +34,9 @@ function bounds(height = settings.height) {
 function readModels() {
   const root = process.env.ASSISTANT004_SMOKE === '1' && process.env.ASSISTANT004_TEST_ASSETS ? path.resolve(process.env.ASSISTANT004_TEST_ASSETS) :
     app.isPackaged ? path.join(process.resourcesPath, 'pets') : path.resolve(__dirname, '..', 'pets');
-  for (const id of ['assistant-004', 'assistant-004-anime']) {
+  for (const entry of fs.readdirSync(root, {withFileTypes: true})) {
+    const id = entry.name;
+    if (!entry.isDirectory() || !/^[a-z0-9-]+$/.test(id) || !fs.existsSync(path.join(root, id, 'hd', 'animation.json'))) continue;
     const folder = path.join(root, id, 'hd');
     const model = JSON.parse(fs.readFileSync(path.join(folder, 'animation.json'), 'utf8'));
     if (model.cellWidth !== 768 || model.cellHeight !== 832) throw Error(`Invalid HD dimensions: ${id}`);
@@ -47,6 +49,8 @@ function readModels() {
     }
     models.set(id, {...model, id});
   }
+  if (!models.size) throw Error('No HD pets installed. Reinstall the complete package.');
+  if (!models.has(settings.pet)) settings.pet = models.keys().next().value;
 }
 function snapshot() {
   const linked = tasks.current(settings.taskId);
@@ -142,7 +146,7 @@ if (single) app.whenReady().then(async () => {
   try {
     try {
       const saved = JSON.parse(fs.readFileSync(settingsFile, 'utf8'));
-      if (['assistant-004', 'assistant-004-anime'].includes(saved.pet)) settings.pet = saved.pet;
+      if (typeof saved.pet === 'string' && /^[a-z0-9-]+$/.test(saved.pet)) settings.pet = saved.pet;
       if ([160, 240, 320, 480, 640].includes(saved.height)) settings.height = saved.height;
       for (const key of ['x', 'y']) if (Number.isFinite(saved[key])) settings[key] = saved[key];
       for (const key of ['paused', 'clickThrough', 'look', 'integration']) if (typeof saved[key] === 'boolean') settings[key] = saved[key];
@@ -161,7 +165,8 @@ if (single) app.whenReady().then(async () => {
     ipcMain.on('pet:menu', event => { if (trusted(event)) menu(); });
     ipcMain.on('pet:gesture', (event, state) => {
       if (!trusted(event) || !['waving', 'jumping'].includes(state)) return;
-      gesture = {state, until: Date.now() + 1200}; update();
+      const duration = models.get(settings.pet).clips[state].durations.reduce((a, b) => a + b, 0);
+      gesture = {state, until: Date.now() + duration}; update();
     });
     ipcMain.on('pet:loaded', (event, ok) => { if (trusted(event)) artworkError = !ok; });
     ipcMain.on('pet:drag', (event, point) => {
@@ -177,8 +182,8 @@ if (single) app.whenReady().then(async () => {
     screen.on('display-removed', () => win.setBounds(bounds()));
     screen.on('display-metrics-changed', () => win.setBounds(bounds()));
     const iconFile = process.env.ASSISTANT004_SMOKE === '1' && process.env.ASSISTANT004_TEST_ASSETS ?
-      path.join(process.env.ASSISTANT004_TEST_ASSETS, 'assistant-004', 'hd', 'tray.png') :
-      path.join(app.isPackaged ? process.resourcesPath : path.resolve(__dirname, '..'), 'pets', 'assistant-004', 'hd', 'tray.png');
+      path.join(process.env.ASSISTANT004_TEST_ASSETS, settings.pet, 'hd', 'tray.png') :
+      path.join(app.isPackaged ? process.resourcesPath : path.resolve(__dirname, '..'), 'pets', settings.pet, 'hd', 'tray.png');
     const icon = nativeImage.createFromPath(iconFile);
     if (icon.isEmpty()) throw Error('Missing tray icon. Reinstall the complete package.');
     tray = new Tray(icon.resize({width: 24, height: 24}));

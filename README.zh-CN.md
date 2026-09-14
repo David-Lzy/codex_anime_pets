@@ -1,206 +1,80 @@
 # Codex Anime Pets
 
-[English](README.md) | [中文](README.zh-CN.md)
+[English](README.md) | **简体中文**
 
-## 高清重制开发中
+可检索、可分享的 Codex 桌宠合集。目前有四款重制角色，提供 Codex 内置版和独立高清版，保留生成题词及素材来源记录。
 
-Assistant-004 正在进行半Q版与修长动漫版重制，并增加独立高清桌宠。可查看[角色草稿与保存的提示词](art/README.md)及[独立版实现说明](desktop/README.zh-CN.md)。目前已实现动画引擎、本机 Codex Hooks 联动、旧版兼容安装选项和发布检查；新版透明动画素材**尚未就绪**，下方已有宠物仍是当前可安装版本。
+| Assistant-004 半Q版 | Assistant-004 修长版 | 三月七 | 琪露诺 |
+| --- | --- | --- | --- |
+| ![半Q版](pets/assistant-004/assets/previews/idle.gif) | ![修长版](pets/assistant-004-anime/assets/previews/idle.gif) | ![三月七](pets/march-7th-001/assets/previews/idle.gif) | ![琪露诺](pets/cirno-009/assets/previews/idle.gif) |
+| 原创，约3.5头身 | 原创，约5头身 | 非官方同人 | 非官方同人 |
 
-独立版计划使用真实 768×832 帧；Codex 内置版仍要求每帧 192×208。草稿不代表最终动画，Windows 发布流程会在高清素材未验收时停止。
+## 下载与使用
 
-旧客户端可使用 PowerShell 的 `-Legacy` 或 Python/Shell 的 `--legacy`。重复安装会先备份已有宠物到 `$CODEX_HOME/pets/.backups/`；Python/Shell 安装器需要 Python 3.9+。
+[最新 Release 与 SHA-256 校验值](https://github.com/David-Lzy/codex_anime_pets/releases/latest)
 
-一个可检索的 Codex 桌面宠物合集。每个宠物都放在独立的 `pets/<pet-id>/` 目录下，包含安装文件、预览媒体、QA 元数据和保存的创作题词。
+- **Codex-Anime-Pets.zip**：轻量 Codex 内置宠物安装包，含 v2 和 v1 兼容素材。
+- **Assistant-004-Desktop-2.0.0-win-x64.zip**：独立 Windows 高清桌宠，**未签名**。完整解压后双击 **Assistant-004 Desktop.exe**，无需额外安装 Python 或 Node。
+- 原生图片、生成题词与构建源码保存在本仓库。Windows 成品由 GitHub Actions 构建，不把二进制放进 Git 历史。
 
-当前包含：
+## 安装到 Codex
 
-- [Assistant-004](pets/assistant-004/README.md) - 原创 chibi AI 实验室助理、带一点吐槽感的编程伙伴、复古科幻研究员气质。
-- [三月七](pets/march-7th-001/README.md) - 非官方 fan-made chibi Codex 桌宠，粉发、开朗、带相机的星旅摄影少女。
-- [琪露诺（⑨）](pets/cirno-009/README.md) - 非官方 fan-made chibi Codex 桌宠，自信过头的冰之妖精。
-
-![Assistant-004 contact sheet](pets/assistant-004/assets/contact-sheet.png)
-![March 7th contact sheet](pets/march-7th-001/assets/contact-sheet.png)
-![Cirno contact sheet](pets/cirno-009/assets/contact-sheet.png)
-
-## AI 检索目录
-
-给 AI 代理、脚本和搜索工具使用：
-
-- [`catalog.json`](catalog.json) - 机器可读宠物注册表
-- [`PETS.md`](PETS.md) - 人类可读宠物列表
-- [`indexes/ai-search-index.json`](indexes/ai-search-index.json) - 扁平化检索索引
-- [`indexes/tags.json`](indexes/tags.json) - 标签到宠物的查找表
-- [`schemas/catalog.schema.json`](schemas/catalog.schema.json) - 后续条目的轻量 schema
-- [`manifest.json`](manifest.json) - 包文件哈希清单
-
-适合 AI 搜索的查询示例：
-
-```text
-找一个理性、吐槽感、实验室助理风格的 Codex 宠物。
-找一个适合 AI 工程师的 chibi 研究员桌面宠物。
-找一个适合代码审查、调试、模型训练和服务器监控的桌面宠物。
-```
-
-## 快速安装
-
-默认安装 `assistant-004`。Fan-made 宠物可以通过指定 pet id 安装。
-
-### Windows
-
-双击：
-
-```text
-scripts\install.bat
-```
-
-或者在 PowerShell 中运行：
+先解压安装包。Windows 双击 `scripts/install.bat` 默认安装 Assistant-004；也可以选择角色或全部安装：
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\install.ps1
+powershell -ExecutionPolicy Bypass -File .\scripts\install.ps1 -PetId assistant-004-anime
+powershell -ExecutionPolicy Bypass -File .\scripts\install.ps1 -All
 ```
 
-安装指定宠物：
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\install.ps1 -PetId assistant-004
-```
-
-列出可用宠物：
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\install.ps1 -List
-```
-
-### macOS / Linux
+macOS/Linux 需要 Python 3.9+：
 
 ```sh
-chmod +x scripts/install.sh
-./scripts/install.sh
+sh scripts/install.sh --pet assistant-004
+sh scripts/install.sh --all
 ```
 
-安装指定宠物：
-
-```sh
-./scripts/install.sh --pet assistant-004
-```
-
-列出可用宠物：
-
-```sh
-./scripts/install.sh --list
-```
-
-### 通用 Python 安装器
-
-```sh
-python scripts/install.py
-```
-
-安装指定宠物：
-
-```sh
-python scripts/install.py --pet assistant-004
-```
-
-安装全部宠物：
-
-```sh
-python scripts/install.py --all
-```
-
-列出宠物：
+跨平台 Python 入口：
 
 ```sh
 python scripts/install.py --list
+python scripts/install.py --pet cirno-009
 ```
 
-安装器会把所选宠物的 `pet.json` 和 `spritesheet.webp` 复制到：
+旧客户端在 Python/Shell 命令后加 `--legacy`，PowerShell 加 `-Legacy`。安装器只复制 `pet.json` 和 `spritesheet.webp`，优先使用 `$CODEX_HOME/pets/<id>/`，否则使用 `~/.codex/pets/<id>/`。已有文件先备份到 `pets/.backups/`。未立即出现时刷新宠物列表或重启 Codex。需要支持桌宠的 Codex 桌面客户端，安装脚本不会安装客户端本身。
 
-```text
-~/.codex/pets/<pet-id>/
-```
+手动安装时，从角色目录复制上述两个文件；旧版请复制 `compat/v1/` 中的那一对文件。
 
-如果设置了 `CODEX_HOME`，则使用：
+## 独立高清桌宠
 
-```text
-$CODEX_HOME/pets/<pet-id>/
-```
+四款角色使用真实透明的 **768x832** 帧，由 Electron/Canvas 播放。默认窗口高约320像素。拖动移动、单击挥手、双击轻跳；右键或托盘菜单可切换角色、动作、大小、暂停、鼠标朝向、鼠标穿透、跟随任务、重置位置与退出。
 
-## 手动安装
+可选的 **Codex integration** 在确认后备份并合并观察型 Hooks，通过带随机令牌的本机回环接口接收最小状态事件。不传输题词或工具输出，不改变审批，不自动连接远程任务。未启用联动时也可以手动切换动作。
 
-复制：
+详细信任步骤、事件限制和构建方式见[中文桌宠说明](desktop/README.zh-CN.md)。Windows 成品未签名；**macOS/Linux 本次只提供源码与构建说明，不宣称实机验收。** 默认不开机启动。
 
-```text
-pets/assistant-004/pet.json
-pets/assistant-004/spritesheet.webp
-```
+## 本次重制
 
-到：
+每款包含九种动作与16个闲置朝向，从正上方顺时针排列。两款 Assistant 在工作、审阅、挫败、等待时穿白大褂，其余动作穿日常短外套。三月七与琪露诺保留各自同人服装。
 
-```text
-~/.codex/pets/assistant-004/
-```
+素材采用原生高分辨率纯绿底动作图，经本地抠图得到真实 RGBA。装配统一缩放整张画布，只平移对齐脚底；不会把每帧人物裁出后单独拉伸。跳跃保留实际画出的蓄力、腾空、落地，左移动作由右移周期镜像获得。
 
-最终目录结构应为：
+Codex v2 图集为 **1536x2288**、8列11行，每格 **192x208**；v1 为 **1536x1872**。内置图集与高清播放素材分开，不修改 Codex 客户端，不承诺自定义客户端播放帧率。旧美术保留在 Git 历史中。
 
-```text
-.codex/
-  pets/
-    assistant-004/
-      pet.json
-      spritesheet.webp
-```
+## 检索与扩展
 
-## 仓库结构
+- [宠物列表](PETS.md)
+- [机器可读目录](catalog.json)
+- [AI 检索索引](indexes/ai-search-index.json)
+- [标签索引](indexes/tags.json)
+- [目录格式](schemas/catalog.schema.json)
+- [题词、来源及装配说明](art/README.md)
+- [文件校验清单](manifest.json)
+- [验收记录及剩余交互检查](art/QA.md)
 
-```text
-catalog.json
-PETS.md
-indexes/
-  ai-search-index.json
-  tags.json
-manifest.json
-schemas/catalog.schema.json
-scripts/
-  install.bat
-  install.ps1
-  install.py
-  install.sh
-pets/
-  assistant-004/
-    README.md
-    pet.json
-    spritesheet.webp
-    creation-prompt.md
-    assets/
-      contact-sheet.png
-      previews/*.gif
-      validation.json
-      review.json
-```
+检索示例：“找一个适合 AI 工程师、会吐槽的原创实验室助理 Codex 高清桌宠。”元数据便于检索，但不保证任何搜索引擎一定收录。
 
-## 添加更多宠物
+新增角色时创建 `pets/<id>/`，在 `catalog.json` 注册，保留题词和权利说明；运行 `python scripts/build_index.py` 更新索引，再按美术说明验证。轻量安装包有自己的子集清单，仓库清单覆盖公开源码和素材。
 
-以后添加新宠物时：
+## 授权
 
-1. 创建 `pets/<new-pet-id>/`。
-2. 放入 `pet.json` 和 `spritesheet.webp`。
-3. 如果有预览媒体和题词，也一起放入。
-4. 在 `catalog.json` 中新增条目。
-5. 在 `PETS.md` 中加入简短列表说明。
-6. 重新生成 `manifest.json`。
-
-## 许可与 Fan-made 说明
-
-除非另有说明，仓库代码和原创元数据使用 MIT 许可。Fan-made 角色宠物属于非官方二创素材；相关角色与作品的底层权利归各自权利人所有。再分发前请查看 `NOTICE.md` 和各宠物 README。
-
-## GitHub 分享
-
-这个仓库已经可以直接克隆、安装和扩展：
-
-```sh
-git clone git@github.com:David-Lzy/codex_anime_pets.git
-cd codex_anime_pets
-python scripts/install.py --list
-python scripts/install.py --pet assistant-004
-```
+代码与原创项目元数据采用 MIT。**MIT 不授予同人角色或所属作品的权利。** 三月七和琪露诺沿用非商业个人桌面使用的非官方同人声明，见 [NOTICE](NOTICE.md)。Assistant-004 为原创设计。用户上传的系列参考图不随包再发布。

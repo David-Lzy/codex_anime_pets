@@ -1,0 +1,553 @@
+{
+  "id": "cirno-009",
+  "display_name": "Cirno (009)",
+  "description": "Fan-made Codex desktop pet of Cirno: blue-haired, overconfident ice fairy chibi with crystalline wings and playful debugging energy.",
+  "reviewed": true,
+  "source_canvas": [
+    768,
+    1536
+  ],
+  "per_frame_bbox_scaling": false,
+  "registration": "Translation only: shared foot baseline, head-registered walk, 45/110 native-pixel takeoff/apex lift. Drawn body proportions and crouch heights retained.",
+  "frames": {
+    "idle": [
+      {
+        "file": "source/frames/idle-00-0.png",
+        "offset": [
+          0,
+          18
+        ]
+      },
+      {
+        "file": "source/frames/idle-00-1.png",
+        "offset": [
+          -2,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/idle-02-0.png",
+        "offset": [
+          -1,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/idle-02-1.png",
+        "offset": [
+          -2,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/idle-04-0.png",
+        "offset": [
+          0,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/idle-04-1.png",
+        "offset": [
+          -2,
+          17
+        ]
+      }
+    ],
+    "running-right": [
+      {
+        "file": "source/frames/running-right-00-0.png",
+        "offset": [
+          -26,
+          32
+        ]
+      },
+      {
+        "file": "source/frames/running-right-00-1.png",
+        "offset": [
+          -24,
+          31
+        ]
+      },
+      {
+        "file": "source/frames/running-right-02-0.png",
+        "offset": [
+          -26,
+          30
+        ]
+      },
+      {
+        "file": "source/frames/running-right-02-1.png",
+        "offset": [
+          -25,
+          31
+        ]
+      },
+      {
+        "file": "source/frames/running-right-04-0.png",
+        "offset": [
+          -26,
+          35
+        ]
+      },
+      {
+        "file": "source/frames/running-right-04-1.png",
+        "offset": [
+          -34,
+          34
+        ]
+      },
+      {
+        "file": "source/frames/running-right-06-0.png",
+        "offset": [
+          -26,
+          31
+        ]
+      },
+      {
+        "file": "source/frames/running-right-06-1.png",
+        "offset": [
+          -23,
+          30
+        ]
+      }
+    ],
+    "running-left": [
+      {
+        "file": "source/frames/running-left-00.png",
+        "offset": [
+          26,
+          32
+        ],
+        "mirrored_from": "source/frames/running-right-00-0.png"
+      },
+      {
+        "file": "source/frames/running-left-01.png",
+        "offset": [
+          24,
+          31
+        ],
+        "mirrored_from": "source/frames/running-right-00-1.png"
+      },
+      {
+        "file": "source/frames/running-left-02.png",
+        "offset": [
+          26,
+          30
+        ],
+        "mirrored_from": "source/frames/running-right-02-0.png"
+      },
+      {
+        "file": "source/frames/running-left-03.png",
+        "offset": [
+          25,
+          31
+        ],
+        "mirrored_from": "source/frames/running-right-02-1.png"
+      },
+      {
+        "file": "source/frames/running-left-04.png",
+        "offset": [
+          26,
+          35
+        ],
+        "mirrored_from": "source/frames/running-right-04-0.png"
+      },
+      {
+        "file": "source/frames/running-left-05.png",
+        "offset": [
+          34,
+          34
+        ],
+        "mirrored_from": "source/frames/running-right-04-1.png"
+      },
+      {
+        "file": "source/frames/running-left-06.png",
+        "offset": [
+          26,
+          31
+        ],
+        "mirrored_from": "source/frames/running-right-06-0.png"
+      },
+      {
+        "file": "source/frames/running-left-07.png",
+        "offset": [
+          23,
+          30
+        ],
+        "mirrored_from": "source/frames/running-right-06-1.png"
+      }
+    ],
+    "waving": [
+      {
+        "file": "source/frames/waving-00-0.png",
+        "offset": [
+          0,
+          18
+        ]
+      },
+      {
+        "file": "source/frames/waving-00-1.png",
+        "offset": [
+          -1,
+          18
+        ]
+      },
+      {
+        "file": "source/frames/waving-02-0.png",
+        "offset": [
+          0,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/waving-02-1.png",
+        "offset": [
+          -2,
+          17
+        ]
+      }
+    ],
+    "jumping": [
+      {
+        "file": "source/frames/jumping-00-0.png",
+        "offset": [
+          -1,
+          22
+        ]
+      },
+      {
+        "file": "source/frames/jumping-00-1.png",
+        "offset": [
+          3,
+          14
+        ]
+      },
+      {
+        "file": "source/frames/jumping-02-0.png",
+        "offset": [
+          1,
+          -27
+        ]
+      },
+      {
+        "file": "source/frames/jumping-02-1.png",
+        "offset": [
+          8,
+          14
+        ]
+      },
+      {
+        "file": "source/frames/jumping-04-0.png",
+        "offset": [
+          -1,
+          17
+        ]
+      }
+    ],
+    "failed": [
+      {
+        "file": "source/frames/failed-00-0.png",
+        "offset": [
+          0,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/failed-00-1.png",
+        "offset": [
+          -3,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/failed-02-0.png",
+        "offset": [
+          0,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/failed-02-1.png",
+        "offset": [
+          -3,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/failed-04-0.png",
+        "offset": [
+          0,
+          18
+        ]
+      },
+      {
+        "file": "source/frames/failed-04-1.png",
+        "offset": [
+          -3,
+          18
+        ]
+      },
+      {
+        "file": "source/frames/failed-06-0.png",
+        "offset": [
+          -1,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/failed-06-1.png",
+        "offset": [
+          -2,
+          17
+        ]
+      }
+    ],
+    "waiting": [
+      {
+        "file": "source/frames/waiting-00-0.png",
+        "offset": [
+          -3,
+          47
+        ]
+      },
+      {
+        "file": "source/frames/waiting-00-1.png",
+        "offset": [
+          -3,
+          47
+        ]
+      },
+      {
+        "file": "source/frames/waiting-02-0.png",
+        "offset": [
+          -1,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/waiting-02-1.png",
+        "offset": [
+          -4,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/waiting-04-0.png",
+        "offset": [
+          -2,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/waiting-04-1.png",
+        "offset": [
+          -4,
+          17
+        ]
+      }
+    ],
+    "running": [
+      {
+        "file": "source/frames/running-00-0.png",
+        "offset": [
+          -1,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/running-00-1.png",
+        "offset": [
+          0,
+          16
+        ]
+      },
+      {
+        "file": "source/frames/running-02-0.png",
+        "offset": [
+          -1,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/running-02-1.png",
+        "offset": [
+          0,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/running-04-0.png",
+        "offset": [
+          -1,
+          16
+        ]
+      },
+      {
+        "file": "source/frames/running-04-1.png",
+        "offset": [
+          -2,
+          16
+        ]
+      }
+    ],
+    "review": [
+      {
+        "file": "source/frames/review-00-0.png",
+        "offset": [
+          -2,
+          16
+        ]
+      },
+      {
+        "file": "source/frames/review-00-1.png",
+        "offset": [
+          -10,
+          16
+        ]
+      },
+      {
+        "file": "source/frames/review-02-0.png",
+        "offset": [
+          1,
+          16
+        ]
+      },
+      {
+        "file": "source/frames/review-02-1.png",
+        "offset": [
+          -5,
+          16
+        ]
+      },
+      {
+        "file": "source/frames/review-04-0.png",
+        "offset": [
+          1,
+          16
+        ]
+      },
+      {
+        "file": "source/frames/review-04-1.png",
+        "offset": [
+          -5,
+          16
+        ]
+      }
+    ],
+    "look": [
+      {
+        "file": "source/frames/look-00-0.png",
+        "offset": [
+          0,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/look-00-1.png",
+        "offset": [
+          -3,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/look-02-0.png",
+        "offset": [
+          0,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/look-02-1.png",
+        "offset": [
+          -8,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/look-04-0.png",
+        "offset": [
+          -7,
+          18
+        ]
+      },
+      {
+        "file": "source/frames/look-04-1.png",
+        "offset": [
+          -13,
+          18
+        ]
+      },
+      {
+        "file": "source/frames/look-06-0.png",
+        "offset": [
+          -7,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/look-06-1.png",
+        "offset": [
+          -10,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/look-08-0.png",
+        "offset": [
+          -1,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/look-08-1.png",
+        "offset": [
+          0,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/look-10-0.png",
+        "offset": [
+          0,
+          18
+        ]
+      },
+      {
+        "file": "source/frames/look-10-1.png",
+        "offset": [
+          -4,
+          18
+        ]
+      },
+      {
+        "file": "source/frames/look-12-0.png",
+        "offset": [
+          0,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/look-12-1.png",
+        "offset": [
+          -3,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/look-14-0.png",
+        "offset": [
+          0,
+          17
+        ]
+      },
+      {
+        "file": "source/frames/look-14-1.png",
+        "offset": [
+          -2,
+          17
+        ]
+      }
+    ]
+  }
+}

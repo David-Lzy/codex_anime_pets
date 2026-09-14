@@ -1,0 +1,16 @@
+{
+  "tool": "built-in imagegen",
+  "model": "cirno-009",
+  "state": "waving",
+  "frames": [
+    2,
+    3
+  ],
+  "prompt": "\nUse case: identity-preserve. Production animation pose pair.\nExactly TWO separate full-body animation drawings side by side in one portrait image, aspect 1205:1305. Two equal vertical cells. Figure centers at 25% and 75% of total width. Keep all hair, hands, clothing and accessories inside each cell, with an empty green gap between them. Full native detail, about 1000 pixels figure height, no thumbnail sheet. Neutral standing boots at y=1200, top of hair around y=180. Preserve this scale for EVERY pose; crouching is shorter, jumping is displaced upward, never zoom a pose to fill its cell. Flat pure chroma green RGB(0,255,0), no floor, cast shadow, gradient, green reflection, checkerboard, writing, symbols, UI, bubbles, watermarks or extra figures. Opaque character with crisp fine cel-shaded outlines, polished eyes, accurate hands, coherent hair locks and fabric folds. Left and right images are two successive ANIMATION DRAWINGS of the SAME identity and outfit, not different costume designs.\nFan-made Cirno chibi. Refined clean anime cel animation, about 3 heads tall, short ice-blue bob hair, large dark-blue bow, bright blue eyes, playfully overconfident face. Six compact pale-blue faceted ice wings, three on each side, attached behind shoulders and always contained in her cell. Wing geometry follows shoulder motion. Preserve existing pet identity, NOT its repeated static poses; draw actual new poses.\nOUTFIT IN BOTH CELLS: Signature blue dress with white short-sleeved blouse, short red necktie, white triangular skirt trim, white socks and blue shoes. Same outfit and compact crystalline wings in ALL states, no lab coat. No floating snowflakes, letters or marks.\nLEFT CELL: Same shoulder and elbow position, waving right wrist tilts inward across cheek, small reserved smile, hair follows slight head inclination.\nRIGHT CELL: Right hand lowers to shoulder level, palm turns inward as greeting settles, composed expression returning, feet remain planted.\n\nOnly these two poses. Do not reuse identical neutral standing art for active poses. Precise same head size, leg length, eye shape and hair silhouette. Never add failure X marks, wave lines or a visible keyboard.",
+  "references": [
+    "pets/cirno-009/source/pairs/idle-00.png",
+    "pets/cirno-009/source/pairs/waving-00.png"
+  ],
+  "output": "source/pairs/waving-02.png",
+  "user_approved_local_matting": true
+}

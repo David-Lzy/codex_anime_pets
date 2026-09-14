@@ -42,6 +42,15 @@ def canonical(file: Path) -> bytes:
     return data
 
 
+def install_bundle(name: str) -> bool:
+    parts = Path(name).parts
+    if parts[0] == "pets" and len(parts) > 2 and parts[2] in {"source", "hd"}:
+        return False
+    if parts[0] == "desktop" and Path(name).suffix != ".md":
+        return False
+    return not (parts[0] == "art" and "remaster-drafts" in parts)
+
+
 def validate(require_hd=False):
     from PIL import Image
     catalog = json.loads((ROOT / "catalog.json").read_text(encoding="utf-8"))
@@ -56,7 +65,8 @@ def validate(require_hd=False):
             if image.size != (1536, 1872 if version == 1 else 2288) or image.mode != "RGBA" or image.getchannel("A").getextrema() != (0, 255):
                 raise ValueError(f"Invalid atlas: {pet['id']}")
     if require_hd:
-        for id in ("assistant-004", "assistant-004-anime"):
+        from build_pet import REMASTER_IDS, STATES, COUNTS
+        for id in REMASTER_IDS:
             if id not in ready:
                 raise ValueError(f"Not ready for release: {id}")
             pet = ROOT / "pets" / id
@@ -66,9 +76,14 @@ def validate(require_hd=False):
             data = json.loads((pet / "hd/animation.json").read_text(encoding="utf-8"))
             if (data["cellWidth"], data["cellHeight"]) != (768, 832):
                 raise ValueError("Wrong HD cell size")
-            for clip in data["clips"].values():
+            if set(data["clips"]) != set(STATES + ["look"]):
+                raise ValueError(f"Missing HD states: {id}")
+            for state, count in zip(STATES + ["look"], COUNTS + [16]):
+                clip = data["clips"][state]
+                if clip["columns"] != 4 or len(clip["durations"]) != count:
+                    raise ValueError(f"Wrong HD frame count: {id}/{state}")
                 with Image.open(pet / "hd" / clip["file"]) as image:
-                    if image.width != 768 * clip["columns"] or image.mode != "RGBA":
+                    if image.size != (3072, 832 * ((count + 3) // 4)) or image.mode != "RGBA" or image.getchannel("A").getextrema() != (0, 255):
                         raise ValueError(f"Invalid HD clip: {clip['file']}")
 
 
@@ -79,11 +94,15 @@ def build(output: Path, require_hd: bool):
     manifest = json.loads((ROOT / "manifest.json").read_text(encoding="utf-8"))
     manifest.update({"manifest_self_hash": "excluded", "updated": datetime.now(timezone.utc).date().isoformat(),
                      "text_bytes": "Git checkout line endings: CRLF for .ps1/.bat, LF for other text", "files": []})
+    bundled = {**manifest, "scope": "Codex install bundle; HD and native source images are separate downloads", "files": []}
     archive = output / "Codex-Anime-Pets.zip"
     with zipfile.ZipFile(archive, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as zip:
         for name, file in files:
             data = canonical(file)
             manifest["files"].append({"path": name, "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()})
+            if not install_bundle(name):
+                continue
+            bundled["files"].append(manifest["files"][-1])
             info = zipfile.ZipInfo(name, (1980, 1, 1, 0, 0, 0))
             info.external_attr = (0o100755 if name.endswith(".sh") else 0o100644) << 16
             info.compress_type = zipfile.ZIP_DEFLATED
@@ -92,7 +111,14 @@ def build(output: Path, require_hd: bool):
         (ROOT / "manifest.json").write_bytes(data)
         info = zipfile.ZipInfo("manifest.json", (1980, 1, 1, 0, 0, 0))
         info.compress_type = zipfile.ZIP_DEFLATED
-        zip.writestr(info, data)
+        zip.writestr(info, (json.dumps(bundled, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
+    with zipfile.ZipFile(archive) as zip:
+        if zip.testzip() is not None:
+            raise ValueError("Archive CRC verification failed")
+        for entry in json.loads(zip.read("manifest.json"))["files"]:
+            data = zip.read(entry["path"])
+            if len(data) != entry["bytes"] or hashlib.sha256(data).hexdigest() != entry["sha256"]:
+                raise ValueError(f"Archive hash mismatch: {entry['path']}")
     digest = hashlib.sha256(archive.read_bytes()).hexdigest()
     (output / "SHA256SUMS.txt").write_text(f"{digest}  {archive.name}\n", encoding="ascii")
     return archive

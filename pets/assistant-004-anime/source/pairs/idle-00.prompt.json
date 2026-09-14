@@ -1,0 +1,15 @@
+{
+  "tool": "built-in imagegen",
+  "model": "assistant-004",
+  "state": "idle",
+  "frames": [
+    0,
+    1
+  ],
+  "prompt": "Use case: identity-preserve. Production animation pose pair.\nExactly TWO separate full-body animation drawings side by side in one portrait image, aspect 1205:1305. Two equal vertical cells. Figure centers at 25% and 75% of total width. Keep all hair, hands, clothing and accessories inside each cell, with an empty green gap between them. Full native detail, about 1000 pixels figure height, no thumbnail sheet. Neutral standing boots at y=1200, top of hair around y=180. Preserve this scale for EVERY pose; crouching is shorter, jumping is displaced upward, never zoom a pose to fill its cell. Flat pure chroma green RGB(0,255,0), no floor, cast shadow, gradient, green reflection, checkerboard, writing, symbols, UI, bubbles, watermarks or extra figures. Opaque character with crisp fine cel-shaded outlines, polished eyes, accurate hands, coherent hair locks and fabric folds. Left and right images are two successive ANIMATION DRAWINGS of the SAME identity and outfit, not different costume designs.\nORIGINAL Assistant-004, refined semi-chibi about 3.5 heads tall, head about 28 percent of total standing height, not babyish. Chestnut long layered hair, asymmetric curved fringe, small plain teal barrette on her left, narrow blue-violet eyes, restrained skeptical scientist expression. Preserve face, hair shape, boot style and proportions across drawings.\nOUTFIT IN BOTH CELLS: Short charcoal jacket with gray cuffs, pale-gray collared shirt, short burgundy tie, black shorts, opaque dark tights and black ankle boots with small teal trim.\nLEFT CELL: Front-facing quiet rest, arms lowered naturally, eyes open, shoulders relaxed, hair settled.\nRIGHT CELL: Same planted feet and body axis, gentle inhale raises shoulders a tiny amount, eyelids half lowered, fingertips relax.\nOnly these two poses. Do not reuse identical neutral standing art for active poses. Precise same head size, leg length, eye shape and hair silhouette. Never add failure X marks, wave lines or a visible keyboard.",
+  "references": [
+    "art/assistant-004-reference-green.png"
+  ],
+  "output": "source/pairs/idle-00.png",
+  "user_approved_local_matting": true
+}

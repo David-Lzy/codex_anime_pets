@@ -1,0 +1,151 @@
+{
+  "id": "assistant-004",
+  "displayName": "Assistant-004",
+  "cellWidth": 768,
+  "cellHeight": 832,
+  "clips": {
+    "idle": {
+      "file": "idle.webp",
+      "columns": 4,
+      "durations": [
+        280,
+        110,
+        110,
+        140,
+        140,
+        320
+      ],
+      "outfit": "casual"
+    },
+    "running-right": {
+      "file": "running-right.webp",
+      "columns": 4,
+      "durations": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ],
+      "outfit": "casual"
+    },
+    "running-left": {
+      "file": "running-left.webp",
+      "columns": 4,
+      "durations": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ],
+      "outfit": "casual"
+    },
+    "waving": {
+      "file": "waving.webp",
+      "columns": 4,
+      "durations": [
+        140,
+        140,
+        140,
+        280
+      ],
+      "outfit": "casual"
+    },
+    "jumping": {
+      "file": "jumping.webp",
+      "columns": 4,
+      "durations": [
+        140,
+        140,
+        140,
+        140,
+        280
+      ],
+      "outfit": "casual"
+    },
+    "failed": {
+      "file": "failed.webp",
+      "columns": 4,
+      "durations": [
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        240
+      ],
+      "outfit": "lab"
+    },
+    "waiting": {
+      "file": "waiting.webp",
+      "columns": 4,
+      "durations": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        260
+      ],
+      "outfit": "lab"
+    },
+    "running": {
+      "file": "running.webp",
+      "columns": 4,
+      "durations": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ],
+      "outfit": "lab"
+    },
+    "review": {
+      "file": "review.webp",
+      "columns": 4,
+      "durations": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        280
+      ],
+      "outfit": "lab"
+    },
+    "look": {
+      "file": "look.webp",
+      "columns": 4,
+      "durations": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "outfit": "casual"
+    }
+  }
+}
