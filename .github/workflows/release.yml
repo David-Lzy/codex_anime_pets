@@ -1,0 +1,50 @@
+name: Assistant-004 release
+on:
+  push:
+    tags: ['assistant-004-v*']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: pnpm/action-setup@v4
+        with:
+          version: '11.19.0'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install Pillow==11.3.0
+      - run: python scripts/build_release.py --check --require-hd
+      - run: python -m unittest discover -s scripts -p "test_*.py"
+      - run: node --test desktop/test.cjs
+      - run: pnpm --dir desktop install --frozen-lockfile
+      - run: pnpm --dir desktop dist:win
+      - run: python scripts/build_release.py --require-hd
+      - name: Collect archives and checksums
+        shell: pwsh
+        run: |
+          Copy-Item -Path desktop/dist/*.zip -Destination build/releases/
+          $Lines = Get-ChildItem -LiteralPath build/releases -Filter *.zip | ForEach-Object {
+            "$((Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant())  $($_.Name)"
+          }
+          [System.IO.File]::WriteAllLines((Join-Path $PWD 'build/releases/SHA256SUMS.txt'), $Lines, [System.Text.UTF8Encoding]::new($false))
+      - uses: actions/upload-artifact@v4
+        with:
+          name: assistant-004-windows
+          path: build/releases/*
+      - name: Publish tagged release
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: pwsh
+        run: |
+          $Files = (Get-ChildItem -LiteralPath build/releases -File).FullName
+          gh release create $env:GITHUB_REF_NAME @Files --verify-tag --title $env:GITHUB_REF_NAME --notes "Windows portable build (unsigned), Codex pet collection and SHA-256 checksums. macOS/Linux are source-only and not hardware-validated. Windows 便携版（未签名）、Codex 宠物包及校验值。macOS/Linux 仅提供源码，未经实机验收。"

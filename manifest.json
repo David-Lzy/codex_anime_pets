@@ -2,7 +2,7 @@
   "package": "codex-pet-collection",
   "collection_id": "codex-pet-collection",
   "default_pet_id": "assistant-004",
-  "updated": "2026-05-27",
+  "updated": "2026-09-14",
   "description": "Shareable Codex pet collection with AI-search catalog, bilingual README, installers, previews, prompts, QA metadata, and fan-made character pet entries.",
   "install_target": "~/.codex/pets/<pet-id>/",
   "catalog": "catalog.json",
@@ -10,18 +10,23 @@
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 202,
-      "sha256": "e47c2b38f1b522bb06a576291a79ddb2c3247933b98da02138e5f75c2b5e72b5"
+      "bytes": 311,
+      "sha256": "5240ec42d6e5c5b69c827fbb681334ee61988eaf97bf276c10f042910cb29bdd"
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "bytes": 2125,
+      "sha256": "97972eb92883d4fab1cd4e19685264ee43546aa626f12f6ba735488c83733bc4"
     },
     {
       "path": ".gitignore",
-      "bytes": 46,
-      "sha256": "2335e2197152735da53c94055aa71360b383d9a093d744b16cd9980b73ff6c12"
+      "bytes": 92,
+      "sha256": "75280a1ab0c2d7b5cdff7dfbd798f04425e3e3f9f389fc3357c0681f8ce4313e"
     },
     {
       "path": "LICENSE",
-      "bytes": 1076,
-      "sha256": "eba9a07ad4d0242b13e4ec8c7a856bda4d6a9e5216b9f63828f11e691906cb02"
+      "bytes": 1054,
+      "sha256": "dbfb4e1d9e55a47b27065f6849549ef3189ac4bff8b8adf55879f9352e9dd619"
     },
     {
       "path": "NOTICE.md",
@@ -35,18 +40,113 @@
     },
     {
       "path": "README.md",
-      "bytes": 4329,
-      "sha256": "3c897d3df3d01b59ae1669e43b1fc78337ea2edc2ae504ae2e3073459e015a07"
+      "bytes": 5213,
+      "sha256": "cd3d6cd6a6af685b56adba53fb5dc92c913835212f6cff19a2d63fed1a30fe14"
     },
     {
       "path": "README.zh-CN.md",
-      "bytes": 4353,
-      "sha256": "4e3ab9be961a6add0a0be6959dc83d8bc77c9a8d85dcc3462a2bcdf8cc7381e2"
+      "bytes": 5148,
+      "sha256": "843c2203e47a75a24c41c3ada0c7a4636c225ecfdf1f488f8f527e3b5611b6bd"
+    },
+    {
+      "path": "art/README.md",
+      "bytes": 4576,
+      "sha256": "aa7756cae95ce16bb1d8094982c979dd16dcdef1aa7cb953439478e2f27293e3"
+    },
+    {
+      "path": "art/assistant-004-casual-draft.png",
+      "bytes": 1780879,
+      "sha256": "c40eb75def7dac8946ec7ee0c2fa0dcb12cf29a2d43d2507fcc40d3a6ca28d9e"
+    },
+    {
+      "path": "art/assistant-004-design.png",
+      "bytes": 1951014,
+      "sha256": "0444d01cb563c6c88fd5b90c5b5a6532c5fa155e9154eecb980b3c26769bc92f"
     },
     {
       "path": "catalog.json",
       "bytes": 12630,
       "sha256": "abe934430b4e45959ce83bd37b40f5bab088ac9538bf5036beca5f4291ed4816"
+    },
+    {
+      "path": "desktop/README.md",
+      "bytes": 3808,
+      "sha256": "8e43cb9623a926720c75673355add0af4dced7dbe69458bb0f55e4452d20c0aa"
+    },
+    {
+      "path": "desktop/README.zh-CN.md",
+      "bytes": 3402,
+      "sha256": "1d296075299680013847abc62f8b6bf9256ae8ee427352dd8af633476deab662"
+    },
+    {
+      "path": "desktop/hooks/bridge.cjs",
+      "bytes": 1895,
+      "sha256": "e49ef8d39aadcb51cf1ad46e37cf14caf711a391d83e91100c7de2781566a21e"
+    },
+    {
+      "path": "desktop/hooks/bridge.ps1",
+      "bytes": 2235,
+      "sha256": "582b8a9fb415b8a771ee92aef5e92b3fa5f2b1e75bc21a81410c37acd9a5e85d"
+    },
+    {
+      "path": "desktop/index.html",
+      "bytes": 530,
+      "sha256": "73bd69acc968b643e90988b35de2dffd1fa99f7f08e73fc59b495961c89a21a8"
+    },
+    {
+      "path": "desktop/integration.cjs",
+      "bytes": 5481,
+      "sha256": "8c4e7642666084d2a36766fb840c66dac7429b52531bbc040ef7f0261d0b2715"
+    },
+    {
+      "path": "desktop/main.cjs",
+      "bytes": 12300,
+      "sha256": "de48f125e7e8bc46f1652c944b7a6d81d7494b0e235bfd25473d928271981e43"
+    },
+    {
+      "path": "desktop/package.json",
+      "bytes": 1176,
+      "sha256": "6e1e2314d46114c660c03c53118606ffded20319e51222708224fc9c7d45e78e"
+    },
+    {
+      "path": "desktop/pnpm-lock.yaml",
+      "bytes": 70469,
+      "sha256": "350122c8ca92a70d13180330c2a809b8a732d96a402f5aff79cf7660877eda30"
+    },
+    {
+      "path": "desktop/pnpm-workspace.yaml",
+      "bytes": 42,
+      "sha256": "161beff2374106057fdefd9de5094f5c3cc3dfff5cf4420b708bc08b6081694f"
+    },
+    {
+      "path": "desktop/preload.cjs",
+      "bytes": 563,
+      "sha256": "8409b5219ca527e53de43ffd43f256b54751e61a448e15ac1be864029806b6f4"
+    },
+    {
+      "path": "desktop/renderer.js",
+      "bytes": 3662,
+      "sha256": "8f6195297e26930150c1ece29b31b320463ea810f16b7567bf85298f82c33054"
+    },
+    {
+      "path": "desktop/smoke.cjs",
+      "bytes": 5185,
+      "sha256": "b130d2fb11c246594d8d321c8f7fe1d40855f73531264e72e70f384c10cd29b1"
+    },
+    {
+      "path": "desktop/state.cjs",
+      "bytes": 3841,
+      "sha256": "4b7ea5c18349fc2cae4f7e156a2a85758bddfd8e140725aa59fde48ed7d65dbf"
+    },
+    {
+      "path": "desktop/style.css",
+      "bytes": 338,
+      "sha256": "aad9d1524f5e0a0b97d675c8d633ceb98587adcdf1e600dcf9e1d894e10ca256"
+    },
+    {
+      "path": "desktop/test.cjs",
+      "bytes": 6441,
+      "sha256": "03f6201e515ba73585d36f21dfa9d9bd454ef080d5b7edce41d43a80031c94bb"
     },
     {
       "path": "indexes/ai-search-index.json",
@@ -319,24 +419,45 @@
       "sha256": "fcabace3100cf8c705f43218a7c668fd5a97506eb048de393c7c2a80fadc5421"
     },
     {
+      "path": "scripts/build_pet.py",
+      "bytes": 6453,
+      "sha256": "f5d631680535bbf5d313e9dd4d4058a9480658a8220c6e4e20fd290c63d68cb0"
+    },
+    {
+      "path": "scripts/build_release.py",
+      "bytes": 5601,
+      "sha256": "4f85e6b509c680eb7202b3e9991d2f08770bda744ef19bc55078a6c8dbaf6d48"
+    },
+    {
       "path": "scripts/install.bat",
       "bytes": 201,
       "sha256": "adfdd35fb626ae99a4e188c42320706ccb024d241387098c2269447b3da6632c"
     },
     {
       "path": "scripts/install.ps1",
-      "bytes": 2265,
-      "sha256": "a77edc7d10a4f63f11daa06841f9bce6b90c4836c3d0610ebf406182059f7e98"
+      "bytes": 6147,
+      "sha256": "b604f646244dad66cf945807657b19dc88da0cf1108a4834d2e3f019d8d26f34"
     },
     {
       "path": "scripts/install.py",
-      "bytes": 3519,
-      "sha256": "53db6710b5153424dc9ca9d18b6ffb926cfd1e099bda8d20d27934e03d22902a"
+      "bytes": 5929,
+      "sha256": "0b01f168890c2feb7c61b4cd98d98f44875c93334b9626c1cda4835e70596962"
     },
     {
       "path": "scripts/install.sh",
-      "bytes": 1269,
-      "sha256": "961e29e9aa3fe8dd9dc50383c7a83d9a7b1a12897765c80d410824ab66997565"
+      "bytes": 347,
+      "sha256": "1aa0274acc9d26bd12f8bce2ed36a417462535bc426e9c1a6317c3797150943e"
+    },
+    {
+      "path": "scripts/make_test_art.py",
+      "bytes": 1207,
+      "sha256": "9be1fa434a0b481ebd65dbd83accaa2b96ffa9dd66220823a96482ed2efe16d8"
+    },
+    {
+      "path": "scripts/test_package.py",
+      "bytes": 3388,
+      "sha256": "2a1f1f07811112f18e1b76e07b0886a14ba911c0b9ecb81799e6c2f6399cffe6"
     }
-  ]
+  ],
+  "text_bytes": "Git checkout line endings: CRLF for .ps1/.bat, LF for other text"
 }

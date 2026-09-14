@@ -2,6 +2,14 @@
 
 [English](README.md) | [中文](README.zh-CN.md)
 
+## 高清重制开发中
+
+Assistant-004 正在进行半Q版与修长动漫版重制，并增加独立高清桌宠。可查看[角色草稿与保存的提示词](art/README.md)及[独立版实现说明](desktop/README.zh-CN.md)。目前已实现动画引擎、本机 Codex Hooks 联动、旧版兼容安装选项和发布检查；新版透明动画素材**尚未就绪**，下方已有宠物仍是当前可安装版本。
+
+独立版计划使用真实 768×832 帧；Codex 内置版仍要求每帧 192×208。草稿不代表最终动画，Windows 发布流程会在高清素材未验收时停止。
+
+旧客户端可使用 PowerShell 的 `-Legacy` 或 Python/Shell 的 `--legacy`。重复安装会先备份已有宠物到 `$CODEX_HOME/pets/.backups/`；Python/Shell 安装器需要 Python 3.9+。
+
 一个可检索的 Codex 桌面宠物合集。每个宠物都放在独立的 `pets/<pet-id>/` 目录下，包含安装文件、预览媒体、QA 元数据和保存的创作题词。
 
 当前包含：

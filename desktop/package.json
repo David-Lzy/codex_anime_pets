@@ -1,0 +1,28 @@
+{
+  "name": "assistant-004-desktop",
+  "version": "2.0.0",
+  "description": "Original animated research assistant with local Codex status integration",
+  "author": "David-Lzy",
+  "license": "MIT",
+  "packageManager": "pnpm@11.19.0",
+  "engines": {"node": ">=22.12.0"},
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test test.cjs",
+    "build:dir": "electron-builder --dir",
+    "dist:win": "electron-builder --win zip --publish never"
+  },
+  "devDependencies": {"electron": "44.3.0", "electron-builder": "26.15.3"},
+  "build": {
+    "appId": "com.davidlzy.assistant004",
+    "productName": "Assistant-004 Desktop",
+    "artifactName": "Assistant-004-Desktop-${version}-${os}-${arch}.${ext}",
+    "files": ["main.cjs", "state.cjs", "integration.cjs", "preload.cjs", "renderer.js", "index.html", "style.css", "hooks/**"],
+    "asarUnpack": ["hooks/**"],
+    "extraResources": [{"from": "../pets", "to": "pets", "filter": ["assistant-004/hd/**", "assistant-004-anime/hd/**"]}],
+    "win": {"target": "zip", "signAndEditExecutable": false},
+    "mac": {"category": "public.app-category.utilities"},
+    "linux": {"category": "Utility"}
+  }
+}

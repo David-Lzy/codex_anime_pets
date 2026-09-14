@@ -14,6 +14,12 @@ Currently included:
 ![March 7th contact sheet](pets/march-7th-001/assets/contact-sheet.png)
 ![Cirno contact sheet](pets/cirno-009/assets/contact-sheet.png)
 
+## HD Remaster Development
+
+Assistant-004's two-style remaster and independent desktop app are in development. See the [design drafts and saved prompts](art/README.md) and [desktop implementation](desktop/README.md). The engine, local Codex Hooks bridge, v1 compatibility installer option and release validation are implemented; the new transparent animation assets are **not yet ready**. The existing pets above remain the installable versions.
+
+The planned independent app uses genuine 768x832 frames; Codex itself still requires 192x208 cells. Draft images must not be mistaken for finished animation. The Windows release workflow refuses to publish without reviewed HD assets.
+
 ## AI Search Catalog
 
 For AI agents, scripts, and search tools:
@@ -63,6 +69,8 @@ List available pets:
 powershell -ExecutionPolicy Bypass -File .\scripts\install.ps1 -List
 ```
 
+For older Codex clients use `-Legacy`. Reinstallation backs up existing pet files under `$CODEX_HOME/pets/.backups/`.
+
 ### macOS / Linux
 
 ```sh
@@ -81,6 +89,8 @@ List available pets:
 ```sh
 ./scripts/install.sh --list
 ```
+
+For older clients use `--legacy`. The shell/Python installer requires Python 3.9+.
 
 ### Universal Python Installer
 
@@ -196,4 +206,3 @@ cd codex_anime_pets
 python scripts/install.py --list
 python scripts/install.py --pet assistant-004
 ```
-

@@ -7,6 +7,9 @@ import argparse
 import json
 import os
 import shutil
+import re
+import tempfile
+from datetime import datetime, timezone
 from pathlib import Path
 
 DEFAULT_PET_ID = "assistant-004"
@@ -37,23 +40,61 @@ def list_pets(pets: dict[str, dict]) -> None:
         print(f"{pet_id}\t{pet.get('display_name', pet_id)}\t{description}")
 
 
-def install_pet(root: Path, codex_home: Path, pet: dict) -> Path:
+def install_pet(root: Path, codex_home: Path, pet: dict, legacy: bool = False) -> Path:
     pet_id = pet["id"]
+    if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", pet_id):
+        raise SystemExit(f"Invalid pet id: {pet_id}")
     files = pet.get("files", {})
+    if legacy and files.get("legacy"):
+        files = files["legacy"]
     pet_json_rel = files.get("pet_json", f"pets/{pet_id}/pet.json")
     spritesheet_rel = files.get("spritesheet", f"pets/{pet_id}/spritesheet.webp")
 
-    pet_json = root / pet_json_rel
-    spritesheet = root / spritesheet_rel
+    pet_json = (root / pet_json_rel).resolve()
+    spritesheet = (root / spritesheet_rel).resolve()
+    if any(not file.is_relative_to(root.resolve()) for file in (pet_json, spritesheet)):
+        raise SystemExit("Pet source path escapes the collection directory")
     if not pet_json.is_file():
         raise SystemExit(f"Missing pet.json for {pet_id}: {pet_json}")
     if not spritesheet.is_file():
         raise SystemExit(f"Missing spritesheet for {pet_id}: {spritesheet}")
 
-    target_dir = codex_home.expanduser() / "pets" / pet_id
+    metadata = json.loads(pet_json.read_text(encoding="utf-8-sig"))
+    if metadata.get("spritesheetPath", "spritesheet.webp") != "spritesheet.webp":
+        raise SystemExit("Unsupported spritesheetPath")
+    if legacy and metadata.get("spriteVersionNumber", 1) != 1:
+        raise SystemExit(f"No v1 compatibility files for {pet_id}")
+    pets_dir = codex_home.expanduser().resolve() / "pets"
+    target_dir = pets_dir / pet_id
+    if target_dir.is_symlink() or (target_dir.exists() and target_dir.resolve().parent != pets_dir.resolve()):
+        raise SystemExit("Refusing to overwrite a redirected pet directory")
+    for name in ("pet.json", "spritesheet.webp"):
+        if (target_dir / name).is_symlink():
+            raise SystemExit("Refusing to overwrite redirected pet files")
     target_dir.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(pet_json, target_dir / "pet.json")
-    shutil.copy2(spritesheet, target_dir / "spritesheet.webp")
+    backup = None
+    if any((target_dir / name).exists() for name in ("pet.json", "spritesheet.webp")):
+        stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
+        backup = pets_dir / ".backups" / f"{pet_id}-{stamp}"
+        if not backup.resolve().is_relative_to(pets_dir.resolve()):
+            raise SystemExit("Backup directory escapes Codex pets directory")
+        backup.mkdir(parents=True)
+        for name in ("pet.json", "spritesheet.webp"):
+            if (target_dir / name).exists():
+                shutil.copy2(target_dir / name, backup / name)
+    try:
+        with tempfile.TemporaryDirectory(prefix=".install-", dir=pets_dir) as staging:
+            for source, name in ((spritesheet, "spritesheet.webp"), (pet_json, "pet.json")):
+                staged = Path(staging) / name
+                shutil.copy2(source, staged)
+                os.replace(staged, target_dir / name)
+    except OSError:
+        for name in ("pet.json", "spritesheet.webp"):
+            if backup and (backup / name).exists():
+                shutil.copy2(backup / name, target_dir / name)
+            else:
+                (target_dir / name).unlink(missing_ok=True)
+        raise
     return target_dir
 
 
@@ -80,6 +121,7 @@ def main() -> int:
         action="store_true",
         help="List available pets and exit.",
     )
+    parser.add_argument("--legacy", action="store_true", help="Install v1 compatibility artwork for older Codex clients.")
     args = parser.parse_args()
 
     root = Path(__file__).resolve().parents[1]
@@ -101,7 +143,7 @@ def main() -> int:
         if pet.get("status") != "ready":
             print(f"Skipping {pet['id']} because status is {pet.get('status')!r}")
             continue
-        target_dir = install_pet(root, args.codex_home, pet)
+        target_dir = install_pet(root, args.codex_home, pet, args.legacy)
         print(f"Installed {pet.get('display_name', pet['id'])}")
         print(f"Target: {target_dir}")
 
@@ -111,4 +153,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
