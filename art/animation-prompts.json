@@ -23,6 +23,24 @@
       "reference": "pets/cirno-009/assets/contact-sheet.png",
       "identity": "Fan-made Cirno chibi. Refined clean anime cel animation, about 3 heads tall, short ice-blue bob hair, large dark-blue bow, bright blue eyes, playfully overconfident face. Six compact pale-blue faceted ice wings, three on each side, attached behind shoulders and always contained in her cell. Wing geometry follows shoulder motion. Preserve existing pet identity, NOT its repeated static poses; draw actual new poses.",
       "casual": "Signature blue dress with white short-sleeved blouse, short red necktie, white triangular skirt trim, white socks and blue shoes. Same outfit and compact crystalline wings in ALL states, no lab coat. No floating snowflakes, letters or marks."
+    },
+    "xilian-001": {
+      "reference": "art/xilian-001-design.png",
+      "identity": "Unofficial fan-made Cyrene (昔涟), refined semi-chibi exactly about 4 heads tall. Preserve the generated canonical design: voluminous waist-length pink hair with blue-lilac tips, violet eyes, white laurel crown, blue-violet rose ornament, pearl-white and star-violet asymmetric dress, crystalline blue details and delicate pale footwear. Keep the same mature gentle face, head size, compact limbs and silhouette in every frame.",
+      "casual": "Signature pearl-white, cherry-pink, deep star-violet and ice-blue ceremonial dress in ALL states. Never switch outfits and never add a weapon, logo, readable text or franchise UI.",
+      "companion": "Exactly one small pink-and-white long-eared memory spirit accompanies EACH character drawing. It is 36 to 42 percent of the character head height and follows a clear oval orbit on her right side. It must not cross the face, hands, chest or center of the skirt; preserve its blue eyes, fluffy tail, gold-pink neck jewel and wing-like ears.",
+      "effects": "Rich but controlled three-layer effects: rear star tide and petals, same-plane blue-violet rose light shards, and brief foreground ripple highlights. Preserve real empty green around all effects, keep them at least 6 percent from the cell edge, and never wash the face or white dress in a large pink fog.",
+      "state_direction": {
+        "idle": "Gentle breathing with delayed hair and ribbon follow-through; spirit drifts near the right shoulder and a small star-sea ripple forms by the feet.",
+        "running-right": "Light right-facing gliding steps; long hair and asymmetric skirt trail left while the spirit follows half a body behind. Mirror this complete cycle for left movement.",
+        "waving": "Warm invitation gesture with a foreshortened open hand; spirit circles the palm once and drops a few petals.",
+        "jumping": "Anticipation, takeoff, apex, landing and recovery; spirit rises first, makes a rose-shaped star ring at the apex, and a ripple appears on landing.",
+        "failed": "Petals lose light, gaze lowers and one hand rests lightly at the chest before the gentle expression returns; spirit comforts near the shoulder. No comic error symbols.",
+        "waiting": "Hands folded, head tilted and eyes briefly closed; skirt tail floats slowly while the spirit completes one foot-to-shoulder orbit.",
+        "running": "Working state: both hands organize floating memory shards into a brief wreath while the spirit helps push the shards. No keyboard or UI.",
+        "review": "One hand supports the cheek and the other holds a blue-violet rose while the gaze scans; spirit observes and points toward the inspected detail.",
+        "look": "Body stays nearly fixed while eyes, chin, front hair and spirit position turn through 16 clockwise directions; the main long-hair mass does not swing broadly."
+      }
     }
   },
   "poses": {

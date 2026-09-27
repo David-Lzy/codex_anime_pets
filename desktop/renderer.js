@@ -1,6 +1,6 @@
 'use strict';
 const canvas = document.querySelector('canvas');
-const ctx = canvas.getContext('2d');
+const ctx = canvas.getContext('2d', {alpha: true});
 let current, start = performance.now(), displayedKey = '', state, down, dragging = false;
 const cache = new Map();
 let loadingId = 0;

@@ -16,7 +16,7 @@ DURATIONS = [[280, 110, 110, 140, 140, 320], [120] * 8, [120] * 8,
              [140] * 3 + [280], [140] * 4 + [280], [140] * 7 + [240], [150] * 5 + [260],
              [120] * 5 + [220], [150] * 5 + [280]]
 CELL = (768, 832)
-REMASTER_IDS = ("assistant-004", "assistant-004-anime", "march-7th-001", "cirno-009")
+REMASTER_IDS = ("assistant-004", "assistant-004-anime", "march-7th-001", "cirno-009", "xilian-001")
 
 
 def dump(file: Path, data: dict) -> None:
@@ -87,7 +87,7 @@ def build(root: Path, preview: bool = False) -> dict:
             small = resize_rgba(frame, (192, 208))
             atlas.alpha_composite(small, ((i % 8) * 192, (row + i // 8) * 208))
             smalls.append(small)
-        strip.save(hd / f"{state}.webp", lossless=True, method=6)
+        strip.save(hd / f"{state}.webp", lossless=True, method=6, exact=True)
         animation["clips"][state] = {"file": f"{state}.webp", "columns": 4, "durations": durations,
             "outfit": spec.get("outfits", {}).get(state, "signature")}
         report["states"][state] = {"count": len(frames), "bounds": [frame.getchannel("A").getbbox() for frame in frames]}
@@ -97,10 +97,10 @@ def build(root: Path, preview: bool = False) -> dict:
             background.paste(small, mask=small.getchannel("A"))
             rendered.append(background)
         rendered[0].save(previews / f"{state}.gif", save_all=True, append_images=rendered[1:], duration=durations, loop=0, disposal=2)
-    atlas.save(root / "spritesheet.webp", lossless=True, method=6)
+    atlas.save(root / "spritesheet.webp", lossless=True, method=6, exact=True)
     legacy = root / "compat" / "v1"
     legacy.mkdir(parents=True, exist_ok=True)
-    atlas.crop((0, 0, 1536, 1872)).save(legacy / "spritesheet.webp", lossless=True, method=6)
+    atlas.crop((0, 0, 1536, 1872)).save(legacy / "spritesheet.webp", lossless=True, method=6, exact=True)
     meta = {"id": spec["id"], "displayName": spec["display_name"], "description": spec["description"],
             "spriteVersionNumber": 2, "spritesheetPath": "spritesheet.webp"}
     dump(root / "pet.json", meta)

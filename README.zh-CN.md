@@ -2,12 +2,12 @@
 
 [English](README.md) | **简体中文**
 
-可检索、可分享的 Codex 桌宠合集。目前有四款重制角色，提供 Codex 内置版和独立高清版，保留生成题词及素材来源记录。
+可检索、可分享的 Codex 桌宠合集。目前有五款重制角色，提供 Codex 内置版和独立高清版，保留生成题词及素材来源记录。
 
-| Assistant-004 半Q版 | Assistant-004 修长版 | 三月七 | 琪露诺 |
-| --- | --- | --- | --- |
-| ![半Q版](pets/assistant-004/assets/previews/idle.gif) | ![修长版](pets/assistant-004-anime/assets/previews/idle.gif) | ![三月七](pets/march-7th-001/assets/previews/idle.gif) | ![琪露诺](pets/cirno-009/assets/previews/idle.gif) |
-| 原创，约3.5头身 | 原创，约5头身 | 非官方同人 | 非官方同人 |
+| Assistant-004 半Q版 | Assistant-004 修长版 | 三月七 | 琪露诺 | 昔涟 |
+| --- | --- | --- | --- | --- |
+| ![半Q版](pets/assistant-004/assets/previews/idle.gif) | ![修长版](pets/assistant-004-anime/assets/previews/idle.gif) | ![三月七](pets/march-7th-001/assets/previews/idle.gif) | ![琪露诺](pets/cirno-009/assets/previews/idle.gif) | ![昔涟](pets/xilian-001/assets/previews/idle.gif) |
+| 原创，约3.5头身 | 原创，约5头身 | 非官方同人 | 非官方同人 | 非官方同人 |
 
 ## 下载与使用
 
@@ -46,7 +46,7 @@ python scripts/install.py --pet cirno-009
 
 ## 独立高清桌宠
 
-四款角色使用真实透明的 **768x832** 帧，由 Electron/Canvas 播放。默认窗口高约320像素。拖动移动、单击挥手、双击轻跳；右键或托盘菜单可切换角色、动作、大小、暂停、鼠标朝向、鼠标穿透、跟随任务、重置位置与退出。
+五款角色使用真实透明的 **768x832** 帧，由 Electron/Canvas 播放。默认窗口高约320像素。拖动移动、单击挥手、双击轻跳；右键或托盘菜单可切换角色、动作、大小、暂停、鼠标朝向、鼠标穿透、跟随任务、重置位置与退出。
 
 可选的 **Codex integration** 在确认后备份并合并观察型 Hooks，通过带随机令牌的本机回环接口接收最小状态事件。不传输题词或工具输出，不改变审批，不自动连接远程任务。未启用联动时也可以手动切换动作。
 
@@ -54,7 +54,7 @@ python scripts/install.py --pet cirno-009
 
 ## 本次重制
 
-每款包含九种动作与16个闲置朝向，从正上方顺时针排列。两款 Assistant 在工作、审阅、挫败、等待时穿白大褂，其余动作穿日常短外套。三月七与琪露诺保留各自同人服装。
+每款包含九种动作与16个闲置朝向，从正上方顺时针排列。两款 Assistant 在工作、审阅、挫败、等待时穿白大褂，其余动作穿日常短外套。三月七、琪露诺与昔涟保留各自同人服装；昔涟的记忆精灵全程伴随。
 
 素材采用原生高分辨率纯绿底动作图，经本地抠图得到真实 RGBA。装配统一缩放整张画布，只平移对齐脚底；不会把每帧人物裁出后单独拉伸。跳跃保留实际画出的蓄力、腾空、落地，左移动作由右移周期镜像获得。
 
@@ -77,4 +77,4 @@ Codex v2 图集为 **1536x2288**、8列11行，每格 **192x208**；v1 为 **153
 
 ## 授权
 
-代码与原创项目元数据采用 MIT。**MIT 不授予同人角色或所属作品的权利。** 三月七和琪露诺沿用非商业个人桌面使用的非官方同人声明，见 [NOTICE](NOTICE.md)。Assistant-004 为原创设计。用户上传的系列参考图不随包再发布。
+代码与原创项目元数据采用 MIT。**MIT 不授予同人角色或所属作品的权利。** 三月七、琪露诺和昔涟沿用非商业个人桌面使用的非官方同人声明，见 [NOTICE](NOTICE.md)。Assistant-004 为原创设计。用户上传的系列参考图不随包再发布。

@@ -1,12 +1,12 @@
 # Art Production / 美术制作
 
-Production sources live in `pets/<id>/source/pairs/`: 33 native pose-pair images per pet, with exact prompts and reference mappings in adjacent JSON files. The four models share `animation-prompts.json` as their creative specification. Some first-pass slender Assistant drawings were reassigned to `assistant-004-anime`; their original generation records remain unchanged for provenance.
+Production sources live in `pets/<id>/source/pairs/`: 33 native pose-pair images per pet, with exact prompts and reference mappings in adjacent JSON files. The five models share `animation-prompts.json` as their creative specification. Some first-pass slender Assistant drawings were reassigned to `assistant-004-anime`; their original generation records remain unchanged for provenance.
 
-正式原图位于 `pets/<id>/source/pairs/`，每款33张双姿势原图，旁边 JSON 保存实际题词及参考图映射。四款共用 `animation-prompts.json` 创作规格。初期偏修长的 Assistant 图分配给了 `assistant-004-anime`，实际生成记录保留原貌，不重写来源。
+正式原图位于 `pets/<id>/source/pairs/`，每款33张双姿势原图，旁边 JSON 保存实际题词及参考图映射。五款共用 `animation-prompts.json` 创作规格。初期偏修长的 Assistant 图分配给了 `assistant-004-anime`，实际生成记录保留原貌，不重写来源。
 
-The user explicitly approved solid green generation plus local matting on 2026-09-14. Native figures are drawn at roughly 1000-1200 pixels tall. Matting removes chroma, recovers antialiased edges, splits figures along an empty path and adds transparent padding without enlarging the drawings. Every frame uses the same 768x1536 working canvas, downsampled at 832/1536 onto a 768x832 output cell. Registration is translation only: grounded feet at one baseline, head registration for walking, and separate takeoff/apex offsets. Left movement is mirrored; all other used poses are drawn, not padded with repeated static art.
+The user explicitly approved solid green generation plus local matting on 2026-09-14. Native figures target roughly 1000-1200 pixels tall; provider-wide source canvases up to 2048 pixels are also accepted. When one pet has mixed provider canvas heights, taller complete pose-pair canvases are downscaled to the shortest approved height as a group; sources are never enlarged and character bounds are never resized independently. Matting removes chroma, recovers antialiased edges, splits figures along an empty path and adds transparent padding. Every frame uses one pet-wide shared working canvas, downsampled into a 768x832 output cell. Registration is translation only: grounded feet at one baseline, head registration for walking, and separate takeoff/apex offsets. Left movement is mirrored; all other used poses are drawn, not padded with repeated static art.
 
-用户已同意纯绿底生成与本地抠图。人物原生高度约1000至1200像素。抠图恢复抗锯齿边缘，沿空隙分离人物，再添加透明留白，不放大人物。统一使用768x1536工作画布，按832/1536缩小到768x832输出格，只做平移配准。行走以头部为基准，跳跃单独保留蓄力、腾空与落地；左移镜像生成，其余使用姿势均为实际绘制。
+用户已同意纯绿底生成与本地抠图。人物原生高度目标约1000至1200像素，也接受宽度不超过2048像素的生成器横幅。同一宠物出现混合画布高度时，只把较高的完整双姿势画布统一缩小到该宠物的最小合规高度；不放大原图，也不按人物边界逐帧缩放。抠图恢复抗锯齿边缘，沿空隙分离人物，再添加透明留白。每款使用统一工作画布缩小到768x832输出格，只做平移配准。行走以头部为基准，跳跃单独保留蓄力、腾空与落地；左移镜像生成，其余使用姿势均为实际绘制。
 
 ## Rebuild
 
@@ -43,7 +43,7 @@ The earlier images below are generated design references, **not animation assets
 
 Tool: built-in `imagegen`, with solid green generation and local matting explicitly approved by the user on 2026-09-14. The earlier checkerboard drafts remain design references only. Production frames use genuine RGBA after chroma removal, with fixed canvas scaling and no image upscaling. Generation prompts and source mappings are preserved alongside the artwork.
 
-The remaster also covers March 7th and Cirno, preserving their existing fan-art notices and signature outfits. They do not inherit Assistant-004's lab coat. Neither the original reference attachments nor franchise ownership rights are included in the code's MIT license.
+The remaster also covers March 7th, Cirno and Cyrene, preserving their fan-art notices and signature outfits. Cyrene additionally keeps exactly one memory spirit in every frame. They do not inherit Assistant-004's lab coat. Neither the original reference attachments nor franchise ownership rights are included in the code's MIT license.
 
 ### Design Sheet Prompt
 

@@ -2,13 +2,13 @@
 
 [English](README.md) | **简体中文**
 
-独立透明置顶的 Electron/Canvas 高清桌宠，包含四款重制角色，不修改 Codex 客户端。每帧768x832，真实 RGBA，按实际时间和素材帧时长播放。
+独立透明置顶的 Electron/Canvas 高清桌宠，包含五款重制角色，不修改 Codex 客户端。每帧768x832，真实 RGBA，按实际时间和素材帧时长播放。
 
 ## Windows 使用
 
 从 [Releases](https://github.com/David-Lzy/codex_anime_pets/releases/latest) 下载 **未签名** 的 Windows ZIP，核对 SHA-256 后完整解压，双击 **Assistant-004 Desktop.exe**。不要只移动 EXE，需要保留同目录资源。成品不依赖另行安装 Python 或 Node。
 
-拖动移动、单击挥手、双击轻跳。右键或托盘菜单可选角色、动作、大小（160至640像素）、暂停、鼠标朝向、鼠标穿透、跟随任务、重置位置和退出。启用穿透后仍可用托盘恢复。位置自动保存，重启会限制在当前显示器可见范围内。默认不开机启动。
+拖动移动、单击挥手、双击轻跳。右键或托盘菜单可选角色、动作、大小（160至640逻辑像素）、暂停、鼠标朝向、鼠标穿透、跟随任务、重置位置和退出。Windows 会自动按系统比例缩放原生菜单，Size 标题会显示当前显示器缩放比例。启用穿透后仍可用托盘恢复。位置自动保存，重启会限制在当前显示器可见范围内。默认不开机启动。
 
 两款 Assistant 在工作、审阅、等待、挫败时穿白大褂，其他状态穿日常短外套。三月七和琪露诺保留各自服装与非官方同人声明。
 
@@ -53,4 +53,4 @@ node --test desktop/test.cjs
 
 可选 `desktop/smoke.cjs` 需要 Playwright 位于 Node 模块路径。设置 `ASSISTANT004_REAL_ART=1`、`ASSISTANT004_ASSETS` 为 `pets` 的绝对路径、`ASSISTANT004_REVIEW_ALL=1`，检查深浅背景下内置和高清尺寸的所有动作循环。用 `TEST_DPR=1`、`1.25` 或 `2` 检查缩放。不启用真实素材模式时，用 `scripts/make_test_art.py` 生成几何测试夹具；夹具不能证明美术质量。
 
-GitHub Actions 仅在四款素材均有验收记录时发布 Windows ZIP 和校验值。EXE 不提交进 Git。渲染进程关闭 Node 集成，启用上下文隔离与沙箱，仅开放必要 IPC，禁止跳转远程页面。
+GitHub Actions 仅在五款素材均有验收记录时发布 Windows ZIP 和校验值。EXE 不提交进 Git。渲染进程关闭 Node 集成，启用上下文隔离与沙箱，仅开放必要 IPC，禁止跳转远程页面。

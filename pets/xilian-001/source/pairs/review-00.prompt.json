@@ -1,0 +1,15 @@
+{
+  "tool": "built-in imagegen",
+  "model": "xilian-001",
+  "state": "review",
+  "frames": [
+    0,
+    1
+  ],
+  "prompt": "Use case: identity-preserve. Production animation pose pair derived from the supplied generated canonical design sheet.\nExactly TWO separate complete full-body drawings side by side on one flat pure chroma-green RGB(0,255,0) canvas, one drawing per half. Each drawing contains exactly ONE Cyrene and exactly ONE small memory spirit; no extra people, duplicate spirits, cropped hair, cropped shoes, text, logo, UI, checkerboard, floor or cast shadow. Keep a clean green gap between the two drawings and generous green margins around hair, dress, spirit, petals and ripple effects.\nUnofficial fan-made Cyrene (昔涟), refined semi-chibi about 4 heads tall: mature gentle face, violet eyes, voluminous waist-length pink hair with blue-lilac tips, white laurel crown, blue-violet rose ornament, pearl-white and star-violet asymmetric dress, ice-blue crystal accents and pale shoes. Preserve identical head size, face, hair silhouette, compact limbs and the same signature outfit in both drawings and every state.\nThe pink-and-white long-eared memory spirit is 36 to 42 percent of her head height, with blue eyes, fluffy tail and gold-pink neck jewel. Keep it on a clear oval orbit to her right and never across her face, hands, chest or skirt center.\nEffects are rich but controlled: rear star tide and petals, same-plane blue-violet rose light shards, and brief foreground ripple highlights. Keep the face and white dress readable; no large pink fog. Crisp premium cel-shaded anime linework, clean hands and coherent hair locks.\nLEFT DRAWING: Review pose: one hand supports her cheek while the other holds a blue-violet rose, eyes scanning viewer-left; spirit watches from shoulder height.\nRIGHT DRAWING: Eyes move from viewer-left toward center and chin lowers slightly; rose remains readable and the spirit leans toward the inspected area.\nOnly these two animation drawings. Keep transparent-effect shapes fully separated from the green border and preserve the same character scale.",
+  "references": [
+    "art/xilian-001-design.png"
+  ],
+  "output": "source/pairs/review-00.png",
+  "user_approved_local_matting": true
+}

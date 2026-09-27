@@ -2,12 +2,12 @@
 
 **English** | [简体中文](README.zh-CN.md)
 
-Four animated companions for Codex, with searchable bilingual metadata, saved generation prompts, and two ways to use them.
+Five animated companions for Codex, with searchable bilingual metadata, saved generation prompts, and two ways to use them.
 
-| Assistant-004 | Assistant-004 Anime | March 7th | Cirno |
-| --- | --- | --- | --- |
-| ![Semi-chibi](pets/assistant-004/assets/previews/idle.gif) | ![Anime](pets/assistant-004-anime/assets/previews/idle.gif) | ![March 7th](pets/march-7th-001/assets/previews/idle.gif) | ![Cirno](pets/cirno-009/assets/previews/idle.gif) |
-| Original, ~3.5-head proportions | Original, ~5-head proportions | Unofficial fan art | Unofficial fan art |
+| Assistant-004 | Assistant-004 Anime | March 7th | Cirno | Cyrene |
+| --- | --- | --- | --- | --- |
+| ![Semi-chibi](pets/assistant-004/assets/previews/idle.gif) | ![Anime](pets/assistant-004-anime/assets/previews/idle.gif) | ![March 7th](pets/march-7th-001/assets/previews/idle.gif) | ![Cirno](pets/cirno-009/assets/previews/idle.gif) | ![Cyrene](pets/xilian-001/assets/previews/idle.gif) |
+| Original, ~3.5-head proportions | Original, ~5-head proportions | Unofficial fan art | Unofficial fan art | Unofficial fan art |
 
 ## Download
 
@@ -46,7 +46,7 @@ Manual installation: copy those two files from the pet folder. For v1, copy the 
 
 ## Independent HD Desktop
 
-The same four pets use true transparent **768x832** frames in an Electron/Canvas app. Default window height is 320 pixels. Drag to move; click to wave; double-click to hop. The native context/tray menu provides character, action, size, pause, pointer direction, click-through, task selection, position reset and exit.
+The same five pets use true transparent **768x832** frames in an Electron/Canvas app. Default window height is 320 pixels. Drag to move; click to wave; double-click to hop. The native context/tray menu provides character, action, size, pause, pointer direction, click-through, task selection, position reset and exit.
 
 Optional **Codex integration** backs up and merges observer hooks only after confirmation. It sends minimal status events to a token-protected loopback port. No prompts or tool output are transmitted, no approval decision is changed, and remote tasks are not automatically connected. Without integration, all actions remain available manually.
 
@@ -54,7 +54,7 @@ See [English desktop guide](desktop/README.md) for trust requirements, event lim
 
 ## Artwork And Animation
 
-Each pet has nine action clips and 16 idle look directions, starting up and proceeding clockwise. Both Assistants wear a lab coat for working, review, frustration and waiting; other states use a casual short jacket. March 7th and Cirno retain their signature fan-art outfits.
+Each pet has nine action clips and 16 idle look directions, starting up and proceeding clockwise. Both Assistants wear a lab coat for working, review, frustration and waiting; other states use a casual short jacket. March 7th, Cirno and Cyrene retain their signature fan-art outfits; Cyrene's memory spirit accompanies every frame.
 
 The remaster uses native high-resolution green-screen pose drawings, locally matted into real RGBA. One common canvas scale is used; frames are translated onto a shared baseline, never independently enlarged to fill their bounding boxes. Jump crouches and airborne poses remain distinct drawings. Leftward movement mirrors the rightward cycle.
 
@@ -79,4 +79,4 @@ Add a folder under `pets/<id>/`, metadata to `catalog.json`, artwork provenance 
 
 ## Rights
 
-Code and original project metadata are MIT-licensed. Fan characters and their franchise rights are **not granted by MIT**. March 7th and Cirno remain unofficial fan-made assets for non-commercial personal desktop use under the existing [NOTICE](NOTICE.md). Assistant-004 is an original design. User-supplied franchise reference attachments are not redistributed.
+Code and original project metadata are MIT-licensed. Fan characters and their franchise rights are **not granted by MIT**. March 7th, Cirno and Cyrene remain unofficial fan-made assets for non-commercial personal desktop use under the existing [NOTICE](NOTICE.md). Assistant-004 is an original design. User-supplied franchise reference attachments are not redistributed.

@@ -3,13 +3,15 @@
     "assistant-004",
     "assistant-004-anime",
     "march-7th-001",
-    "cirno-009"
+    "cirno-009",
+    "xilian-001"
   ],
   "16方向": [
     "assistant-004",
     "assistant-004-anime",
     "march-7th-001",
-    "cirno-009"
+    "cirno-009",
+    "xilian-001"
   ],
   "5-head-proportions": [
     "assistant-004-anime"
@@ -50,6 +52,9 @@
     "march-7th-001",
     "cirno-009"
   ],
+  "anime-semi-chibi": [
+    "xilian-001"
+  ],
   "anime-slender": [
     "assistant-004-anime"
   ],
@@ -82,11 +87,18 @@
     "assistant-004",
     "assistant-004-anime",
     "march-7th-001",
-    "cirno-009"
+    "cirno-009",
+    "xilian-001"
   ],
   "coding-partner": [
     "assistant-004",
     "assistant-004-anime"
+  ],
+  "companion": [
+    "xilian-001"
+  ],
+  "cyrene": [
+    "xilian-001"
   ],
   "debugging": [
     "assistant-004",
@@ -96,7 +108,8 @@
     "assistant-004",
     "assistant-004-anime",
     "march-7th-001",
-    "cirno-009"
+    "cirno-009",
+    "xilian-001"
   ],
   "fan art": [
     "march-7th-001",
@@ -104,20 +117,27 @@
   ],
   "fan-art": [
     "march-7th-001",
-    "cirno-009"
+    "cirno-009",
+    "xilian-001"
   ],
   "hd-desktop-pet": [
     "assistant-004",
     "assistant-004-anime",
     "march-7th-001",
-    "cirno-009"
+    "cirno-009",
+    "xilian-001"
   ],
   "honkai-star-rail": [
-    "march-7th-001"
+    "march-7th-001",
+    "xilian-001"
+  ],
+  "honkai:-star-rail": [
+    "xilian-001"
   ],
   "ice": [
     "march-7th-001",
-    "cirno-009"
+    "cirno-009",
+    "xilian-001"
   ],
   "ice-fairy": [
     "cirno-009"
@@ -136,12 +156,22 @@
   "march-7th": [
     "march-7th-001"
   ],
+  "memory": [
+    "xilian-001"
+  ],
+  "memory-spirit": [
+    "xilian-001"
+  ],
   "model-training": [
     "assistant-004",
     "assistant-004-anime"
   ],
   "pink-hair": [
-    "march-7th-001"
+    "march-7th-001",
+    "xilian-001"
+  ],
+  "remembrance": [
+    "xilian-001"
   ],
   "researcher": [
     "assistant-004",
@@ -150,6 +180,9 @@
   "retro-sci-fi": [
     "assistant-004",
     "assistant-004-anime"
+  ],
+  "ripples-of-past-reverie": [
+    "xilian-001"
   ],
   "sanyueqi": [
     "march-7th-001"
@@ -187,6 +220,9 @@
     "assistant-004",
     "assistant-004-anime"
   ],
+  "xilian": [
+    "xilian-001"
+  ],
   "⑨": [
     "cirno-009"
   ],
@@ -217,6 +253,9 @@
   "冰之妖精": [
     "cirno-009"
   ],
+  "冰属性": [
+    "xilian-001"
+  ],
   "冰晶翅膀": [
     "cirno-009"
   ],
@@ -231,11 +270,18 @@
     "assistant-004",
     "assistant-004-anime",
     "march-7th-001",
-    "cirno-009"
+    "cirno-009",
+    "xilian-001"
   ],
   "助理": [
     "assistant-004",
     "assistant-004-anime"
+  ],
+  "半Q版": [
+    "xilian-001"
+  ],
+  "同人": [
+    "xilian-001"
   ],
   "吐槽": [
     "assistant-004",
@@ -254,14 +300,22 @@
     "assistant-004-anime"
   ],
   "崩坏星穹铁道": [
-    "march-7th-001"
+    "march-7th-001",
+    "xilian-001"
   ],
   "怀疑主义": [
     "assistant-004",
     "assistant-004-anime"
   ],
+  "昔涟": [
+    "xilian-001"
+  ],
+  "昔涟桌宠": [
+    "xilian-001"
+  ],
   "星穹铁道": [
-    "march-7th-001"
+    "march-7th-001",
+    "xilian-001"
   ],
   "服务器监控": [
     "assistant-004",
@@ -271,7 +325,8 @@
     "assistant-004",
     "assistant-004-anime",
     "march-7th-001",
-    "cirno-009"
+    "cirno-009",
+    "xilian-001"
   ],
   "模型训练": [
     "assistant-004",
@@ -292,7 +347,8 @@
     "assistant-004-anime"
   ],
   "粉发": [
-    "march-7th-001"
+    "march-7th-001",
+    "xilian-001"
   ],
   "编程伙伴": [
     "assistant-004",
@@ -300,6 +356,12 @@
   ],
   "蓝发": [
     "cirno-009"
+  ],
+  "记忆命途": [
+    "xilian-001"
+  ],
+  "记忆精灵": [
+    "xilian-001"
   ],
   "调试": [
     "assistant-004",
@@ -309,6 +371,7 @@
     "assistant-004",
     "assistant-004-anime",
     "march-7th-001",
-    "cirno-009"
+    "cirno-009",
+    "xilian-001"
   ]
 }

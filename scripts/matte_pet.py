@@ -42,11 +42,32 @@ def key_green(image: Image.Image) -> Image.Image:
     return Image.fromarray(np.rint(np.dstack((foreground, alpha)) * 255).astype(np.uint8))
 
 
-def split_pair(source: Path, output: Path, split: int | None = None) -> dict:
+def prepare_pair_canvas(image: Image.Image, target_height: int | None = None) -> tuple[Image.Image, dict]:
+    """Validate native canvases and only downscale a complete pair when required."""
+    native_size = image.size
+    if not 832 <= image.height <= 1344 or image.width > 2048:
+        raise ValueError("Regenerate on the shared canvas: height 832..1344, width <=2048")
+    scale = 1
+    prepared = image.convert("RGB")
+    if target_height is not None:
+        if not 832 <= target_height <= image.height:
+            raise ValueError("Target height may only downscale an approved source canvas")
+        scale = target_height / image.height
+        if scale < 1:
+            prepared = prepared.resize((round(image.width * scale), target_height), Image.Resampling.LANCZOS)
+    return prepared, {
+        "native_size": list(native_size),
+        "normalized_size": list(prepared.size),
+        "canvas_scale": scale,
+        "canvas_padding_top": 0,
+    }
+
+
+def split_pair(source: Path, output: Path, split: int | None = None,
+               target_height: int | None = None) -> dict:
     with Image.open(source) as image:
-        if not 832 <= image.height <= 1344 or image.width > 1536:
-            raise ValueError("Regenerate on the shared canvas: height 832..1344, width <=1536")
-        keyed = key_green(image)
+        prepared, normalization = prepare_pair_canvas(image, target_height)
+        keyed = key_green(prepared)
     alpha = np.asarray(keyed.getchannel("A"))
     if any(np.any(edge > 32) for edge in (alpha[:2], alpha[-2:], alpha[:, :2], alpha[:, -2:])):
         raise ValueError("Source figure touches the image edge; regenerate with complete shoes, hair and wings")
@@ -75,9 +96,10 @@ def split_pair(source: Path, output: Path, split: int | None = None) -> dict:
         boundary = np.full(keyed.height, split)
     left_edge, right_edge = int(boundary.min()), int(boundary.max())
     width = max(768, right_edge, keyed.width - left_edge)
+    padding_top = 128 + max(0, 1024 - keyed.height)
     output.parent.mkdir(parents=True, exist_ok=True)
-    report = {"source": source.name, "native_size": keyed.size, "split_range": [left_edge, right_edge],
-              "source_canvas": [width, 1536], "padding_top": 128, "scale": 1, "frames": []}
+    report = {"source": source.name, **normalization, "split_range": [left_edge, right_edge],
+              "source_canvas": [width, 1536], "padding_top": padding_top, "scale": 1, "frames": []}
     pixels = np.asarray(keyed).copy()
     left_mask = np.arange(keyed.width)[None, :] < boundary[:, None]
     for index, (left, right) in enumerate(((0, right_edge), (left_edge, keyed.width))):
@@ -85,9 +107,10 @@ def split_pair(source: Path, output: Path, split: int | None = None) -> dict:
         selected[~left_mask if index == 0 else left_mask] = 0
         cell = Image.fromarray(selected).crop((left, 0, right, keyed.height))
         frame = Image.new("RGBA", (width, 1536))
-        frame.alpha_composite(cell, ((width - cell.width) // 2, 128))
+        frame.alpha_composite(cell, ((width - cell.width) // 2, padding_top))
         box = frame.getchannel("A").getbbox()
-        if not box or box[3] - box[1] < 650:
+        min_detail_height = min(650, round(keyed.height * 2 / 3))
+        if not box or box[3] - box[1] < min_detail_height:
             raise ValueError("Figure lacks native detail; regenerate at a larger scale")
         file = output.with_name(f"{output.name}-{index}.png")
         frame.save(file)

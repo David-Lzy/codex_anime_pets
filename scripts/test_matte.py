@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 
 from PIL import Image, ImageDraw
-from matte_pet import key_green, split_pair
+from matte_pet import key_green, prepare_pair_canvas, split_pair
 
 
 class MattingTest(unittest.TestCase):
@@ -53,6 +53,35 @@ class MattingTest(unittest.TestCase):
             a, b = report["frames"]
             self.assertEqual(a["bounds"][3] - b["bounds"][3], 100)
             self.assertEqual(b["bounds"][1] - a["bounds"][1], 120)
+
+    def test_provider_wide_canvas_preserves_native_scale(self):
+        image = Image.new("RGB", (1774, 887), "#00ff00")
+        draw = ImageDraw.Draw(image)
+        draw.rectangle((200, 80, 700, 850), fill="white")
+        draw.rectangle((1074, 80, 1574, 850), fill="black")
+        prepared, report = prepare_pair_canvas(image)
+        self.assertEqual(prepared.size, (1774, 887))
+        self.assertEqual(report["canvas_scale"], 1)
+        self.assertEqual(report["canvas_padding_top"], 0)
+
+        with tempfile.TemporaryDirectory() as folder:
+            source = Path(folder) / "wide.png"
+            image.save(source)
+            split_report = split_pair(source, Path(folder) / "frame")
+            self.assertEqual(split_report["native_size"], [1774, 887])
+            self.assertEqual(split_report["normalized_size"], [1774, 887])
+            self.assertEqual(split_report["source_canvas"], [887, 1536])
+            self.assertEqual(split_report["padding_top"], 265)
+            self.assertTrue(all(entry["bounds"][3] - entry["bounds"][1] >= 591
+                                for entry in split_report["frames"]))
+
+    def test_mixed_provider_canvas_only_downscales_the_whole_image(self):
+        image = Image.new("RGB", (1536, 1024), "#00ff00")
+        prepared, report = prepare_pair_canvas(image, target_height=887)
+        self.assertEqual(prepared.size, (1330, 887))
+        self.assertAlmostEqual(report["canvas_scale"], 887 / 1024)
+        with self.assertRaisesRegex(ValueError, "only downscale"):
+            prepare_pair_canvas(image, target_height=1100)
 
     def test_rejects_clipped_source_before_padding(self):
         with tempfile.TemporaryDirectory() as folder:

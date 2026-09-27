@@ -151,6 +151,42 @@
         "touhou-project"
       ],
       "fan_notice": "Cirno and Touhou Project are associated with Team Shanghai Alice/ZUN. This pet is an unofficial fan-made asset and is not endorsed by or affiliated with Team Shanghai Alice/ZUN."
+    },
+    {
+      "id": "xilian-001",
+      "display_name": "Cyrene",
+      "path": "pets/xilian-001/",
+      "install_command": "python scripts/install.py --pet xilian-001",
+      "status": "ready",
+      "sprite_version": 2,
+      "hd": {
+        "cell_width": 768,
+        "cell_height": 832
+      },
+      "summary_en": "Fan-made Cyrene Codex desktop pet with pink hair, a pearl-white and star-violet dress, blue-violet roses, a memory spirit, and radiant ripple effects.",
+      "query_text_en": "Cyrene fan-made semi-chibi memory heroine with companion Cyrene Xilian Ripples of Past Reverie Honkai Star Rail Honkai: Star Rail Remembrance Ice fan art pink hair memory spirit anime semi-chibi desktop pet HD desktop pet Codex v2 16 directions pink long hair white laurel crown pearl-white dress star-violet lining blue-violet roses ice-blue crystal memory spirit star-sea ripple semi-chibi anime gentle warm reflective graceful quietly encouraging long coding sessions calm focus code review memory-themed workflows elegant desktop ambience",
+      "summary_zh": "昔涟 fan-made Codex 桌面宠物：粉色长发、珍珠白与星紫礼服、蓝紫玫瑰、伴生记忆精灵和星海涟漪特效。",
+      "query_text_zh": "昔涟 fan-made 半Q版记忆命途少女与伴生精灵 昔涟 昔涟桌宠 崩坏星穹铁道 星穹铁道 记忆命途 冰属性 粉发 记忆精灵 同人 半Q版 桌面宠物 高清桌宠 16方向 动画重制 粉色长发 白色月桂冠 珍珠白礼服 星紫内衬 蓝紫玫瑰 冰晶蓝装饰 记忆精灵 星海涟漪 半Q版动漫 温柔 亲切 善于回望 优雅 安静鼓励 长时间编码 平静专注 代码审阅 记忆主题工作流 优雅桌面氛围",
+      "tags": [
+        "16-directions",
+        "anime-semi-chibi",
+        "codex-v2",
+        "companion",
+        "cyrene",
+        "desktop-pet",
+        "fan-art",
+        "hd-desktop-pet",
+        "honkai-star-rail",
+        "honkai:-star-rail",
+        "ice",
+        "memory",
+        "memory-spirit",
+        "pink-hair",
+        "remembrance",
+        "ripples-of-past-reverie",
+        "xilian"
+      ],
+      "fan_notice": "Cyrene (昔涟) and Honkai: Star Rail are associated with HoYoverse/miHoYo. This pet is an unofficial fan-made asset for non-commercial personal desktop use and is not endorsed by or affiliated with HoYoverse/miHoYo."
     }
   ]
 }

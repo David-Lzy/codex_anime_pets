@@ -2,7 +2,7 @@
   "package": "codex-pet-collection",
   "collection_id": "codex-pet-collection",
   "default_pet_id": "assistant-004",
-  "updated": "2026-09-14",
+  "updated": "2026-09-27",
   "description": "Shareable Codex pet collection with AI-search catalog, bilingual README, installers, previews, prompts, QA metadata, and fan-made character pet entries.",
   "install_target": "~/.codex/pets/<pet-id>/",
   "catalog": "catalog.json",
@@ -30,38 +30,38 @@
     },
     {
       "path": "NOTICE.md",
-      "bytes": 1469,
-      "sha256": "147afdd7e5172760714c34ddf9d16506857bf4fb5892ce8e0359028ae7aae56d"
+      "bytes": 1498,
+      "sha256": "693894304d435da95c3e761116337bb223a41b2fbbd7a1e3f5c4c2fc9d672ff1"
     },
     {
       "path": "PETS.md",
-      "bytes": 1986,
-      "sha256": "cfc2ba9bbb4a9295d1a189e8494250a29ebd81636284a3ea31e9ab0dde70b054"
+      "bytes": 2290,
+      "sha256": "dbbefdd76762104fc74a8bfa4c04f91f378f51bb6263253e535874c0bc8b5a4b"
     },
     {
       "path": "README.md",
-      "bytes": 5465,
-      "sha256": "0137081e8939ab921df80999ac25c362ac0c81d9df70cfbb9ee62e532d0dc068"
+      "bytes": 5619,
+      "sha256": "357426bae231f468fe20c43bb5000eefbc9d0dd7f8ae501554e71994c32fc81d"
     },
     {
       "path": "README.zh-CN.md",
-      "bytes": 4967,
-      "sha256": "735b940af31a4c53da0a00216d4aeeb17c00df025cda75643ecc316a8ae0c5b2"
+      "bytes": 5108,
+      "sha256": "d75abdcdeae334d26d316e255b150dcdbe947d249baeb7bb3e4f99bec1157e2d"
     },
     {
       "path": "art/QA.md",
-      "bytes": 3601,
-      "sha256": "2556a2a452b1d9111ac8e1a4b328b8df1f68cd5f8529edb6d3d6cd35c7e00063"
+      "bytes": 3550,
+      "sha256": "8a76adcbb4d66c072bcdad3aac57e8831fa4a9a0053841a09ddfe70523d806d4"
     },
     {
       "path": "art/README.md",
-      "bytes": 7919,
-      "sha256": "e84cac7b2c69a8b6088b44d6bd0be31589db07e8247310b9d9373ce79b316d2d"
+      "bytes": 8436,
+      "sha256": "cf467628824fcd4c12e354f38b4210d7d42dbe295bd0a721a493917ccb84af3a"
     },
     {
       "path": "art/animation-prompts.json",
-      "bytes": 13661,
-      "sha256": "01722ff15c206bb7ddfbcc8620ac893aada9039bb2d4ddec618da93229712ef5"
+      "bytes": 16611,
+      "sha256": "6d5210c3b3a51408aa6603e44f0d992a89b5f85279ef79cb51ecc8a97970bcde"
     },
     {
       "path": "art/assistant-004-casual-draft.png",
@@ -110,8 +110,8 @@
     },
     {
       "path": "art/playback-review.json",
-      "bytes": 20314,
-      "sha256": "fceeb49dea56d6f100717c36fadeb3f2a5df4a7676a85a94c6fab81e9eb14a60"
+      "bytes": 25266,
+      "sha256": "787b55d777ee55583844b9b2dc46234b600da25537d5aa33fbc32e94028935cd"
     },
     {
       "path": "art/remaster-drafts/README.md",
@@ -119,19 +119,24 @@
       "sha256": "dfc23cdedf18556bce2bf54bbf17d39356973eec8d29d887b0747688e4f864f2"
     },
     {
+      "path": "art/xilian-001-design.png",
+      "bytes": 2126443,
+      "sha256": "da920e47d944a017be5b185fbf6b06ed67c7141701edd7f88082441d93fbdb43"
+    },
+    {
       "path": "catalog.json",
-      "bytes": 20211,
-      "sha256": "d2569b0f64a04e05ba18bb4962aa14aab1bc51051400c6bef3d8319ddd822d96"
+      "bytes": 25079,
+      "sha256": "2464f65eb63103d06514e87eeadc86a420e70461780f400fdf81ded85f5414bc"
     },
     {
       "path": "desktop/README.md",
-      "bytes": 4730,
-      "sha256": "8ccaf25a663f659d8c8c73f1961e4dc3570284ae190fe99961797cb96bd93606"
+      "bytes": 4833,
+      "sha256": "8ad35e97ddbe07719254c8c5474a96a5dbf09c3ab4c4641e27ac041a9eb32b71"
     },
     {
       "path": "desktop/README.zh-CN.md",
-      "bytes": 4433,
-      "sha256": "d61a59df28d4236b631ed0056e3c045baf8434cfcf85eb62d7ca16637bb71d0b"
+      "bytes": 4542,
+      "sha256": "8139ffe65ccf9e9fc7f856fa5da09d2e1970a09f6988923fcdb055ff647f1c66"
     },
     {
       "path": "desktop/hooks/bridge.cjs",
@@ -155,8 +160,8 @@
     },
     {
       "path": "desktop/main.cjs",
-      "bytes": 12730,
-      "sha256": "693c514ea140041f0d062c27a94e713d61a0ebda7815a98398c08bf894a87cde"
+      "bytes": 12921,
+      "sha256": "1c45c2c802f51b8a93563ea6fc3e70593c18853076e1d3b187db541c8452c65b"
     },
     {
       "path": "desktop/native-smoke.ps1",
@@ -185,13 +190,13 @@
     },
     {
       "path": "desktop/renderer.js",
-      "bytes": 3662,
-      "sha256": "a7813f9e555ff0b67e576c4466912e1d1805ab98b0cccdfaf70aa9bb5a63ec10"
+      "bytes": 3677,
+      "sha256": "992d185a39fe0b547721044452483dae1656dfa9848a1e98bb1ed11e03a02c50"
     },
     {
       "path": "desktop/smoke.cjs",
-      "bytes": 10406,
-      "sha256": "3c5218022808fcc191977157320553ed890bfa96972aa8a579e69973282a8520"
+      "bytes": 11128,
+      "sha256": "b3359f33c44325d316249af4bc29a32a7156fc7f9d003c6967ce87bd912ce72f"
     },
     {
       "path": "desktop/state.cjs",
@@ -200,8 +205,8 @@
     },
     {
       "path": "desktop/style.css",
-      "bytes": 338,
-      "sha256": "aad9d1524f5e0a0b97d675c8d633ceb98587adcdf1e600dcf9e1d894e10ca256"
+      "bytes": 385,
+      "sha256": "95aff6376665da74d035d53b2e4c5d428a016c099fb77e4e30155d1b1e242a74"
     },
     {
       "path": "desktop/test.cjs",
@@ -210,13 +215,13 @@
     },
     {
       "path": "indexes/ai-search-index.json",
-      "bytes": 9576,
-      "sha256": "e0040eff91195660a644c2845fa40265f0f6dd86c3d77e9df80468aeddd626b3"
+      "bytes": 11937,
+      "sha256": "67b4501c46132a736f822fc1cf274f19686811e5d65e083df6521796ae7126cf"
     },
     {
       "path": "indexes/tags.json",
-      "bytes": 5166,
-      "sha256": "a702bcdc03c8ac86c08d22185156b628c6b30154a5dfbc36b0d139099d33cdb1"
+      "bytes": 6087,
+      "sha256": "45666c1cbff49ddb419c672170b77090cc4c15539327a5f812b1032d2df05538"
     },
     {
       "path": "pets/assistant-004-anime/README.md",
@@ -2199,6 +2204,501 @@
       "sha256": "2359e7ae4f14085ae1d2ce5800e22f4af43dddec6ad53f626682ebf94adef767"
     },
     {
+      "path": "pets/xilian-001/README.md",
+      "bytes": 2615,
+      "sha256": "6d307ab1d127c2656683b03325c67aee51d510fb84f8680010cf230135e63596"
+    },
+    {
+      "path": "pets/xilian-001/assets/contact-sheet.png",
+      "bytes": 1383979,
+      "sha256": "541def033cc69830a23c9b02543e63487f9101edc9a0ff0b8d47e7ebf10ff278"
+    },
+    {
+      "path": "pets/xilian-001/assets/previews/failed.gif",
+      "bytes": 71737,
+      "sha256": "621350bb8c06466c4059c15cca212f431957d1358864072627cd589bbf047c74"
+    },
+    {
+      "path": "pets/xilian-001/assets/previews/idle.gif",
+      "bytes": 53364,
+      "sha256": "574483474397ebceea956be011bd47cbc420c18a8084730992d446c1105fb97c"
+    },
+    {
+      "path": "pets/xilian-001/assets/previews/jumping.gif",
+      "bytes": 50213,
+      "sha256": "0cf9b158fc13bee38d6514b5c80a956e9c21d08681267031770646fe7f5b8028"
+    },
+    {
+      "path": "pets/xilian-001/assets/previews/look.gif",
+      "bytes": 141403,
+      "sha256": "45c7184688347699dbdce234d91c5192c5b474217b38e82153694152004c3109"
+    },
+    {
+      "path": "pets/xilian-001/assets/previews/review.gif",
+      "bytes": 68433,
+      "sha256": "686dab2a9763fb6845d3aaa8d958370db1fb05d85d018937b65f739068656efd"
+    },
+    {
+      "path": "pets/xilian-001/assets/previews/running-left.gif",
+      "bytes": 69580,
+      "sha256": "c342c71dc83a4fdbcec5491f36850e0fa578ab45d13515e454fc60625597f680"
+    },
+    {
+      "path": "pets/xilian-001/assets/previews/running-right.gif",
+      "bytes": 69649,
+      "sha256": "6098bf90525c450df9dfae7183d8263d305930e9d4c675c1540da5544fafdf2d"
+    },
+    {
+      "path": "pets/xilian-001/assets/previews/running.gif",
+      "bytes": 62585,
+      "sha256": "621e282a1b7d7d025ed95ef10a6b941263a0034c19323f435769b4fe5ae730eb"
+    },
+    {
+      "path": "pets/xilian-001/assets/previews/waiting.gif",
+      "bytes": 60573,
+      "sha256": "6a809b697ac093c993cf1c06c045d8bb212e6508efc40fb62a023f6454fb340e"
+    },
+    {
+      "path": "pets/xilian-001/assets/previews/waving.gif",
+      "bytes": 40322,
+      "sha256": "290a7b8658dbbca19b9267d5ee9ead542529c419309ee205f1c5911010f3f7c2"
+    },
+    {
+      "path": "pets/xilian-001/assets/review.json",
+      "bytes": 1597,
+      "sha256": "0f0a8af3ce39f1d7ce5dfe8061f1f3d1562073039256c4501778294af6d146ba"
+    },
+    {
+      "path": "pets/xilian-001/assets/run-summary.json",
+      "bytes": 362,
+      "sha256": "52aa68632433a9533dc6ef59f4cebc1ee766e738c82fde409624983327bf1cf4"
+    },
+    {
+      "path": "pets/xilian-001/assets/validation.json",
+      "bytes": 6702,
+      "sha256": "bcb3f099afa02b5369ef535d8bec8b17510ee5b895aa261febbf242ae0955cba"
+    },
+    {
+      "path": "pets/xilian-001/compat/v1/pet.json",
+      "bytes": 323,
+      "sha256": "08dc644d9f4043779b6d83e9485b0a4d347e15560f97589aaacb6389a1729071"
+    },
+    {
+      "path": "pets/xilian-001/compat/v1/spritesheet.webp",
+      "bytes": 1266518,
+      "sha256": "8f06e82d1dd89188d333f29308402c6b4f9154684fe37bc357feb87e479b50d1"
+    },
+    {
+      "path": "pets/xilian-001/creation-prompt.md",
+      "bytes": 1966,
+      "sha256": "71fcb5f9ab84f06721675a2469e9e250f279a88be35bc8d28c967ff96e87cdd4"
+    },
+    {
+      "path": "pets/xilian-001/hd/animation.json",
+      "bytes": 2373,
+      "sha256": "d67097211e3aa6e68801e8d5102f72a04490a5bdfcea955e63890382aa884b4f"
+    },
+    {
+      "path": "pets/xilian-001/hd/failed.webp",
+      "bytes": 1692946,
+      "sha256": "68dceeab3672d18748d3234791a2265610a815988d8afdb09690c7d6464e209e"
+    },
+    {
+      "path": "pets/xilian-001/hd/idle.webp",
+      "bytes": 1262118,
+      "sha256": "34fceb91d502a4020c539f68cf9fe288321817d8a66cbfcbf5adb9ecd46b3402"
+    },
+    {
+      "path": "pets/xilian-001/hd/jumping.webp",
+      "bytes": 1256688,
+      "sha256": "6d961f66c896a945b7b3ef97bbb6e21672c540acaa5a12bf1599676bf82421e5"
+    },
+    {
+      "path": "pets/xilian-001/hd/look.webp",
+      "bytes": 3204522,
+      "sha256": "311ae9f1c611953a81f0f1c26199b4788342d4e45f10c960487f9ecddb1cadaf"
+    },
+    {
+      "path": "pets/xilian-001/hd/review.webp",
+      "bytes": 1678116,
+      "sha256": "5e290acc83f71ea67e7c05251894ae19a6cbdb3df34a35cace3691727a05d26a"
+    },
+    {
+      "path": "pets/xilian-001/hd/running-left.webp",
+      "bytes": 1626078,
+      "sha256": "4316c9064ac12fd5037bc30d357bb89e4acb3139c8fd94bd92a4b2d4042e99dc"
+    },
+    {
+      "path": "pets/xilian-001/hd/running-right.webp",
+      "bytes": 1627282,
+      "sha256": "c571af0365eaa1350e2d439edfd740494cb02c4901161a9cdeec49d77831be86"
+    },
+    {
+      "path": "pets/xilian-001/hd/running.webp",
+      "bytes": 1531482,
+      "sha256": "1009556070ec710902f89764136fd7d63c2c43e92be5cbfde23848cd8243d019"
+    },
+    {
+      "path": "pets/xilian-001/hd/tray.png",
+      "bytes": 9839,
+      "sha256": "2d7730cbe8cf458424e297e4055b0e53f3f91e799c2ce3f4b3216bb625cf7090"
+    },
+    {
+      "path": "pets/xilian-001/hd/waiting.webp",
+      "bytes": 1480080,
+      "sha256": "e04e734667620206766cd1093505b5ecccfce0865986754e6643cee3e61357ee"
+    },
+    {
+      "path": "pets/xilian-001/hd/waving.webp",
+      "bytes": 982146,
+      "sha256": "bbe179f76975d85b3be8d53091187522a550f72c938333290cedca24f37fdb3c"
+    },
+    {
+      "path": "pets/xilian-001/pet.json",
+      "bytes": 323,
+      "sha256": "3c5f982d20bf99380e87d195ca392f398679df5623d5e31bc44b2f51f546795d"
+    },
+    {
+      "path": "pets/xilian-001/source/frames.json",
+      "bytes": 10399,
+      "sha256": "e06f9577bb1dc813d13e3b96208d9be5fab4e56c6923bc74026cfb44851aeef0"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/failed-00.png",
+      "bytes": 2161249,
+      "sha256": "45b7335e58f286c115f29d3870ae8b2bf99ce7a73cab571ee51ff66737d009d6"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/failed-00.prompt.json",
+      "bytes": 2229,
+      "sha256": "dccd15746b26a6c19d19ea446fac9b676df9955806fa627d6a508f6a73d474e2"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/failed-02.png",
+      "bytes": 2200604,
+      "sha256": "eeddc1ac713b0dc97a394faeeeb70c787e3213690e9985f88133b95b1b336971"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/failed-02.prompt.json",
+      "bytes": 2257,
+      "sha256": "5e39e09db6885a878061712665cb8f95435106c3b2e6a5493c194c0a2e7a2b60"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/failed-04.png",
+      "bytes": 2074954,
+      "sha256": "ca8cdf41c67bbeaa515fe64d6097ad847b8441f8917b17d972d7d165077f7b46"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/failed-04.prompt.json",
+      "bytes": 2241,
+      "sha256": "c2a18c23022b4a4d5588fc0e38e23e62b6c3c7a5dde0b9f0fd4ac5bdd997ef55"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/failed-06.png",
+      "bytes": 2280085,
+      "sha256": "4d23589f72a364d41a694ea82899593c181c794aae58a1053f4e8221b8b4da18"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/failed-06.prompt.json",
+      "bytes": 2216,
+      "sha256": "ae52b6106dc2e8f628bf147d41a49710dd6f067e8f5558b72529f940044fe515"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/idle-00.png",
+      "bytes": 2168086,
+      "sha256": "351f4ae6ccc7ecd934064fae6297b3185ce154be03fc1ea8f0a16a3c865f5eeb"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/idle-00.prompt.json",
+      "bytes": 2298,
+      "sha256": "5097c06cd19d13efcf829c15a22801003cc44a4d175781cdfec5fe2c550e6625"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/idle-02.png",
+      "bytes": 2125807,
+      "sha256": "9eadfa8994b384b9846526bfbc0d6f29166837d8c7ef9be5d88216efb24ffb46"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/idle-02.prompt.json",
+      "bytes": 2273,
+      "sha256": "ba1875859c8b51df530b6139fdf1344fb287f31be632dd261aa4bc56c97e21ea"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/idle-04.png",
+      "bytes": 2035827,
+      "sha256": "df700a53a9910438be6a74c56add44964ea40642800b200d7a904085e982bdfa"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/idle-04.prompt.json",
+      "bytes": 2265,
+      "sha256": "173d0ad8328ebdc18db118479a4f0d58ec5a48886262213f26fa9197bb2697c7"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/jumping-00.png",
+      "bytes": 1965304,
+      "sha256": "2613ed8e97a5e759f8309e837c335be3a477afb687540fe05913398e61a161d6"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/jumping-00.prompt.json",
+      "bytes": 2291,
+      "sha256": "57b0da3c989085ab6225e31975917441426b0855919f013ded6b764ac223451c"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/jumping-02.png",
+      "bytes": 2298535,
+      "sha256": "e10ac27193afa2067488709cee4a7a5f150ead70d48fa208d7bbbd038d3f2d05"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/jumping-02.prompt.json",
+      "bytes": 2275,
+      "sha256": "83c915d8418fd10e59b7448f55074b660041f4cfab089b82a47c3fee2d281d04"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/jumping-04.png",
+      "bytes": 1934745,
+      "sha256": "e1c7789d640ac93bd522f567b275a6a6e1659556691d37afc5b505588a501b9e"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/jumping-04.prompt.json",
+      "bytes": 2262,
+      "sha256": "093679bfcd54f161fd162a9e41d974b85519f37cdc1545079cac176be98dbc38"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/look-00.png",
+      "bytes": 2180920,
+      "sha256": "11ddb1decffdef78825c0ee4787b83e788a50a9018c998514f92b6423482dc86"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/look-00.prompt.json",
+      "bytes": 2459,
+      "sha256": "4b14e48d382b6f65395a6d0b4b4177d35802682b42921a6f424332be6f9fb9fa"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/look-02.png",
+      "bytes": 2106453,
+      "sha256": "b85a82ef6bfd70e353c80857355731207c439cdff99a55da48fc9af72408b9ae"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/look-02.prompt.json",
+      "bytes": 2455,
+      "sha256": "08e62e6fddaf0916c59787ae06d76b3d9bb7ede406c65d4ff02847e41605e75e"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/look-04.png",
+      "bytes": 2109171,
+      "sha256": "4a65bf01b02ff60348566b74ce2c27bb93f28b207c7bfa81501d18e04ac3379e"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/look-04.prompt.json",
+      "bytes": 2442,
+      "sha256": "e4b3d0343091d92aee3ae3c639a080f27e459fc9ed29864e74f5d4d30a6cabae"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/look-06.png",
+      "bytes": 1979874,
+      "sha256": "9c953524b55cbeb539a976907db0af32206004db60e6069b89a18376b2ae2067"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/look-06.prompt.json",
+      "bytes": 2437,
+      "sha256": "ad4c98fb096c84a98afe997f86a518502e40e0de4e13a309036b944abf1a683d"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/look-08.png",
+      "bytes": 1928278,
+      "sha256": "18ed307f66c5b3464a8cf77c7cd2875d11d05ceec0accaa885f301519f3f424b"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/look-08.prompt.json",
+      "bytes": 2514,
+      "sha256": "5a9c1018d4dd623e1f860fe94d0d1d88c60552f6343892c8147663ea41e199e0"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/look-10.png",
+      "bytes": 1919940,
+      "sha256": "7265f6b549bef07568b37899e04fbadf0007122c6902ef4e0981b7b4275aa3a3"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/look-10.prompt.json",
+      "bytes": 2482,
+      "sha256": "6737a2ef2d7942ad3b41de9e3cef14a131ba33dc1a294f549d39350e44c8b0ce"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/look-12.png",
+      "bytes": 1992899,
+      "sha256": "9d7b6a4b60118a8cc11c5ec5857d33f4d650348a9ba2a5f92ff5d966e1c33e9a"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/look-12.prompt.json",
+      "bytes": 2455,
+      "sha256": "5eecdce3598c2857b1108b5dae510543c855ced89bb5f5c7ae885a327c940ed5"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/look-14.png",
+      "bytes": 2152199,
+      "sha256": "6abcf8f9076164646863a6e8d4902a1f0460cbc76c7f3b8fa9952d093b3ef774"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/look-14.prompt.json",
+      "bytes": 2455,
+      "sha256": "064b8b26452b1051bd8662d03d8972dfc12e7b54957b9cd726e9e580764e063c"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/review-00.png",
+      "bytes": 2252670,
+      "sha256": "91017c486d4b840405c8b385c3e04d634386db9527eb24b746ac43ef2ea80ebe"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/review-00.prompt.json",
+      "bytes": 2253,
+      "sha256": "a43d1c63fe213a3cab7cc61001cd942ea83b4e11a3a4f2d34b4ebcae054e0691"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/review-02.png",
+      "bytes": 2157757,
+      "sha256": "ead23ba174bb30f62d09671bc3c19df5c6c6eb2164ed85ce251de77de37dfad6"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/review-02.prompt.json",
+      "bytes": 2221,
+      "sha256": "bc3c9df0a5f0241ff48d61fb18219053653c6d79f586ebd076c09331badefaac"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/review-04.png",
+      "bytes": 2285015,
+      "sha256": "ecd8d575b911d74c0b56952bdf534a331f53d8d874914471fe688c13e08a5523"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/review-04.prompt.json",
+      "bytes": 2250,
+      "sha256": "90fa35efb0ba96eaf5b959edef407e437a40e476bb100c9d0afe70c3795eff01"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/running-00.png",
+      "bytes": 2132400,
+      "sha256": "d8f059f48b5e6ad044837bfc8d65d3289489efb2dcfc1d47e86ccabb22d5e29e"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/running-00.prompt.json",
+      "bytes": 2286,
+      "sha256": "851b8210f46438b8c1dd768782c4c4b84c49aabca1ea3faeb4f7c3f55427980c"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/running-02.png",
+      "bytes": 2162701,
+      "sha256": "2640ed804ce7dba6ce88839322b105ed016d7a684269ab1fdb25fac6fdfb5a3b"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/running-02.prompt.json",
+      "bytes": 2222,
+      "sha256": "da3f7641605e62e810aa368ee4738a0f3532184001f36cd0c84a68cbedad1b6a"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/running-04.png",
+      "bytes": 2150067,
+      "sha256": "dfa9175ceb20637271b4eca933cfb0ac58bcf3d5b76dcca87c201cc87d0b29df"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/running-04.prompt.json",
+      "bytes": 2245,
+      "sha256": "8b8b5e51cc8cbc96e7a1008c37cbacc67dd9d8a9781d79160cfa361f6d37a1b3"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/running-right-00.png",
+      "bytes": 2083749,
+      "sha256": "23ad958d12775b20f2a53931d645e6addea275762d1c96c762ff95c3cfc123fb"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/running-right-00.prompt.json",
+      "bytes": 2325,
+      "sha256": "5b1949329167672909f4caa11ed7f710af09a3f29a5fd23fd14dfa0d0b1f68a1"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/running-right-02.png",
+      "bytes": 1948819,
+      "sha256": "26339a8d6d306e7f625e2814923b2e60c695953c62a5034c3ed6cc5143d06103"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/running-right-02.prompt.json",
+      "bytes": 2342,
+      "sha256": "2c2d1ff73481c2fda5cdba51c790ccadbba618010c495fcdf7381a4c79717bbf"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/running-right-04.png",
+      "bytes": 2038240,
+      "sha256": "f718eef55add16f614f03e629110b30c1d34df600e2dccbcd0a9c31f63f414bf"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/running-right-04.prompt.json",
+      "bytes": 2295,
+      "sha256": "68a632f3abe553b34a6f081a379b6d632960e1b13c3f636a2e0f49dfd6bde433"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/running-right-06.png",
+      "bytes": 2060098,
+      "sha256": "d31e0fa475b398a791b90228eedb54a4bfd367a03e3c372cc9213295ef7dbae8"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/running-right-06.prompt.json",
+      "bytes": 2321,
+      "sha256": "a6b669823a8f38aac3465e101ee469c8d20b2a435b4915a2e838c9bbf0fc5045"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/waiting-00.png",
+      "bytes": 2170523,
+      "sha256": "726d6eb36c9eda922dadca2d2412fe3a6c859fc331f16639c63ce4a413fd1072"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/waiting-00.prompt.json",
+      "bytes": 2227,
+      "sha256": "bc8ee214f8e8d4ceeb19dbcdd66fdbbcff50b3cff97a1eb1f5a2431a3008b063"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/waiting-02.png",
+      "bytes": 2043163,
+      "sha256": "aac4163980082daf2a0d7b9d75581f604af99381f37134a549e58ca4b337e295"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/waiting-02.prompt.json",
+      "bytes": 2226,
+      "sha256": "5311796b54e5094ae4db5efb558d39670f9eee85ad3674eda11d5df6a16ec117"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/waiting-04.png",
+      "bytes": 2060478,
+      "sha256": "1dcce68219e1275124672e1b05136b5797d993d30f25dd013f76c46c47638e95"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/waiting-04.prompt.json",
+      "bytes": 2199,
+      "sha256": "e743625ed7389e519b2fe1246a2b91f3665e63c375727a2b3dc180d00e003327"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/waving-00.png",
+      "bytes": 2424059,
+      "sha256": "d1bb15cac2787a2f3c00e9643775176142a2670048f64db6a61bb91baf0654a0"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/waving-00.prompt.json",
+      "bytes": 2293,
+      "sha256": "4f711af8a67e10a6ac5e359d18a4c9a4f9f9ac1571c2904faa5726f1426a5a4b"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/waving-02.png",
+      "bytes": 2096620,
+      "sha256": "1d3b48a30c790cb57080d33bda323ed872add9823d325bd828706317a483d5b5"
+    },
+    {
+      "path": "pets/xilian-001/source/pairs/waving-02.prompt.json",
+      "bytes": 2239,
+      "sha256": "e3d3e5ddd68216b975a3199b13f57870caa42b707a97faa444bbcf0b87249e81"
+    },
+    {
+      "path": "pets/xilian-001/spritesheet.webp",
+      "bytes": 1579474,
+      "sha256": "472ba569b8ae55fac0ec5f04f5e3ac06650f477fb8c2052cbc969cd4f91392af"
+    },
+    {
       "path": "schemas/catalog.schema.json",
       "bytes": 2283,
       "sha256": "fcabace3100cf8c705f43218a7c668fd5a97506eb048de393c7c2a80fadc5421"
@@ -2210,8 +2710,8 @@
     },
     {
       "path": "scripts/build_pet.py",
-      "bytes": 6832,
-      "sha256": "277147c563c7effcab1ac1b5d5508cac21529fd0eaee4e570bf7ac8982eed850"
+      "bytes": 6882,
+      "sha256": "6dc9145f11a1b77a406bfbd32a6e00575e4eacb278502afa46b3db99e30743be"
     },
     {
       "path": "scripts/build_release.py",
@@ -2245,18 +2745,18 @@
     },
     {
       "path": "scripts/matte_pet.py",
-      "bytes": 5362,
-      "sha256": "2b74f11a52477481abaebfa605e1bd8c7ce7a9549cbe9da83e8338226b04dbf9"
+      "bytes": 6431,
+      "sha256": "e5c872ac4d0d20c03e92a71487497c627a449bcc891625c5fff8583d875c3a5b"
     },
     {
       "path": "scripts/register_art.py",
-      "bytes": 4042,
-      "sha256": "f73f3e50f378f0c4d5c0a4c7792b94bf09b74dcb9d535d2405a39dd716f11bdf"
+      "bytes": 5206,
+      "sha256": "96f7ccd30b49bf6551d31b0fa94ce81267494e7d4b41419256e9064ad428b1b4"
     },
     {
       "path": "scripts/test_matte.py",
-      "bytes": 3143,
-      "sha256": "e79302d4c04ef7d320b415c7b6dfb7b252365df6b75ae6f6cb16c310fb6bbbbf"
+      "bytes": 4744,
+      "sha256": "742519ea796e87c486c17dc81c7b5516c22629490c9115f886e7d59e7ddfaefa"
     },
     {
       "path": "scripts/test_package.py",

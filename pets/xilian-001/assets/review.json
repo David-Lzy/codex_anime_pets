@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "id": "xilian-001",
+  "version": "2.0.0",
+  "art_reviewed": true,
+  "method": "Native green-background pose pairs, local RGBA matting, one shared pet-wide canvas scale and translation-only registration.",
+  "automated_playback": {
+    "cases": 36,
+    "loops_per_case": 2,
+    "states": 9,
+    "backgrounds": [
+      "#ffffff",
+      "#17191c"
+    ],
+    "heights": [
+      208,
+      320
+    ],
+    "evidence": "../../../art/playback-review.json"
+  },
+  "visual_review": [
+    "All 73 used frames on light and dark contact sheets",
+    "Exactly one Cyrene and one memory spirit in every frame",
+    "Signature outfit, hair, laurel, rose motifs and companion identity consistency",
+    "Profile walk cycle, mirrored left movement and unclipped shoes",
+    "Grounded foot stability and distinct anticipation, takeoff, apex, landing and recovery",
+    "Invitation hand, memory-shard work wreath, rose review and sixteen clockwise look poses",
+    "Transparent edges around white dress, pink hair and layered star, petal and ripple effects"
+  ],
+  "desktop_review": {
+    "device_scale_factors": [
+      1,
+      1.25,
+      2
+    ],
+    "transparent_corner_rgba": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "native_click_through": true,
+    "position_restore": true
+  },
+  "limits": [
+    "Authored low-frame-count animation; not skeletal motion or interpolated 60fps.",
+    "Small per-frame drawing variations remain.",
+    "Codex built-in playback timing is controlled by the client.",
+    "Unofficial fan-made asset for non-commercial personal desktop use."
+  ]
+}

@@ -2,13 +2,13 @@
 
 **English** | [简体中文](README.zh-CN.md)
 
-An independent transparent Electron/Canvas companion using the four remastered pets. It does not modify Codex. Frames are 768x832 RGBA; playback follows elapsed time and the authored frame durations.
+An independent transparent Electron/Canvas companion using the five remastered pets. It does not modify Codex. Frames are 768x832 RGBA; playback follows elapsed time and the authored frame durations.
 
 ## Windows
 
 Download the unsigned Windows ZIP from [Releases](https://github.com/David-Lzy/codex_anime_pets/releases/latest). Verify SHA-256, extract the **whole** archive, and double-click **Assistant-004 Desktop.exe**. Keep its resources beside the executable. No Python or Node installation is needed for the packaged app.
 
-Drag to move, click to wave, double-click to hop. Right-click or use the tray menu for character, action, sizes (160-640 px), pause, pointer direction, click-through, followed task, position reset or quit. The tray remains usable during click-through. Position is saved and clamped to connected displays on restart. No autostart is enabled.
+Drag to move, click to wave, double-click to hop. Right-click or use the tray menu for character, action, sizes (160-640 logical px), pause, pointer direction, click-through, followed task, position reset or quit. Windows scales the native menu automatically; the Size label reports the active display scale. The tray remains usable during click-through. Position is saved and clamped to connected displays on restart. No autostart is enabled.
 
 Both Assistants wear lab coats for working/review/waiting/frustration and casual jackets otherwise. March 7th and Cirno retain signature outfits and their fan-art notices.
 
@@ -54,4 +54,4 @@ node --test desktop/test.cjs
 
 The optional `desktop/smoke.cjs` requires Playwright on Node's module path. Set `ASSISTANT004_REAL_ART=1`, `ASSISTANT004_ASSETS` to the absolute `pets` directory, and `ASSISTANT004_REVIEW_ALL=1` to check all real action loops on light/dark backgrounds at Codex and HD sizes. Set `TEST_DPR=1`, `1.25`, or `2` for scaling tests. Without real-art mode, generate geometric fixtures using `scripts/make_test_art.py`; fixtures do not certify artwork.
 
-GitHub Actions gates releases on all four reviewed HD assets and produces the Windows portable ZIP and checksums. Executables are not committed. The renderer has Node integration disabled, context isolation and sandboxing enabled, restricted IPC, and no remote navigation.
+GitHub Actions gates releases on all five reviewed HD assets and produces the Windows portable ZIP and checksums. Executables are not committed. The renderer has Node integration disabled, context isolation and sandboxing enabled, restricted IPC, and no remote navigation.

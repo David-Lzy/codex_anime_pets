@@ -114,6 +114,8 @@ function set(name, value) {
 }
 function menu() {
   const linked = tasks.current(settings.taskId);
+  const display = screen.getDisplayMatching(win.getBounds());
+  const scale = Math.round(display.scaleFactor * 100);
   const items = [
     {label: 'Assistant-004 Desktop', enabled: false},
     {label: integrationError || (receiver ? linked.status : 'Integration disabled'), enabled: false},
@@ -121,7 +123,7 @@ function menu() {
     {label: 'Character', submenu: [...models].map(([id, model]) => ({label: model.displayName, type: 'radio', checked: settings.pet === id, click: () => set('pet', id)}))},
     {label: 'Action', submenu: [{label: 'Automatic', type: 'radio', checked: settings.mode === 'auto', click: () => set('mode', 'auto')},
       ...STATES.map(state => ({label: state, type: 'radio', checked: settings.mode === state, click: () => set('mode', state)}))]},
-    {label: 'Size', submenu: [160, 240, 320, 480, 640].map(height => ({label: `${height} px`, type: 'radio', checked: settings.height === height, click: () => set('height', height)}))},
+    {label: `Size (${scale}% system scale)`, submenu: [160, 240, 320, 480, 640].map(height => ({label: `${height} logical px`, type: 'radio', checked: settings.height === height, click: () => set('height', height)}))},
     {label: 'Paused', type: 'checkbox', checked: settings.paused, click: item => set('paused', item.checked)},
     {label: 'Look toward pointer', type: 'checkbox', checked: settings.look, click: item => set('look', item.checked)},
     {label: 'Click through (use tray to restore)', type: 'checkbox', checked: settings.clickThrough, click: item => set('clickThrough', item.checked)},
@@ -189,6 +191,7 @@ if (single) app.whenReady().then(async () => {
     tray = new Tray(icon.resize({width: 24, height: 24}));
     tray.on('click', menu); tray.on('right-click', menu);
     await win.loadFile(path.join(__dirname, 'index.html'));
+    win.setBackgroundColor('#00000000');
     win.setIgnoreMouseEvents(settings.clickThrough, {forward: true});
     win.showInactive();
     timer = setInterval(update, 50);

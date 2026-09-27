@@ -30,6 +30,10 @@ const path = require('node:path');
       for (let i = 3; i < pixels.length; i += 4) if (pixels[i] > 0) return true;
       return false;
     });
+    assert.deepEqual(await page.evaluate(() => ({html: getComputedStyle(document.documentElement).backgroundColor,
+      body: getComputedStyle(document.body).backgroundColor, canvas: getComputedStyle(document.querySelector('canvas')).backgroundColor,
+      cornerAlpha: document.querySelector('canvas').getContext('2d').getImageData(0, 0, 1, 1).data[3]})),
+      {html: 'rgba(0, 0, 0, 0)', body: 'rgba(0, 0, 0, 0)', canvas: 'rgba(0, 0, 0, 0)', cornerAlpha: 0});
     const originalBounds = await instance.evaluate(() => globalThis.__petTest.win.getBounds());
     await page.mouse.move(120, 170); await page.mouse.down();
     await page.mouse.move(135, 175); await page.waitForTimeout(100);
@@ -54,7 +58,7 @@ const path = require('node:path');
     await page.waitForTimeout(250);
     assert.equal(await instance.evaluate(() => globalThis.__petTest.win.getBounds().height), 640);
     const ids = await instance.evaluate(() => [...globalThis.__petTest.models.keys()]);
-    if (!realArt) assert.equal(ids.length, 4);
+    if (!realArt) assert.equal(ids.length, 5);
     for (const pet of ids) {
       await instance.evaluate((_, id) => globalThis.__petTest.set('pet', id), pet);
       await page.waitForTimeout(200);
@@ -65,24 +69,29 @@ const path = require('node:path');
     if (realArt && process.env.ASSISTANT004_REVIEW_ALL === '1') {
       const reviewDir = path.resolve(__dirname, '../build/art-review/playback');
       fs.mkdirSync(reviewDir, {recursive: true});
-      for (const pet of ids) for (const height of [208, 320]) for (const background of ['#ffffff', '#17191c']) {
-        await instance.evaluate((_, v) => { const t = globalThis.__petTest; t.set('pet', v.pet); t.set('height', v.height); }, {pet, height});
-        await page.evaluate(bg => { document.body.style.background = bg; }, background);
-        for (const state of require('./state.cjs').STATES) {
-          await instance.evaluate((_, s) => globalThis.__petTest.set('mode', s), state);
-          await page.waitForFunction(key => displayedKey === key, `${pet}:${state}`);
-          const durations = await instance.evaluate(() => globalThis.__petTest.snapshot().model.clips[globalThis.__petTest.settings.mode].durations);
-          const sums = new Set(), until = Date.now() + durations.reduce((a, b) => a + b, 0) * 2;
-          while (Date.now() < until) { sums.add((await pixels()).checksum); await page.waitForTimeout(45); }
-          assert.ok(sums.size >= durations.length, `${pet}/${state} must display every drawn frame`);
-          const name = `${pet}-${state}-${height}-${background === '#ffffff' ? 'light' : 'dark'}`;
-          await page.screenshot({path: path.join(reviewDir, name + '.png')});
-          loops.push({pet, state, height, background, uniqueDisplayedFrames: sums.size});
+      await instance.evaluate(() => globalThis.__petTest.win.setOpacity(0));
+      try {
+        for (const pet of ids) for (const height of [208, 320]) for (const background of ['#ffffff', '#17191c']) {
+          await instance.evaluate((_, v) => { const t = globalThis.__petTest; t.set('pet', v.pet); t.set('height', v.height); }, {pet, height});
+          await page.evaluate(bg => { document.body.style.setProperty('background', bg, 'important'); }, background);
+          for (const state of require('./state.cjs').STATES) {
+            await instance.evaluate((_, s) => globalThis.__petTest.set('mode', s), state);
+            await page.waitForFunction(key => displayedKey === key, `${pet}:${state}`);
+            const durations = await instance.evaluate(() => globalThis.__petTest.snapshot().model.clips[globalThis.__petTest.settings.mode].durations);
+            const sums = new Set(), until = Date.now() + durations.reduce((a, b) => a + b, 0) * 2;
+            while (Date.now() < until) { sums.add((await pixels()).checksum); await page.waitForTimeout(45); }
+            assert.ok(sums.size >= durations.length, `${pet}/${state} must display every drawn frame`);
+            const name = `${pet}-${state}-${height}-${background === '#ffffff' ? 'light' : 'dark'}`;
+            await page.screenshot({path: path.join(reviewDir, name + '.png')});
+            loops.push({pet, state, height, background, uniqueDisplayedFrames: sums.size});
+          }
+          console.log(JSON.stringify({playback: pet, height, background, passed: true}));
         }
-        console.log(JSON.stringify({playback: pet, height, background, passed: true}));
+        fs.writeFileSync(path.join(reviewDir, 'results.json'), JSON.stringify(loops, null, 2));
+      } finally {
+        await page.evaluate(() => { document.body.style.removeProperty('background'); });
+        await instance.evaluate(() => globalThis.__petTest.win.setOpacity(1));
       }
-      fs.writeFileSync(path.join(reviewDir, 'results.json'), JSON.stringify(loops, null, 2));
-      await page.evaluate(() => { document.body.style.background = 'transparent'; });
     }
     await instance.evaluate(() => globalThis.__petTest.set('clickThrough', true));
     assert.equal(await instance.evaluate(() => globalThis.__petTest.settings.clickThrough), true);
