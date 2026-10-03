@@ -6,9 +6,9 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageOps
 from install import install_pet, load_catalog
-from build_pet import load_frame, resize_rgba, REMASTER_IDS, STATES, COUNTS
+from build_pet import load_frame, resize_rgba, reframe_frame, REMASTER_IDS, STATES, COUNTS
 from build_release import install_bundle
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -83,6 +83,31 @@ class PackageTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 load_frame(root, {"file": "0.png"}, (384, 416))
             self.assertEqual(resize_rgba(frames[0], (192, 208)).mode, "RGBA")
+
+    def test_shared_viewport_preserves_mirror_and_displacement(self):
+        viewport = [76, 158, 692, 774]
+        standing = Image.new("RGBA", (768, 832))
+        airborne = Image.new("RGBA", (768, 832))
+        ImageDraw.Draw(standing).rectangle((220, 280, 540, 749), fill="#844235")
+        ImageDraw.Draw(airborne).rectangle((220, 230, 540, 699), fill="#844235")
+        framed = reframe_frame(standing, viewport)
+        jump = reframe_frame(airborne, viewport)
+        a, b = framed.getchannel("A").getbbox(), jump.getchannel("A").getbbox()
+        self.assertAlmostEqual(a[3] - b[3], 50 * 768 / 616, delta=1)
+        self.assertAlmostEqual(a[3] - a[1], b[3] - b[1], delta=1)
+        mirrored = reframe_frame(ImageOps.mirror(standing), viewport)
+        self.assertEqual(mirrored.tobytes(), ImageOps.mirror(framed).tobytes())
+        self.assertEqual(framed.size, (768, 832))
+        self.assertGreater(a[3] - a[1], 570)
+
+    def test_shared_viewport_rejects_clipping_and_invalid_dimensions(self):
+        image = Image.new("RGBA", (768, 832))
+        ImageDraw.Draw(image).rectangle((20, 20, 100, 100), fill="#844235")
+        with self.assertRaisesRegex(ValueError, "clips artwork"):
+            reframe_frame(image, [76, 158, 692, 774])
+        for viewport in ([0, 0, 0, 832], [0, 0, 769, 832], [0, 0, 768], [0, 0, 768.0, 832]):
+            with self.assertRaisesRegex(ValueError, "Invalid"):
+                reframe_frame(image, viewport)
 
     @unittest.skipUnless(sys.platform == "win32", "Windows installer")
     def test_powershell_install_legacy_and_id_validation(self):

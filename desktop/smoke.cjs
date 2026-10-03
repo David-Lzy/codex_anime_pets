@@ -66,12 +66,14 @@ const path = require('node:path');
       assert.ok((await pixels()).occupied > 0);
     }
     const loops = [];
-    if (realArt && process.env.ASSISTANT004_REVIEW_ALL === '1') {
+    if (realArt && (process.env.ASSISTANT004_REVIEW_ALL === '1' || process.env.ASSISTANT004_REVIEW_PET)) {
       const reviewDir = path.resolve(__dirname, '../build/art-review/playback');
       fs.mkdirSync(reviewDir, {recursive: true});
+      const reviewIds = process.env.ASSISTANT004_REVIEW_PET ? [process.env.ASSISTANT004_REVIEW_PET] : ids;
+      assert.ok(reviewIds.every(id => ids.includes(id)), 'Playback review pet must be installed');
       await instance.evaluate(() => globalThis.__petTest.win.setOpacity(0));
       try {
-        for (const pet of ids) for (const height of [208, 320]) for (const background of ['#ffffff', '#17191c']) {
+        for (const pet of reviewIds) for (const height of [208, 320]) for (const background of ['#ffffff', '#17191c']) {
           await instance.evaluate((_, v) => { const t = globalThis.__petTest; t.set('pet', v.pet); t.set('height', v.height); }, {pet, height});
           await page.evaluate(bg => { document.body.style.setProperty('background', bg, 'important'); }, background);
           for (const state of require('./state.cjs').STATES) {

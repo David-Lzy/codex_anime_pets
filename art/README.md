@@ -21,6 +21,8 @@ python -m unittest discover -s scripts -p 'test_*.py'
 
 Repeat for the other IDs. Review outputs under `build/art-review/<id>/`. `register_art.py` deliberately resets `reviewed` to false. Only after checking every state, directions, light/dark edges, foot stability and full loops, set `reviewed: true` in `source/frames.json` and run `build_pet.py` without `--preview`. Update `assets/review.json` with the actual acceptance evidence. Rebuild indexes with `python scripts/build_index.py`; build release archives and hashes with `python scripts/build_release.py --require-hd`.
 
+An optional model `frame_viewport` applies the same crop and scale to every registered frame, after registration. It must contain all artwork in all poses. Cyrene uses this to reduce transparent padding; do not fit or rescale individual character bounding boxes. Targeted playback review uses `ASSISTANT004_REAL_ART=1`, `ASSISTANT004_REVIEW_PET=<id>` and `ASSISTANT004_ASSETS=<repository pets directory>` with `node desktop/smoke.cjs`.
+
 对其他角色重复以上流程。重新配准会把验收标记清零；检查全部动作、朝向、深浅底边缘、脚底和循环后才可标记已验收。不要把自动化非空像素检查等同于美术质量保证。中间透明 PNG 可重建，因此不重复提交到 Git。历史候选图片保留在本地草稿目录，不进入安装包。
 
 ## Earlier Design Drafts

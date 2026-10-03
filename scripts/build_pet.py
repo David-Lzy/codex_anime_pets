@@ -28,6 +28,24 @@ def resize_rgba(image: Image.Image, size: tuple[int, int]) -> Image.Image:
     return image.convert("RGBa").resize(size, Image.Resampling.LANCZOS).convert("RGBA")
 
 
+def reframe_frame(image: Image.Image, viewport: list[int] | None) -> Image.Image:
+    if viewport is None:
+        return image
+    if (not isinstance(viewport, list) or len(viewport) != 4 or any(type(v) is not int for v in viewport)
+            or not 0 <= viewport[0] < viewport[2] <= CELL[0]
+            or not 0 <= viewport[1] < viewport[3] <= CELL[1]):
+        raise ValueError("Invalid shared frame viewport")
+    box = image.getchannel("A").getbbox()
+    if box is None or any(box[i] < viewport[i] for i in (0, 1)) or any(box[i] > viewport[i] for i in (2, 3)):
+        raise ValueError("Shared frame viewport clips artwork")
+    crop = image.crop(tuple(viewport))
+    scale = min(CELL[0] / crop.width, CELL[1] / crop.height)
+    size = (round(crop.width * scale), round(crop.height * scale))
+    frame = Image.new("RGBA", CELL)
+    frame.alpha_composite(resize_rgba(crop, size), ((CELL[0] - size[0]) // 2, (CELL[1] - size[1]) // 2))
+    return frame
+
+
 def load_frame(root: Path, entry: dict, source_size: tuple[int, int]) -> Image.Image:
     file = (root / entry["file"]).resolve()
     if not file.is_relative_to(root.resolve()):
@@ -62,7 +80,8 @@ def build(root: Path, preview: bool = False) -> dict:
         entries = spec["frames"][state]
         if len(entries) != count:
             raise ValueError(f"{state} requires exactly {count} frames")
-        frames = [load_frame(root, entry, source_size) for entry in entries]
+        # One viewport for every pose preserves body scale, foot registration and jump displacement.
+        frames = [reframe_frame(load_frame(root, entry, source_size), spec.get("frame_viewport")) for entry in entries]
         unique = len({hashlib.sha256(frame.tobytes()).digest() for frame in frames})
         if unique < (16 if state == "look" else min(3, count)):
             raise ValueError(f"Repeated static frames in {state}")
@@ -76,6 +95,8 @@ def build(root: Path, preview: bool = False) -> dict:
     atlas = Image.new("RGBA", (1536, 2288))
     animation = {"id": spec["id"], "displayName": spec["display_name"], "cellWidth": 768, "cellHeight": 832, "clips": {}}
     report = {"schema_version": 2, "preview_only": preview, "source_canvas": source_size, "output_cell": CELL, "per_frame_bbox_scaling": False, "states": {}}
+    if spec.get("frame_viewport") is not None:
+        report["frame_viewport"] = spec["frame_viewport"]
     previews = root / "assets" / "previews"
     previews.mkdir(parents=True, exist_ok=True)
     for row, (state, frames) in enumerate(rows.items()):

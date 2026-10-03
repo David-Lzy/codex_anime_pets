@@ -88,6 +88,9 @@ def register(pet: Path):
             "reviewed": False, "source_canvas": [source_width, 1536], "per_frame_bbox_scaling": False,
             "registration": "Translation only: shared foot baseline, head-registered walk, 45/110 native-pixel takeoff/apex lift. Drawn body proportions and crouch heights retained.",
             "frames": frames}
+    viewport = plan["models"].get(pet.name, {}).get("frame_viewport")
+    if viewport is not None:
+        spec["frame_viewport"] = viewport
     if pet.name.startswith("assistant-004"):
         spec["outfits"] = {state: "lab" if state in plan["lab_states"] else "casual" for state in frames}
     dump(pet / "source/frames.json", spec)

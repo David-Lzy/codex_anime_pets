@@ -31,9 +31,24 @@ prompts and live task hooks require interactive user acceptance;
 the automated tests send the same event contract locally, not a real user task.
 macOS/Linux have not been hardware-tested. Windows builds are unsigned.
 
-Twelve Python checks and six Node checks passed, including v1/v2 installation,
+Fourteen Python checks and six Node checks passed, including v1/v2 installation,
 backups, legacy-only pet regression, matting, atlas geometry, loopback privacy,
 hook preservation, state transitions and cancellation of stale image loads.
+
+## Cyrene Compact Framing
+
+On 2026-10-03, all 73 Cyrene frames received one shared `[76, 158, 692, 774]`
+viewport. Art scale increases uniformly by 1.24675; frame dimensions, outfit,
+companion, mirror relationships and jump displacement remain consistent. First
+idle-frame visible height increases from 120 to 149 pixels within the 208-pixel
+cell. Every frame is checked for cropping; all twelve WebP files retain zero RGB
+under fully transparent pixels. The revised pet passed 36 real-art playback
+cases at device scale factor 1.5, plus tests for mirror and displacement retention.
+
+The current native pointer test did not reach its owned underlay window and
+sent no click. That run is not a successful native-input validation. Codex's own
+desktop pet uses a client-controlled rectangular interaction region; the asset
+format cannot configure a per-pixel alpha hit mask.
 
 ## Source History
 

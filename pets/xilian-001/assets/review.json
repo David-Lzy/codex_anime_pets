@@ -1,9 +1,25 @@
 {
   "schema_version": 2,
   "id": "xilian-001",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "art_reviewed": true,
   "method": "Native green-background pose pairs, local RGBA matting, one shared pet-wide canvas scale and translation-only registration.",
+  "framing_revision": {
+    "reviewed_on": "2026-10-03",
+    "frame_viewport": [76, 158, 692, 774],
+    "shared_scale": 1.2467532467532467,
+    "per_frame_bbox_scaling": false,
+    "idle_visible_height_before": 120,
+    "idle_visible_height_after": 149,
+    "idle_alpha_coverage_before": 0.13401442307692307,
+    "idle_alpha_coverage_after": 0.2059044471153846,
+    "all_73_frames_unclipped": true,
+    "transparent_rgb_checks_passed": 12,
+    "playback_cases": 36,
+    "playback_device_scale_factor": 1.5,
+    "native_pointer_test": "Not verified: the hit test did not reach the owned test window, so no click was sent.",
+    "native_codex_hit_mask": "Client-controlled rectangle; pixel-level alpha hit testing is not configured by pet.json."
+  },
   "automated_playback": {
     "cases": 36,
     "loops_per_case": 2,

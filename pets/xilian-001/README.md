@@ -37,6 +37,12 @@ Older client: add `--legacy` or PowerShell `-Legacy`. Existing files are backed 
 
 Nine action rows plus 16 clockwise look directions. There are 73 used frames: 65 drawn frames and eight mirrored left-movement frames. Every state retains the same signature white-violet dress and exactly one memory spirit. / 九种动作与16个顺时针朝向，共73个使用帧：65个实际绘制帧与8个左移镜像帧；所有状态保留同一套白紫礼服和一只记忆精灵。
 
+All 73 frames use one shared compact viewport, `[76, 158, 692, 774]`, to reduce transparent padding. The character, companion, effects and jump displacement scale together; individual poses are never fitted separately. / 全部73帧统一采用紧凑取景框，减少透明留白；人物、伙伴、特效与跳跃位移一起缩放，不逐帧改变人物比例。
+
+Codex controls the native desktop pet's rectangular interaction region. Transparent pixels inside that rectangle may still reveal controls; the sprite sheet cannot supply a pixel-level hit mask. / Codex 原生桌宠的交互矩形由客户端控制，矩形内的透明像素仍可能唤起控件；图集本身不能提供逐像素命中遮罩。
+
+Newer Codex clients may migrate local pets to the shared account pet library. Reinstalling local files does not replace an already migrated cloud pet. Update the existing cloud record when changing its artwork, rather than importing another copy. / 新版 Codex 可能把本地宠物迁移到共享账号宠物库，重新安装本地文件不会覆盖已迁移的云端素材；修改素材时应更新原云端条目。
+
 ## Rights / 权利说明
 
 Cyrene (昔涟) and Honkai: Star Rail are associated with HoYoverse/miHoYo. This pet is an unofficial fan-made asset and is not endorsed by or affiliated with HoYoverse/miHoYo.
